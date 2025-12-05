@@ -1,0 +1,23 @@
+type: CoreBlock
+category: effect
+name: "Core: «Impact»"
+description": "Second interation of core on Asterion. Not so special, to have a big description.",
+squareSprite: false
+size: 4
+health: 3800
+
+itemCapacity: 5000
+unitCapModifier: 16
+unitType: magnetism
+outputsPower: true
+isFirstTier: false
+buildVisibility: shown
+
+requirements: [
+	whitorite/1700
+	pyrite/500
+	zincum/1250
+]
+
+research: core-force
+researchCostMultiplier: 0.1

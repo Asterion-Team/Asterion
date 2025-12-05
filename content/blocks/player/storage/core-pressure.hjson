@@ -1,0 +1,24 @@
+type: CoreBlock
+category: effect
+name: "Core: «Pressure»",
+description: "Third interation of core on Asterion. Not so special, to have a big description.",
+squareSprite: false
+size: 5
+health: 5000
+
+itemCapacity: 8600
+unitCapModifier: 25
+unitType: magnetism
+outputsPower: true
+isFirstTier: false
+buildVisibility: shown
+
+requirements: [
+	whitorite/3000
+	pyrite/1050
+	zincum/2800
+	magnetite/1250
+]
+
+research: core-impact
+researchCostMultiplier: 0.1

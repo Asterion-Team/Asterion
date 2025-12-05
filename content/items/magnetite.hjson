@@ -1,10 +1,12 @@
 name: "Magnetite"
 description: "It has magnetic properties, a good ammunition for turrets to disable a mechanical/electro enemy, is used in advanced constructions."
-color: "919191"
-research: irmenite
-hardness: 4
-charge: 0.17
-explosiveness: 0.0
-flammability: 0.0
+color: "d1d1d6"
+hardness: 3
+cost: 3.4
+
+explosiveness: 0
+flammability: 0
 radioactivity: 0
-cost: 4
+charge: 0.5
+
+research: zincum

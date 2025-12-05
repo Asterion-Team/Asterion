@@ -1,9 +1,12 @@
 name: "Zinc"
 description: "Metal that does not have any special properties in itself."
-color: 707c8a
-research: kiten
+color: 90ada7
 hardness: 2
+cost: 2.5
+
 explosiveness: 0
 flammability: 0
 radioactivity: 0
-cost: 2.7
+charge: 0
+
+research: pyrite

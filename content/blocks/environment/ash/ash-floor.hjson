@@ -1,9 +1,0 @@
-name: Ash
-variants: 3
-type: floor
-attributes: {
-	water: -0.65
-	ash: 1
-}
-wall: ash-wall
-decoration: ash-boulder

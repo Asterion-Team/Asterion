@@ -1,0 +1,18 @@
+type: Unloader
+category: distribution
+name: "Unloader"
+description: "//TODO" 
+size: 1
+squareSprite: false
+
+requirements: [
+	whitorite/20
+	pyrite/15
+]
+
+speed: 4
+solid: true
+
+allowCoreUnload: true
+research: irmenite-container
+researchCostMultiplier: 0.05

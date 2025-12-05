@@ -1,5 +1,5 @@
-type: StaticWall
-name: "Puzzle Wall"
+type: TallWall
+name: "Big Puzzle crystall"
 emitLight: true
 lightRadius: 32
 lightColor: "7cc3d948"
@@ -7,4 +7,6 @@ attributes: {
 	heat: 0.2
 	light: 2
 }
-variants: 3
+variants: 0
+shadowAlpha: 1.7
+shadowOffset: -1.5

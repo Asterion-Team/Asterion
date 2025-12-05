@@ -1,23 +1,23 @@
 type: SteamVent
-name: "flaming crater"
-parent: endomine-floor
-blendGroup: endomine-floor
+name: "Flaming Crater"
+parent: endominous-rock
+blendGroup: endominous-rock
 variants: 3
 effect: {
-particles: 2
-length: 250
-lifetime: 300
-cone: 50
-baseRotation: 30
-sizeFrom: 3
-sizeTo: 25
-colorFrom: ba6d2038
-colorTo: ba6d2000
-sizeInterp: pow3Out
-interp: pow3Out
+	particles: 2
+	length: 250
+	lifetime: 300
+	cone: 50
+	baseRotation: 30
+	sizeFrom: 3
+	sizeTo: 25
+	colorFrom: "ba6d2038"
+	colorTo: "ba6d2000"
+	sizeInterp: pow3Out
+	interp: pow3Out
 } 
-effectColor: 7a7266c6
+
 attributes: {
-   steam: 1
-   heat: 0.6
+	steam: 1
+	heat: 0.6
 }

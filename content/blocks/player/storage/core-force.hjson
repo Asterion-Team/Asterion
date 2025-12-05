@@ -1,0 +1,28 @@
+type: CoreBlock
+category: effect
+name: "Core: «Force»"
+description: "The first core, small capacity of items, nothing special."
+squareSprite: false
+size: 3
+health: 2500
+
+//absorbLasers: true
+itemCapacity: 3500
+unitCapModifier: 7
+unitType: attraction
+incinerateNonBuildable: false
+isFirstTier: true
+
+requirements: [
+	whitorite/1300
+	pyrite/200
+]
+
+research: {
+	root: true
+	name: Asterion
+	requiresUnlock: false
+	planet: as-asterion
+}
+researchCostMultiplier: 0.1
+alwaysUnlocked: true

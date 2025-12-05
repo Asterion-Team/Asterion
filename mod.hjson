@@ -1,27 +1,43 @@
-{
-"name": "as",
-"displayName": "Asterion",
-"description":
-  '''
-This is collaboration mod.
+name: "as"
+displayName: "Asterion"
+author: "[white] [purple]|Asterion [yellow]Team|[white] "
+description:
+'''
+	This is collaboration mod.
 
-[white] [purple]|Asterion [yellow]Team|[white] 
-Developers/Helpers:
-  Sputnuc - Creator,coder, spriter, mapper
-  bloody_ocean1846_66553 - Spriter
-  sundered8134 - Spriter
-  R.O.T - coder, spriter
-  andashik - coder, spriter, mapper
-  scrap1020spawn/ace1020spawn - composer,mapper
-  los_sasikos - balancer
-  gg_word - WTF man!? Where is russian translate!?
-  itz.craft_ - funny man
-  lehanchic25 - funny man
-  '''
-"author": "[white] [purple]|Asterion [yellow]Team|[white] ",
-"version": "pre 0.96.5",
-"minGameVersion": 147,
-"subtitle": "Beta V0.96.5",
-"hideBrowser": "true"
-}
+	[white] [purple]|Asterion [yellow]Team|[white] 
+	Developers/helpers:
+	Sputnuc — creator, coder, spriter, mapper
+	Bloody Ocean — spriter
+	AnDashik — coder, spriter, mapper
+	Ace — composer
+	R.O.T — coder, spriter
+	Sundered — some sprites
+	Los Sasikos - help with balance & sprites
+'''
+subtitle: "Rework! Alpha 0.1"
 
+version: "Alpha 1.0"
+minGameVersion: 151
+
+hideBrowser: true
+
+contentOrder: [
+	// Items
+	whitorite
+	pyrite
+	quartz
+	zincum
+	blacktite
+	magnetite
+	ghetronFlesh
+	// Liquids
+	endomine
+	oxylene
+	kryoline
+	ghetron
+	// Gases
+	zion
+	methane
+	verdyne
+]

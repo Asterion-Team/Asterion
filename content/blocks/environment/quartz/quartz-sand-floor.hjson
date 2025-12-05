@@ -1,0 +1,9 @@
+type: Floor
+name: "Quartz Sand"
+variants: 5
+attributes: {
+	water: 0.50
+}
+itemDrop: quartz
+wall: quartz-sand-wall
+decoration: quartz-growth
