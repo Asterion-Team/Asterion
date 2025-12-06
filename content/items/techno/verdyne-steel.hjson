@@ -1,0 +1,12 @@
+name: "Verdyne Steel"
+description: "//REDO \nElectric metal, refined from Magnetite and Verdyne. Used in durable and advanced constructions."
+color: "383574"
+hardness: 3
+cost: 4.4
+
+explosiveness: 0
+flammability: 0
+radioactivity: 0.6
+charge: 0.15
+
+research: core-force

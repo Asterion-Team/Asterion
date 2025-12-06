@@ -30,12 +30,27 @@ contentOrder: [
 	zincum
 	blacktite
 	magnetite
+	calcite
 	ghetronFlesh
+	// Items: Orion
+	irmenite
+	silicate
+	// Items: Pyro
+	ashotite
+	graphene
+	// Items: Extinguished
+	cobalt
+	zionitium
+	// Items: Techno
+	verdyneSteel
+	fractone
+	
 	// Liquids
 	endomine
 	oxylene
 	kryoline
 	ghetron
+	
 	// Gases
 	zion
 	methane
