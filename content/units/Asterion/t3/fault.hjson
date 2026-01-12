@@ -1,5 +1,5 @@
 name: Fault
-description: "Shoots homing napalm missiles. \n[white]Faction: [#c75432]Pyro[]."
+description: "Shoots homing napalm missiles. \n[]Faction: [#c75432]«Pyro»[]."
 type: legs
 outlineColor: "1c1a1b" //Old -> 2b2828
 speed: 0.55

@@ -1,5 +1,5 @@
 name: raptor
-description: "Fires a volley of lasers. From time to time, the Predator needs to release excess energy in order not to explode. Is the strongest of the Orion... (Or not). \n[white]Faction: [#d0d8e8]Orion[]."
+description: "Fires a volley of lasers. From time to time, the Predator needs to release excess energy in order not to explode. Is the strongest of the Orion... (Or not). \n[]Faction: [#d0d8e8]«Orion»[]."
 type: mech
 speed: 0.40
 flying: false

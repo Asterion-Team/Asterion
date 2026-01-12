@@ -1,6 +1,6 @@
 type: tank
 name: Twilight
-description: "//TODO T7 \n[white]Faction: [#d26e64][Extinguished]."
+description: "//TODO T7 \n[]Faction: [#d26e64]«Extinguished»[]."
 hitSize: 14
 flying: false
 omniMovement: false

@@ -1,5 +1,5 @@
 name: War
-description: "Shoots multiple fire projectiles, has portable incineration weapons (does not penetrate buildings). \n[white]Faction: [#c75432]Pyro[]."
+description: "Shoots multiple fire projectiles, has portable incineration weapons (does not penetrate buildings). \n[]Faction: [#c75432]«Pyro»[]."
 type: legs
 outlineColor: "1c1a1b" //Old -> 2b2828
 speed: 0.4

@@ -12,7 +12,7 @@ speed : 1.95
 accel : 0.4
 armor : 5
 name : Instant
-description:"//TODO \n[white]Faction: [#74c1e8]Techno[]."
+description:"//TODO \n[]Faction: [#74c1e8]«Techno»[]."
 type : hover
 drag : 0.07
 outlineColor: 28282d
@@ -52,8 +52,6 @@ abilities: [
         x : 0
     }
 ]
-
-research: orion-factory
 
 weapons: [
 {
@@ -143,3 +141,5 @@ weapons: [
         }
     }
 }]
+
+research: faction-techno

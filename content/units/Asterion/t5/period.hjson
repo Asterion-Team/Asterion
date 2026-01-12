@@ -11,7 +11,7 @@ speed : 1.4
 accel : 0.5
 armor : 28
 name : Period
-description:"//TODO \n[white]Faction: [#74c1e8]Techno[]."
+description:"//TODO \n[]Faction: [#74c1e8]«Techno»[]."
 type : flying
 drag : 0.1
 outlineColor: 28282d

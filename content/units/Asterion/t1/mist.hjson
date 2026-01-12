@@ -1,6 +1,6 @@
 type: tank
 name: Mist
-description: "//TODO T7 \n[white]Faction: [#d26e64]Extinguished[]."
+description: "//TODO T7 \n[]Faction: [#d26e64]«Extinguished»[]."
 hitSize: 11
 flying: false
 omniMovement: false
@@ -21,7 +21,6 @@ treadRects: [
 ]
 template: TankUnitType
 treadPullOffset: 4
-research: orion-factory
 weapons: [
  {
     name: mist-weapon
@@ -114,3 +113,5 @@ weapons: [
     }
   }
 ]
+
+research: faction-extinguished

@@ -1,10 +1,9 @@
 name: Spark
-description: "Explodes itself and incends ground. \n[white]Faction: [#c75432]Pyro[]."
+description: "Explodes itself and incends ground. \n[]Faction: [#c75432]«Pyro»[]."
 type: mech
 outlineColor: "1c1a1b" //Old -> 2b2828
 speed: 0.8
 flying: false
-research: orion-factory
 hitSize: 10
 itemCapacity: 0
 targetAir: true
@@ -85,3 +84,5 @@ shootEffect: {
 }
 }
 ]
+
+research: faction-pyro

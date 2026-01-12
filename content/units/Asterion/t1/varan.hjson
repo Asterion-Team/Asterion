@@ -1,10 +1,9 @@
 name: Varan
-description: "Shoots light, fast projectiles. \n[white]Faction: [#d0d8e8]Orion[]."
+description: "Shoots light, fast projectiles. \n[]Faction: [#d0d8e8]«Orion»[]."
 type: mech
 outlineColor: 22262b
 speed: 0.6
 flying: false
-research: orion-factory
 hitSize: 12
 itemCapacity: 10
 outlineColor: 1f1f26
@@ -106,3 +105,5 @@ weapons: [
     }
   }
 ]
+
+research: faction-orion
