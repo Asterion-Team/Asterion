@@ -18,11 +18,14 @@ requirements: [
 	pyrite/200
 ]
 
+research: faction-resemblance
+/*
 research: {
 	root: true
 	name: Asterion
 	requiresUnlock: false
 	planet: as-asterion
 }
+*/
 researchCostMultiplier: 0.1
 alwaysUnlocked: true
