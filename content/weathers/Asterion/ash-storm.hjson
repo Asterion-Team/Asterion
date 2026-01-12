@@ -1,14 +1,14 @@
 type: ParticleWeather
-name: "Ash Wind"
+name: "Ash Storm"
 color: a8a7a5
 noiseColor: 4d4744de
 particleColor: "47444204" //4a423e3f
 particleRegion: as-ash-wind-ash
 status: as-in-ash
 statusDuration: 978
-sizeMax: 240
-sizeMin: 10
-density: 9862
+sizeMax: 215
+sizeMin: 7
+density: 2862
 duration: 2359
 useWindVector: true
 drawNoise: true
