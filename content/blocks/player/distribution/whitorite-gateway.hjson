@@ -1,0 +1,14 @@
+
+name: "Whitorite Gateway"
+description: "Distributes items to the sides if the front passage is blocked."
+category: distribution
+invert: false
+research: {
+parent: whitorite-router
+planet: as-asterion
+}
+requirements: [
+	whitorite/2
+	pyrite/3
+]
+researchCostMultiplier: 0.5

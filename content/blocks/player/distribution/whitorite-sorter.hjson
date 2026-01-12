@@ -1,0 +1,14 @@
+name: "Sorter"
+description: "Sorts items. The selected item is brought forward."
+squareSprite: false
+category: distribution
+size: 1
+health: 60
+
+requirements: [
+	whitorite/6
+	pyrite/9
+] 
+
+researchCostMultiplier: 0.2
+research: whitorite-router

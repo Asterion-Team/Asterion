@@ -1,0 +1,14 @@
+name: "Whitorite Duct"
+description: "Moves items forward."
+speed: 5
+underBullets: true
+itemCapacity: 2
+armored: false
+bridgeReplacement: whitorite-duct-bridge
+requirements: [
+	whitorite/1				
+]
+research: core-force
+requirements: [
+	whitorite/20
+]
