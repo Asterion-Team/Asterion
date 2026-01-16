@@ -1,5 +1,5 @@
 type: StorageBlock
-category: effect
+category: distribution
 name: Container
 description: "Stores items in larger quantities. Fragile."
 size: 2
