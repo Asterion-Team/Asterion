@@ -1,10 +1,10 @@
 type: Floor
-name: "Cracked Column Floor"
+name: "Split Column Floor"
 blendGroup: column-floor
 attributes: {
-	water: -0.85
-	heat: 0.05
-	steam: 0.15
+	water: -0.35
+	steam: 0.4
+	heat: 0.2
   }
 variants: 4
 wall: column-wall
