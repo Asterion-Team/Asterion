@@ -1,8 +1,8 @@
-type: Floor"
-"name": "Endominous Rock"
+type: Floor
+name: "Endominous Rock"
 attributes: {
 	water: -0.60
 }
 variants: 3
-//wall: 
-//decoration: 
+wall: endominous-wall
+decoration: endominous-boulder

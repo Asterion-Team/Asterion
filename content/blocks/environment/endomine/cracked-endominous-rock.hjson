@@ -1,12 +1,10 @@
-{
-  "type": "Floor",
-  "name": "Cracked endomine floor",
-  "attributes": {
-	"water": -0.95
-	"heat": 0.05
-	"steam": 0
-  },
-  "variants": 3
-  //"wall": 
-  //"decoration": 
+type: Floor
+name: "Cracked endomine floor"
+attributes": {
+	water: -0.95
+	heat: 0.05
+	steam: 0
 }
+variants: 3
+wall: endominous-rock
+decoration: endominous-boulder
