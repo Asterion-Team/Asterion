@@ -6,6 +6,7 @@ flying: false
 research: raptor
 hitSize: 38
 itemCapacity: 190
+stepSound: step-titan
 outlineColor: 1f1f26
 targetAir: true
 targetGround: true
@@ -29,7 +30,7 @@ parts: [
       color: a9c5ea
       haloRotateSpeed: 1.15
       haloRadius: 7
-      haloRadiusTo: 14
+      haloRadiusTo: 10
       stroke: 7
       strokeTo: 8
       shapes: 4
@@ -45,7 +46,7 @@ parts: [
       color: a9c5ea
       haloRotateSpeed: 1.15
       haloRadius: 7
-      haloRadiusTo: 14
+      haloRadiusTo: 10
       stroke: 7
       strokeTo: 8
       shapes: 4
@@ -56,13 +57,13 @@ parts: [
 {
       type: HaloPart
       y: -15.25
-      radius: 5.5
+      radius: 3
       tri: true
 	  layer: 110
       color: a9c5ea
       haloRotateSpeed: -0.70
-      haloRadius: 16
-      haloRadiusTo: 20
+      haloRadius: 11
+      haloRadiusTo: 15
       shapes: 4
       triLengthTo: 8.5
       triLength: 7
@@ -70,13 +71,13 @@ parts: [
 {
       type: HaloPart
       y: -15.25
-      radius: 5.5
+      radius: 3
       tri: true
 	  layer: 110
       color: a9c5ea
       haloRotateSpeed: -0.70
-      haloRadius: 16
-      haloRadiusTo: 20
+      haloRadius: 11
+      haloRadiusTo: 15
       shapes: 4
       triLengthTo: 5
       triLength: 3
@@ -91,7 +92,7 @@ parts: [
       color: c7d9f0f
       stroke: 1.5
       strokeTo: 2
-      radiusTo: 14
+      radiusTo: 10
       radius: 7
 }
     {
@@ -107,7 +108,7 @@ parts: [
         strokeTo: 1.2
         rotateSpeed: 0.8
         radius: 7
-        radiusTo: 14
+        radiusTo: 10
     }
     {
         type: ShapePart
@@ -122,7 +123,7 @@ parts: [
         strokeTo: 1.2
         rotateSpeed: -0.6
         radius: 7
-        radiusTo: 14
+        radiusTo: 10
     }
 {
       type: shapePart
@@ -154,7 +155,7 @@ weapons: [
     
     shootY: 22.5
 	shake: 15
-	rotationSpeed: 0.6
+	rotateSpeed: 0.6
 	cone: 10
     shootX: 0
     x: 35.25
@@ -372,16 +373,14 @@ weapons: [
         mirror: false
         recoil: 0
         reload: 5000
-        shootSound: spark
+        shootSound: shootPulsar
         shootStatus: high_energy_output
-        shootStatusDuration: 670
+        shootStatusDuration: 200
         alwaysShooting: true
+        inaccuracy: 360
         shoot: {
-            firstShotDelay: 150
-            type: ShootSpread
             shots: 39
             shotDelay: 3
-            shotSpread: 360
         }
 
         bullet: {
@@ -398,72 +397,9 @@ weapons: [
             inaccuracy: 360
             lightningLengthRand: 0
             keepVelocity: false
-            chargeEffect: {
-              type: WaveEffect
-              colorFrom: d0d8e8
-              colorTo: a1b1d0
-              sizeFrom: 90
-              sizeTo: 0
-              lightScl: 4
-              lightOpacity: 1
-              rotation: 0
-              strokeFrom: 0
-              strokeTo: 4
-              lifetime: 150
-                    }
-            shootEffect: {
-                type: MultiEffect
-                effects: [
-                {
-                    type: ParticleEffect
-                    colorFrom: ffffff
-                    colorTo: a1b1d0
-                    particles: 1
-                    cone: 360
-                    length: 30
-                    baseLength: 5
-                    lightScl: 3
-                    lightOpacity: 2
-                    spin: 0
-                    sizeFrom: 3
-                    sizeTo: 0
-                    offset: 1
-                }
-                    {
-                        type: ParticleEffect
-                        colorFrom: a1b1d0
-                        colorTo: 8798b9
-                        particles: 2
-                        cone: 360
-                        length: 40
-                        baseLength: 5
-                        lightScl: 3
-                        lightOpacity: 2
-                        spin: 0
-                        sizeFrom: 3
-                        sizeTo: 0
-                        offset: 1
-                    }
-                    {
-                        type: ParticleEffect
-                        colorFrom: 8798b9
-                        colorTo: 8798b9
-                        particles: 2
-                        cone: 360
-                        length: 50
-                        baseLength: 5
-                        lightScl: 3
-                        lightOpacity: 2
-                        spin: 0
-                        sizeFrom: 3
-                        sizeTo: 0
-                        offset: 1
-                    }
-                    ]
-                    }
-                    }
-                    }
-                        {
+        }
+    }
+{
     name: glava-weapon-sap
     x: -20
     y: -7
@@ -472,7 +408,8 @@ weapons: [
     top: true
     rotate: true
     recoil: 2
-    shootSound: sap
+    rotateSpeed: 2
+    shootSound: shootSap
 
     bullet: {
         type: SapBulletType

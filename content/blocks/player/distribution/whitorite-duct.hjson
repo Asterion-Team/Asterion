@@ -6,9 +6,12 @@ itemCapacity: 2
 armored: false
 bridgeReplacement: whitorite-duct-bridge
 requirements: [
-	whitorite/1				
+	whitorite/1			
 ]
-research: core-force
-requirements: [
-	whitorite/20
-]
+
+research: {
+	parent: core-force
+	requirements: [
+		whitorite/20
+	]
+}

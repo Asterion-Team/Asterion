@@ -37,7 +37,7 @@ weapons: [
     y: 0
     shootY: -3
     mirror: false
-    shootSound: largeCannon
+    shootSound: shootConquer
     reload: 90
     shake: 3
     shoot: {

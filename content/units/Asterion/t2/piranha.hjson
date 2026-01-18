@@ -39,11 +39,16 @@ weapons: [
   name: piranha-weapon
   x: -8.5
   y: 0
-  reload: 30
+  reload: 60
   mirror: true
   recoil: 2
   layerOffset: -0.01
-  shootSound: sap
+  inaccuracy: 10
+  shootSound: shootSap
+  shoot: {
+    shots: 3
+    shotDelay: 6
+  }
   bullet: {
     type: SapBulletType
     sapStrength: 0.4
