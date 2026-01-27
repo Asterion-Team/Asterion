@@ -11,6 +11,7 @@ outlineColor: 1f1f26
 targetAir: true
 targetGround: true
 mechLegColor: 1f1f26
+stepSound: mechStep
 mechFrontSway: 0.8
 mechStepParticles: true
 stepShake: 1
@@ -22,340 +23,210 @@ armor: 19
 range: 225
 
 weapons: [
-{
-    name: scorpion-weapon
-    
-    parts: [
     {
-        type: RegionPart
-        suffix: -heat
-        progress: warmup
-        blending: additive
-        color: 30fdf3
-        layerOffset: -0.1
-        outline: false
-    }
-    ]
+        name: scorpion-weapon
     
-    shootY: 9.25
-    shootX: 0
-    x: -15.5
-    y: 1
-    layerOffset: -0.01
-    mirror: true
-    rotate: true
-    rotationLimit: 28
-    recoil: 3
-    reload: 30
-    shootSound: malignShoot
-
-    bullet: {
-type: BasicBulletType
-homingPower: 0.15
-homigRadius: 120
-damage: 120
-lifetime: 9
-width: 7
-height: 15
-speed: 25
-backColor: d0d8e8 
-frontColor: a1b1d0
-trailColor: a1b1d0 
-trailWidth: 2.333333
-trailLength: 6
-homingPower: 0.2
-weaveMag: 2
-weaveScale: 2
-splashDamage: 40
-splashDamageRadius: 34
-pierce: true
-pierceCap: 2
-pierceBuilding: true 
-pierceArmor: true
-
-shootEffect: {
-type: ParticleEffect 
-colorFrom: d0d8e8
-colorTo: a1b1d0
-particles: 16
-cone: 32
-length: 12
-baseLength: 5
-lightScl: 3
-lightOpacity: 2
-spin: 0
-sizeFrom: 2
-sizeTo: 0 
-offset: 1
-}
-
-despawnEffect: {
-                type: MultiEffect
-                effects: [
+        parts: [
+        {
+            type: RegionPart
+            suffix: -heat
+            progress: heat
+            blending: additive
+            color: 30fdf3
+            layerOffset: -0.1
+            outline: false
+        }
+        ]
+        shootY: 9.25
+        shootX: 0
+        x: -15.5
+        y: 1
+        layerOffset: -0.01
+        mirror: true
+        rotate: true
+        shake: 3
+        rotationLimit: 28
+        recoil: 3
+        reload: 30
+        shootSound: shootAfflict
+        bullet: {
+            type: BasicBulletType
+            homingPower: 0.15
+            homigRadius: 120
+            damage: 113
+            lifetime: 20
+            speed: 12
+            parts: [
                 {
-                    type: ParticleEffect
-                    colorFrom: ffffff
+                    type: FlarePart
+                    color2: d0d8e8
+                    color1: a1b1d0
+                    radius: 10
+                    radiusTo: 10
+                    layer: 110
+                }
+            ]
+            trailColor: a1b1d0 
+            trailWidth: 2
+            trailLength: 6
+            homingPower: 0.1
+            homingDelay: 8
+            weaveMag: 2
+            weaveScale: 2
+            trailInterval: 1
+            trailRotation: true
+            trailEffect: [
+                {
+                    particles: 6
+                    length: 40
+                    cone: 1
+                    sizeFrom: 5
+                    sizeTo: 0
+                    colorFrom: a1b1d0
+                    colorTo: d0d8e8
+                    sizeInterp: circleOut
+                    lifetime: 30
+                }
+                {
+                    particles: 5
+                    length: 7
+                    sizeFrom: 2
+                    sizeTo: 0
+                    colorFrom: a1b1d0
                     colorTo: a1b1d0
-                    particles: 9
-                    cone: 50
-                    length: 30
-                    baseLength: 5
-                    lightScl: 3
-                    lightOpacity: 2
-                    spin: 0
+                    lifetime: 10
+                }
+            ]
+            pierce: true
+            pierceCap: 2
+            pierceBuilding: true 
+            pierceArmor: true
+            shootEffect: [
+                {
+                    type: ParticleEffect 
+                    colorFrom: a1b1d0
+                    colorTo: a1b1d0
+                    particles: 6
+                    cone: 12
+                    length: 42
                     sizeFrom: 3
                     sizeTo: 0
-                    offset: 1
+                    lifetime: 15
                 }
-                    {
-                        type: ParticleEffect
-                        colorFrom: a1b1d0
-                        colorTo: 8798b9
-                        particles: 12
-                        cone: 60
-                        length: 40
-                        baseLength: 5
-                        lightScl: 3
-                        lightOpacity: 2
-                        spin: 0
-                        sizeFrom: 3
-                        sizeTo: 0
-                        offset: 1
-                    }
-                    {
-                        type: ParticleEffect
-                        colorFrom: 8798b9
-                        colorTo: 8798b9
-                        particles: 9
-                        cone: 90
-                        length: 50
-                        baseLength: 5
-                        lightScl: 3
-                        lightOpacity: 2
-                        spin: 0
-                        sizeFrom: 3
-                        sizeTo: 0
-                        offset: 1
-                    }
-                    {
-                        type: WaveEffect
-                        colorFrom: d0d8e8
-                        colorTo: a1b1d0
-                        sizeFrom: 0
-                        sizeTo: 25
-                        lightScl: 4
-                        lightOpacity: 1
-                        rotation: 0
-                        strokeFrom: 4
-                        strokeTo: 0
-                    }
-                    ]
-                    hitEffect: {
-                type: MultiEffect
-                effects: [
                 {
-                    type: ParticleEffect
-                    colorFrom: ffffff
+                    type: ParticleEffect 
+                    colorFrom: a1b1d0
+                    colorTo: 6583bf
+                    particles: 5
+                    cone: 12
+                    length: 32
+                    sizeFrom: 4.5
+                    sizeTo: 0
+                    lifetime: 15
+                }
+                {
+                    type: ParticleEffect 
+                    line: true
+                    colorFrom: a1b1d0
+                    colorTo: 5272b3
+                    particles: 5
+                    cone: 35
+                    length: 25
+                    lenFrom: 6.5
+                    lenTo: 0
+                    strokeFrom: 1.85
+                    strokeTo: 0.75
+                    lifetime: 15
+                }
+            ]
+            hitEffect: [
+                {
+                    particles: 5
+                    line: true
+                    lenFrom: 4
+                    lenTo: 0
+                    length: 45
+                    cone: 35
+                    strokeFrom: 1
+                    strokeTo: 0.8
+                    colorFrom: a1b1d0
                     colorTo: a1b1d0
+                    lifetime: 28
+                }
+                {
                     particles: 9
-                    cone: 50
-                    length: 30
-                    baseLength: 5
-                    lightScl: 3
-                    lightOpacity: 2
-                    spin: 0
                     sizeFrom: 3
                     sizeTo: 0
-                    offset: 1
+                    length: 75
+                    cone: 15
+                    colorFrom: a1b1d0
+                    colorTo: a1b1d0
+                    lifetime: 35
                 }
-                    {
-                        type: ParticleEffect
-                        colorFrom: a1b1d0
-                        colorTo: 8798b9
-                        particles: 12
-                        cone: 60
-                        length: 40
-                        baseLength: 5
-                        lightScl: 3
-                        lightOpacity: 2
-                        spin: 0
-                        sizeFrom: 3
-                        sizeTo: 0
-                        offset: 1
-                    }
-                    {
-                        type: ParticleEffect
-                        colorFrom: 8798b9
-                        colorTo: 8798b9
-                        particles: 9
-                        cone: 90
-                        length: 50
-                        baseLength: 5
-                        lightScl: 3
-                        lightOpacity: 2
-                        spin: 0
-                        sizeFrom: 3
-                        sizeTo: 0
-                        offset: 1
-                    }
-                    {
-                        type: WaveEffect
-                        colorFrom: d0d8e8
-                        colorTo: a1b1d0
-                        sizeFrom: 0
-                        sizeTo: 25
-                        lightScl: 4
-                        lightOpacity: 1
-                        rotation: 0
-                        strokeFrom: 4
-                        strokeTo: 0
-                    }
-                    ]
-                    }
-                    }
-                    }
-                    }
-                    {
-    name: scorpion-weapon-360
-    x: 0
-    y: -8.25
-    layerOffset: -0.01
-    mirror: false
-    recoil: 1
-    reload: 180
-    range: 180
-    useAttackRange: false
-    baseRotation: 180
-    shootSound: shootAlt
-    rotate: true
-    rotationLimit: 5
-    rotateSpeed: 0.5
-    shootCone: 180
-    inaccuracy: 6
-    velocityRnd: 0.4
-    ignoreRotation: true
-
-    shoot: {
-type: ShootAlternate
-shots: 30
-shotDelay: 2
-barrels: 2
-}
-
-bullet: {
-type: BasicBulletType
-damage: 27
-lifetime: 30
-width: 7
-height: 7
-speed: 4.5
-backColor: d0d8e8 
-frontColor: a1b1d0
-trailColor: a1b1d0 
-trailWidth: 2.33333
-trailLength: 6
-pierceArmor: true
-
-shootEffect: {
-type: ParticleEffect 
-colorFrom: d0d8e8
-colorTo: a1b1d0
-particles: 16
-cone: 12
-length: 12
-baseLength: 5
-lightScl: 3
-lightOpacity: 2
-spin: 0
-sizeFrom: 2
-sizeTo: 0 
-offset: 1
-}
-
-despawnEffect: {
-type: WaveEffect 
-colorFrom: d0d8e8
-colorTo: a1b1d0
-sizeFrom: 2 
-sizeTo: 0
-lightScl: 2
-lightOpacity: 0.3
-rotation: 0 
-strokeFrom: 2
-strokeTo: 0 
-}
-hitEffect: {
-type: WaveEffect 
-colorFrom: d0d8e8
-colorTo: a1b1d0
-sizeFrom: 0 
-sizeTo: 6
-lightScl: 4 
-lightOpacity: 1
-rotation: 0 
-strokeFrom: 4
-strokeTo: 0
-}
-fragAngle: 180
-fragBullets: 1
-fragVelocityMin: 1
-fragVelocityMax: 1
-fragOffsetMax: 1
-fragRandomSpread: 5
-fragBullet: {
-   damage: 10
-   homigRadius: 60
-   homingPower: 0.11
-   lifetime: 60
-   width: 7
-   height: 7
-   speed: 7.5
-   backColor: d0d8e8 
-   frontColor: a1b1d0
-   trailColor: a1b1d0 
-   trailWidth: 2.33333
-   trailLength: 6
-   pierceArmor: true
-   shootEffect: {
-    type: ParticleEffect 
-	colorFrom: d0d8e8
-	colorTo: a1b1d0
-	particles: 16
-	cone: 12
-	length: 12
-	baseLength: 5
-	lightScl: 3
-	lightOpacity: 2
-	spin: 0
-	sizeFrom: 2
-	sizeTo: 0 
-	offset: 1
+            ]
+            despawnEffect: [
+                {
+                    type: ParticleEffect
+                    colorFrom: a1b1d0
+                    colorTo: a1b1d0
+                    particles: 9
+                    cone: 25
+                    length: 49
+                    sizeFrom: 3
+                    sizeTo: 0
+                    lifetime: 25
+                }
+                {
+                    type: ParticleEffect
+                    colorFrom: a1b1d0
+                    colorTo: a1b1d0
+                    line: true
+                    particles: 5
+                    length: 31
+                    lenFrom: 7
+                    lenTo: 0
+                    strokeFrom: 1.75
+                    strokeTo: 0.7
+                    lifetime: 25
+                    baseLength: 6
+                }
+                {
+                    type: WaveEffect
+                    colorFrom: d0d8e8
+                    colorTo: a1b1d0
+                    sizeFrom: 0
+                    sizeTo: 20
+                    strokeFrom: 4
+                    strokeTo: 0
+                    lifetime: 15
+                }
+            ]
+            bulletInterval: 2
+            intervalRandomSpread: 50
+            intervalBullet: {
+                type: BasicBulletType
+                damage: 23
+                lifetime: 9
+                speed: 2
+                lifetime: 12
+                frontColol: a1b1d0
+                backColor: 8296bf
+                width: 8
+                height: 9
+                trailColor: a1b1d0 
+                trailWidth: 1
+                trailLength: 4
+                hitEffect: {
+                    particles: 3
+                    sizeFrom: 2
+                    lenTo: 0
+                    length: 9
+                    colorFrom: a1b1d0
+                    colorTo: a1b1d0
+                    lifetime: 10
+                }
+                despawnEffect: none
+            }
+        }
     }
-   despawnEffect: {
-    type: WaveEffect 
-	colorFrom: d0d8e8
-	colorTo: a1b1d0
-	sizeFrom: 0 
-	sizeTo: 6
-	lightScl: 4 
-	lightOpacity: 1
-	rotation: 0 
-	strokeFrom: 4
-	strokeTo: 0 
-   }
-   hitEffect: {
-    type: WaveEffect 
-	colorFrom: d0d8e8
-	colorTo: a1b1d0
-	sizeFrom: 0 
-	sizeTo: 6
-	lightScl: 4 
-	lightOpacity: 1
-	rotation: 0 
-	strokeFrom: 4
-	strokeTo: 0
-  }
- }
-}
-}
 ]
