@@ -1,4 +1,6 @@
 type: Floor
-name: "Lumite floor"
+name: "Lumite Floor"
 wall: lumite-wall
 //decoration: 
+lightRadius: 16
+lightColor: "6a7b8f48"

@@ -1,7 +1,7 @@
 type: SteamVent
 name: "Column vent"
-parent: column-floor
-blendGroup: column-floor
+parent: column-slate
+blendGroup: column-slate
 variants: 3
 effect: {
 particles: 3
@@ -21,3 +21,5 @@ attributes: {
    steam: 1
    heat: 0.3534
 }
+wall: column-wall
+decoration: column-boulder

@@ -1,3 +1,5 @@
 type: StaticWall
 name: "Lumite wall"
 variants: 3
+lightRadius: 16
+lightColor: "6a7b8f48"

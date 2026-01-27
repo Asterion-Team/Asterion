@@ -1,3 +1,4 @@
 name: "Dead Ghetron Egg (Small)"
-type: StaticWall
+type: Prop
 variants: 3
+breakSound: plantBreak

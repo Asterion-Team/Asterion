@@ -1,6 +1,6 @@
 type: Floor
-name: "Cracked Column Floor"
-blendGroup: column-floor
+name: "Cracked Column slate"
+blendGroup: column-slate
 attributes: {
 	water: -0.85
 	heat: 0.05
