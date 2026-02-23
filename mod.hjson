@@ -5,8 +5,7 @@ description:
 '''
 	This is collaboration mod.
 
-	[white] [purple]|Asterion [yellow]Team|[white] 
-	Developers/helpers:
+	[white] |[purple]Asterion [yellow]Team[white]| []
 	Sputnuc — creator, coder, spriter, mapper
 	Bloody Ocean — spriter, coder
 	AnDashik — coder, spriter, mapper
@@ -18,7 +17,7 @@ description:
 subtitle: "Rework! Alpha 0.1"
 
 version: "Alpha 1.0"
-minGameVersion: 151
+minGameVersion: 155
 
 hideBrowser: true
 
