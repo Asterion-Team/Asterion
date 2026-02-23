@@ -1,25 +1,25 @@
 type: SteamVent
-name: "Column vent"
+name: "Column Vent"
 parent: column-slate
 blendGroup: column-slate
 variants: 3
 effect: {
-particles: 3
-length: 210
-lifetime: 432
-cone: 20
-baseRotation: 30
-sizeFrom: 0
-sizeTo: 19
-colorFrom: 52392f90
-colorTo: 2e282210
-sizeInterp: pow3Out
-interp: pow3Out
+	particles: 1
+	length: 210
+	lifetime: 432
+	cone: 20
+	baseRotation: 30
+	sizeFrom: 0
+	sizeTo: 19
+	colorFrom: "52392f90"
+	colorTo: "2e282210"
+	sizeInterp: pow3Out
+	interp: pow3Out
 } 
-effectColor: 7a7266c6
+//effectColor: "7a7266c6"
 attributes: {
-   steam: 1
-   heat: 0.3534
+	steam: 1
+	heat: 0.3534
 }
 wall: column-wall
 decoration: column-boulder
