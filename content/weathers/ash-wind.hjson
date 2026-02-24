@@ -8,7 +8,7 @@ status: as-in-ash
 statusDuration: 978
 sizeMax: 240
 sizeMin: 10
-density: 9862
+density: 14862
 duration: 2359
 useWindVector: true
 drawNoise: true
