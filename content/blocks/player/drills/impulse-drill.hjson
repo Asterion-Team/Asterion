@@ -1,0 +1,39 @@
+type: BurstDrill
+name: "Impulse Drill"
+description: "Average drill, hits the ground to collect minerals."
+category: production
+size: 2
+squareSprite: false
+health: 240
+
+requirements: [
+	whitorite/80
+	pyrite/60
+]
+
+tier: 1
+drillTime: 240 // 5 * 60
+drillEffect: [mineImpact, mineImpactWave ]
+liquidBoostIntensity: 1.5
+shake: 1.25
+itemCapacity: 20
+blockedItem: calcite
+
+consumes: {
+	liquid: {
+		liquid: zion
+		amount: 0.0083333333333333
+		optional: true
+		booster: true
+	}
+}
+
+research: {
+	planet: asterion
+	parent: core-force
+	planet: as-asterion
+	requirements: [
+		whitorite/120
+		pyrite/80
+	]
+}

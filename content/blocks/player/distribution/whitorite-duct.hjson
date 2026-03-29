@@ -2,7 +2,7 @@ name: "Whitorite Duct"
 description: "Moves items forward."
 speed: 5
 underBullets: true
-itemCapacity: 2
+itemCapacity: 3
 armored: false
 bridgeReplacement: whitorite-duct-bridge
 requirements: [
