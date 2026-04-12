@@ -7,8 +7,8 @@ squareSprite: false
 health: 240
 
 requirements: [
-	whitorite/80
-	pyrite/60
+	whitorite/60
+	pyrite/25
 ]
 
 tier: 1
@@ -29,11 +29,9 @@ consumes: {
 }
 
 research: {
-	planet: asterion
 	parent: core-force
-	planet: as-asterion
 	requirements: [
-		whitorite/120
-		pyrite/80
+		whitorite/80
+		pyrite/50
 	]
 }

@@ -1,18 +1,25 @@
 type: crawl
-name: imperfect-bug
+name: "Imperfect Bug"
+
+outlineColor: 42413e
+outlineRadius: 0
+
 health: 240
+armor: 2
 speed: 0.6
-armor: 0
-drawCell: false
+hitSize: 10
+
 segments: 2
 segmentScl: 1
 segmentPhase: 2
 segmentMag: 2
 rotateSpeed: 1
-omniMovement: false
-hitSize: 10
-groundLayer: 69.69
 drag: 0.4
-outlineColor: 42413e
-outlineRadius: 0
-weapons: []
+omniMovement: false
+
+targetAir: false
+crushDamage: 0.5
+
+drawCell: false
+drawBody: false
+groundLayer: 69.69

@@ -1,0 +1,15 @@
+name: "Magnetite Wall"
+health: 1745
+absorbLasers: false
+lightningChance: 0.05
+lightningDamage: 10
+lightningColor: "e9ecf0"
+size: 1
+requirements: [
+	whitorite/2
+	pyrite/3
+	magnetite/4
+]
+category: defense
+research: irmenite-wall-large
+researchCostMultiplier: 0.20

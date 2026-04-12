@@ -1,0 +1,12 @@
+name: Irmenite wall
+health: 750
+absorbLasers: true
+insulated: true
+size: 1
+requirements: [
+	irmenite/4
+	pyrite/2
+]
+category: defense
+research: whitorite-wall-large
+researchCostMultiplier: 0.20

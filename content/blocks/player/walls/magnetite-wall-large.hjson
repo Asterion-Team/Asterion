@@ -1,0 +1,15 @@
+name: "Large Magnetite Wall"
+health: 6980
+absorbLasers: false
+lightningChance: 0.1
+lightningDamage: 15
+lightningColor: "e9ecf0"
+size: 2
+requirements: [
+	whitorite/8
+	pyrite/12
+	magnetite/16
+]
+category: defense
+research: magnetite-wall
+researchCostMultiplier: 0.20

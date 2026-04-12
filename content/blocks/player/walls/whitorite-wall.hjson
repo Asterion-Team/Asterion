@@ -1,0 +1,11 @@
+name: Whitorite wall
+health: 640
+armor: 2
+size: 1
+requirements: [
+	whitorite/6
+]
+category: defense
+research: core-force
+researchCostMultiplier: 0.50
+buildCostMultiplier: 0.5

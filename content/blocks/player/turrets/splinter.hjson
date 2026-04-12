@@ -1,0 +1,372 @@
+//outlineColor: "22262b"
+outlineColor: "1c1d1f"
+name: "Splinter"
+description: "Shoots piercing spears."
+health: 720
+shootSound: shootAlt
+buildCostMultiplier: 0.9
+moveWhileCharging: false
+rotateSpeed: 1.6
+reload: 95
+recoil: 0.6
+range: 200
+size: 3
+consumes: { 
+	coolant: {
+		amount: 0.1
+	}
+}
+shoot: {
+	firstShotDelay: 25
+}
+researchCostMultiplier: 0.4
+inaccuracy: 0
+
+targetAir: true
+targetGround: true
+ammoTypes: {
+
+	whitorite: {
+		speed: 10
+		pierce: true
+		pierceCap: 3
+		ammoMultiplier: 1
+		sprite: as-spear
+		hitSize: 9
+		width: 12
+		height: 25
+		type: BasicBulletType
+		damage: 17
+		lifetime: 20
+		trailWidth: 1
+		trailLength: 7
+		trailColor: "d0cbc0"
+		frontColor: "d0cbc0"
+		backColor: "AFAFAF"
+		trailInterval: 1
+		trailRotation: true
+		trailEffect: {
+			followParent: false
+			particles: 1
+			length: 0
+			baseLength: 0
+			randLength: false
+			lifetime: 15
+			cone: 0
+			offset: 90
+			region: as-inclined-wave
+			sizeFrom: 5
+			sizeTo: 2
+			colorFrom: "d0cbc0"
+			colorTo: "d0cbc000"
+		}
+		chargeEffect: [
+			{
+				type: ParticleEffect
+				particles: 1
+				cone: 0
+				length: 6
+				baseLength: 0
+				randLength: false
+				sizeFrom: 7
+				sizeTo: 7
+				colorFrom: "d0cbc000"
+				colorTo: "d0cbc0"
+				region: as-spear
+				lifetime: 25
+				offset: -90
+				startDelay: 0
+			}
+			{
+				type: ParticleEffect
+				particles: 12
+				cone: 35
+				length: -45
+				baseLength: 45
+				randLength: true
+				sizeFrom: 0
+				sizeTo: 2
+				colorFrom: "d0cbc000"
+				colorTo: "d0cbc0"
+				lifetime: 25
+			}
+			{
+				type: ParticleEffect
+				particles: 12
+				cone: 65
+				length: 35
+				baseLength: -35
+				randLength: true
+				sizeFrom: 0
+				sizeTo: 2
+				colorFrom: "d0cbc000"
+				colorTo: "d0cbc0"
+				lifetime: 25
+			}
+		]
+		shootEffect: [
+			{
+				type: ParticleEffect
+				particles: 1
+				cone: 0
+				length: 2
+				baseLength: 4
+				randLength: false
+				sizeFrom: 15
+				sizeTo: 0
+				colorFrom: "d0cbc0"
+				colorTo: "AFAFAF00"
+				region: as-alternate-flash
+				lifetime: 15
+				offset: -90
+				startDelay: 0
+			}
+			{
+				type: ParticleEffect
+				particles: 9
+				cone: 25
+				length: 65
+				baseLength: 0
+				randLength: true
+				sizeFrom: 3
+				sizeTo: 0
+				colorFrom: "d0cbc0"
+				colorTo: "d0cbc0"
+				lifetime: 25
+			}
+			{
+				type: ParticleEffect
+				particles: 9
+				cone: 45
+				length: 35
+				baseLength: 0
+				randLength: true
+				sizeFrom: 3
+				sizeTo: 2
+				colorFrom: "d0cbc0"
+				colorTo: "AFAFAF00"
+				lifetime: 35
+			}
+		]
+		despawnEffect: [
+			{
+				type: ParticleEffect
+				particles: 13
+				cone: 35
+				length: 35
+				sizeFrom: 2
+				sizeTo: 0
+				colorFrom: "d0cbc0"
+				colorTo: "AFAFAF"
+				lifetime: 25
+			}
+			{
+				type: WaveEffect
+				sizeFrom: 4
+				sizeTo: 10
+				colorFrom: "d0cbc0"
+				colorTo: "d0cbc0"
+				strokeFrom: 3
+				strokeTo: 0
+				lifetime: 15
+			}
+			{
+				type: ParticleEffect
+				particles: 7
+				cone: 15
+				length: -45
+				sizeFrom: 2
+				sizeTo: 0
+				colorFrom: "d0cbc0"
+				colorTo: "AFAFAF"
+				lifetime: 25
+			}
+		]
+	}
+	
+	irmenite: {
+		type: BasicBulletType
+		pierce: true
+		pierceCap: 5
+		sprite: as-spear
+		damage: 40
+		width: 12
+		height: 30
+		lifetime: 16
+		speed: 12.5
+		hitSize: 8
+		ammoMultiplier: 2
+		trailWidth: 1
+		trailLength: 9
+		trailColor: "abe0e5"
+		frontColor: "abe0e5"
+		backColor: "8FAFC0"
+		reloadMultiplier: 0.90
+		trailInterval: 1
+		trailRotation: true
+		trailEffect:{
+			followParent: false
+			particles: 1
+			length: 0
+			baseLength: 0
+			randLength: false
+			lifetime: 15
+			cone: 0
+			offset: 90
+			region: as-inclined-wave
+			sizeFrom: 5
+			sizeTo: 2
+			colorFrom: "abe0e5"
+			colorTo: "abe0e500"
+		}
+		chargeEffect: [
+			{
+				type: ParticleEffect
+				particles: 1
+				cone: 0
+				length: 6
+				baseLength: 0
+				randLength: false
+				sizeFrom: 7
+				sizeTo: 7
+				colorFrom: "abe0e500"
+				colorTo: "abe0e5"
+				region: as-spear
+				lifetime: 25
+				offset: -90
+				startDelay: 0
+			}
+			{
+				type: ParticleEffect
+				particles: 12
+				cone: 35
+				length: -45
+				baseLength: 45
+				randLength: true
+				sizeFrom: 0
+				sizeTo: 2
+				colorFrom: "abe0e500"
+				colorTo: "abe0e5"
+				lifetime: 25
+			}
+			{
+				type: ParticleEffect
+				particles: 12
+				cone: 65
+				length: 35
+				baseLength: -35
+				randLength: true
+				sizeFrom: 0
+				sizeTo: 2
+				colorFrom: "abe0e500"
+				colorTo: "abe0e5"
+				lifetime: 25
+			}
+		]
+		shootEffect: [
+			{
+				type: ParticleEffect
+				particles: 1
+				cone: 0
+				length: 2
+				baseLength: 4
+				randLength: false
+				sizeFrom: 15
+				sizeTo: 0
+				colorFrom: "abe0e5"
+				colorTo: "8FAFC000"
+				region: as-alternate-flash
+				lifetime: 15
+				offset: -90
+				startDelay: 0
+			}
+			{
+				type: ParticleEffect
+				particles: 9
+				cone: 25
+				length: 65
+				baseLength: 0
+				randLength: true
+				sizeFrom: 3
+				sizeTo: 0
+				colorFrom: "abe0e5"
+				colorTo: "abe0e5"
+				lifetime: 25
+			}
+			{
+				type: ParticleEffect
+				particles: 9
+				cone: 45
+				length: 35
+				baseLength: 0
+				randLength: true
+				sizeFrom: 3
+				sizeTo: 2
+				colorFrom: "abe0e5"
+				colorTo: "8FAFC000"
+				lifetime: 35
+			}
+		]
+		despawnEffect: [
+			{
+				type: ParticleEffect
+				particles: 13
+				cone: 35
+				length: 35
+				sizeFrom: 2
+				sizeTo: 0
+				colorFrom: "abe0e5"
+				colorTo: "8FAFC0"
+				lifetime: 25
+			}
+			{
+				type: WaveEffect
+				sizeFrom: 4
+				sizeTo: 10
+				colorFrom: "abe0e5"
+				colorTo: "abe0e5"
+				strokeFrom: 3
+				strokeTo: 0
+				lifetime: 15
+			}
+			{
+				type: ParticleEffect
+				particles: 7
+				cone: 15
+				length: -45
+				sizeFrom: 2
+				sizeTo: 0
+				colorFrom: "abe0e5"
+				colorTo: "8FAFC0"
+				lifetime: 25
+			}
+		]
+	}
+}
+requirements: [
+  whitorite/45
+  pyrite/15
+]
+research: {
+	planet: as-asterion
+	parent: core-force
+	requirements: [
+		whitorite/55
+		pyrite/35
+	]
+}
+category: turret 
+drawer: {
+	type: DrawTurret
+	basePrefix: ast-
+	parts: [
+		{
+			type: RegionPart
+			suffix: -barrel
+			under: true
+			progress: recoil
+			moveY: -4
+		}
+	]
+}
+
