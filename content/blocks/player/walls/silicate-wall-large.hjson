@@ -1,7 +1,7 @@
 name: "Large Silicate Wall"
 size: 2
-health: 10000
-armor: 20
+health: 3600
+armor: 120
 
 update: true
 absorbLasers: true

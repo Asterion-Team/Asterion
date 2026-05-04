@@ -3,11 +3,11 @@ outlineColor: "1c1d1f"
 name: "Splinter"
 description: "Shoots piercing spears."
 health: 720
-shootSound: shootAlt
+shootSound: shootSplinter
 buildCostMultiplier: 0.9
 moveWhileCharging: false
 rotateSpeed: 1.6
-reload: 95
+reload: 75
 recoil: 0.6
 range: 200
 size: 3
@@ -36,7 +36,8 @@ ammoTypes: {
 		width: 12
 		height: 25
 		type: BasicBulletType
-		damage: 17
+		damage: 32
+		armorMultiplier: 1.1
 		lifetime: 20
 		trailWidth: 1
 		trailLength: 7
@@ -182,6 +183,34 @@ ammoTypes: {
 				lifetime: 25
 			}
 		]
+		hitEffect: [
+			{
+				cone: 25
+				length: -15
+				particles: 5
+				line: true
+				lenFrom: 5
+				lenTo: 0
+				strokeFrom: 1.1
+				strokeTo: 0.8
+				colorFrom: "d0cbc0"
+				colorTo: "AFAFAF"
+				lifetime: 30
+			}
+			{
+				cone: 15
+				length: 25
+				particles: 4
+				line: true
+				lenFrom: 7
+				lenTo: 0
+				strokeFrom: 1.2
+				strokeTo: 0.8
+				colorFrom: "d0cbc0"
+				colorTo: "AFAFAF"
+				lifetime: 30
+			}
+		]
 	}
 	
 	irmenite: {
@@ -189,7 +218,7 @@ ammoTypes: {
 		pierce: true
 		pierceCap: 5
 		sprite: as-spear
-		damage: 40
+		damage: 49
 		width: 12
 		height: 30
 		lifetime: 16
@@ -341,6 +370,34 @@ ammoTypes: {
 				lifetime: 25
 			}
 		]
+		hitEffect: [
+			{
+				cone: 25
+				length: -25
+				particles: 5
+				line: true
+				lenFrom: 6
+				lenTo: 0
+				strokeFrom: 1.1
+				strokeTo: 0.8
+				colorFrom: "abe0e5"
+				colorTo: "8FAFC0"
+				lifetime: 20
+			}
+			{
+				cone: 15
+				length: 35
+				particles: 4
+				line: true
+				lenFrom: 9
+				lenTo: 0
+				strokeFrom: 1.2
+				strokeTo: 0.8
+				colorFrom: "abe0e5"
+				colorTo: "8FAFC0"
+				lifetime: 20
+			}
+		]
 	}
 }
 requirements: [
@@ -363,9 +420,24 @@ drawer: {
 		{
 			type: RegionPart
 			suffix: -barrel
-			under: true
 			progress: recoil
 			moveY: -4
+		}
+		{
+			type: RegionPart
+			x: 6.5
+			y: 1
+			suffix: -side
+			mirror: true
+			progress: recoil
+			moveRot: -3
+			moveY: -2
+			moves: [
+				{
+					rot: -9
+					y: -2
+				}
+			]
 		}
 	]
 }

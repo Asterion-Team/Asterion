@@ -9,11 +9,10 @@ buildSpeed: 1.05
 mineTier: 1
 mineSpeed: 8.0
 buildRange: 150
-strafePenalty: 0.01
-engineSize: 0
+strafePenalty: 0.5
+engineSize: 2
+trailLength: 2
 speed: 5.5
-range: 210
-accel: 0.2
 targetGround: true
 targetAir: true
 rotateSpeed: 5.66
@@ -29,23 +28,24 @@ weapons: [
 	top: false
 	//layerOffset: -0.001
 	inaccuracy: 1
-	reload: 8
+	reload: 19
 	mirror: true
 	alternate: true
-	shootSound: lasershoot
+	shootSound: shootPlasma2
 	bullet: {
 		type: BasicBulletType
-		speed: 4
-		homingPower: 0.15
+		speed: 9
+		homingPower: 0.1
 		homingRange: 24
-		homingDelay: 10
-		lifetime: 53
+		homingDelay: 5
+		lifetime: 25
+		scaleKeepVelocity: true
 		buildingDamageMultiplier: 0.01
-		damage: 10
+		damage: 23
 		width: 8.2
 		height: 8.5
 		collidesTeam: true
-		healPercent: 2.5
+		healPercent: 7.5
 		healColor: e39fe1
 		frontColor: e39fe1
 		backColor: d66bd3
@@ -53,7 +53,7 @@ weapons: [
 		trailLength: 5
 		trailColor: e39fe1
 		weaveScale: 4
-		weaveMag: 2
+		weaveMag: 1
 		shootEffect: {
 			type: ParticleEffect
 			particles: 8
@@ -65,16 +65,32 @@ weapons: [
 			colorTo: e39fe1
 			cone: 10
 		}
-		hitEffect: {
-			type: WaveEffect
-			sizeFrom: 3
-			sizeTo: 6
-			lifetime: 15
-			strokeFrom: 2
-			sizeTo: 0
-			colorFrom: e39fe1
-			colorTo: d66bd3
-		}
+		hitEffect: [
+			{
+				type: WaveEffect
+				sizeFrom: 3
+				sizeTo: 6
+				lifetime: 15
+				strokeFrom: 2
+				sizeTo: 0
+				colorFrom: e39fe1
+				colorTo: d66bd3
+
+			}
+			{
+				cone: 35
+				particles: 6
+				line: true
+				length: 32
+				lenFrom: 6
+				lenTo: 0
+				strokeFrom: 1.4
+				strokeTo: 0.9
+				colorFrom: e39fe1
+				colorTo: e39fe1
+				lifetime: 22
+			}
+		]
 		despawnEffect: {
 			type: WaveEffect
 			sizeFrom: 4
@@ -86,74 +102,5 @@ weapons: [
 			colorTo: d66bd3
 		}
 		}
-	}
-//Engines
-	{
-	 x: 0
-	 y: -3
-	 baseRotation: 180
-	 rotate: false
-	 mirror: false
-	 display: false
-	 alwaysShooting: true
-	 alwaysContinuous: false
-	 reload: 1
-	 shootCone: 360
-	 alternate: false
-	 continuous: true
-	 shootSound: none
-	 minShootVelocity: 0
-	 shootY: 0
-	  bullet: {
-      type: ContinuousFlameBulletType
-      lifetime: 10
-      collidesGround: false
-      collidesAir: false
-      length: 5
-      width: 2
-      colors: [c9904fa9, db8330cb, f5c0a2aa, edd3bbdd, ffffff]
-      drawFlare: false
-      smokeEffect: none
-      lengthInterp: pow10Out
-      oscScl: 1
-      oscMag: 0.1
-      hitEffect: none
-      lightStroke: 9
-      lightOpacity: 0.4
-    }
-	}
-	{
-	 x: 0
-	 y: -3
-	 baseRotation: 180
-	 rotate: false
-	 mirror: false
-	 display: false
-	 shootCone: 360
-	 alwaysShooting: true
-	 alwaysContinuous: false
-	 reload: 1
-	 alternate: false
-	 continuous: true
-	 shootSound: none
-	 minShootVelocity: 3
-	 shootY: 0
-	  bullet: {
-      type: ContinuousFlameBulletType
-      lifetime: 10
-      collidesGround: false
-      collidesAir: false
-      length: 9
-      width: 2
-      colors: [c9904fa9, db8330cb, f5c0a2aa, edd3bbdd, ffffff]
-      drawFlare: false
-      smokeEffect: none
-      lengthInterp: pow10Out
-      oscScl: 1
-      oscMag: 0.1
-      hitEffect: none
-      lightStroke: 9
-      lightOpacity: 0.4
-    }
 	}
 	]

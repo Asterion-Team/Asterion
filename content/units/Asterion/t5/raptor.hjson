@@ -111,7 +111,7 @@ weapons: [
 	parentizeEffects: true
     recoil: 2
     reload: 45
-    shootSound: blaster-shot-2
+    shootSound: shootBlast
     bullet: {
      damage: 195
      pierce: true

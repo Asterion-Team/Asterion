@@ -13,5 +13,5 @@ Events.on(ClientLoadEvent, e => {
 	Vars.control.sound.darkMusic.add(yourlasttick);
 	Vars.control.sound.ambientMusic.add(fearintheair);
 	Vars.control.sound.ambientMusic.add(importantTerritory);
-	Vars.control.sound.bossMusic.add(ascendancy);
+	// Vars.control.sound.bossMusic.add(ascendancy); this will be on some important sectors.
 });

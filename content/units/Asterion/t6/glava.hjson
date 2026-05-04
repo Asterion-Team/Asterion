@@ -166,7 +166,7 @@ weapons: [
     rotationLimit: 32
     recoil: 3
     reload: 40
-    shootSound: mechshoot
+    shootSound: shootPortableRailgun
 
     bullet: {
 	type: BasicBulletType
