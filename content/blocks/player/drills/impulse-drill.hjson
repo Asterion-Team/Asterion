@@ -7,8 +7,8 @@ squareSprite: false
 health: 240
 
 requirements: [
-	whitorite/60
-	pyrite/25
+	whitorite/30
+	pyrite/15
 ]
 
 tier: 1

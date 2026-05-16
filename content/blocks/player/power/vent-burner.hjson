@@ -1,5 +1,14 @@
 type: ThermalGenerator
-research: core-force
+name: Vent burner
+research: {
+    parent: core-force
+    objectives: [
+        {
+            type: SectorComplete
+            preset: entry-point
+        }
+    ]
+}
 category: power
 requirements: [
     whitorite/55

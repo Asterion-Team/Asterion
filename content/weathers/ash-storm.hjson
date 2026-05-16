@@ -14,10 +14,9 @@ useWindVector: true
 drawNoise: true
 opacityMultiplier: 0.23
 baseSpeed: 4
-sound: windhowl
-//sound: "as-ash-wind"
-soundVol: 0.62
-soundVolMin: 0.37
+sound: ashStorm
+soundVol: 2
+soundVolMin: 1.2
 force: 1.87
 noisePath: "fog"
 noiseScale: 862

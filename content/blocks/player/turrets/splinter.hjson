@@ -4,7 +4,6 @@ name: "Splinter"
 description: "Shoots piercing spears."
 health: 720
 shootSound: shootSplinter
-buildCostMultiplier: 0.9
 moveWhileCharging: false
 rotateSpeed: 1.6
 reload: 75
@@ -21,6 +20,7 @@ shoot: {
 }
 researchCostMultiplier: 0.4
 inaccuracy: 0
+shootCone: 0.1
 
 targetAir: true
 targetGround: true
@@ -408,8 +408,8 @@ research: {
 	planet: as-asterion
 	parent: core-force
 	requirements: [
-		whitorite/55
-		pyrite/35
+		whitorite/75
+		pyrite/45
 	]
 }
 category: turret 

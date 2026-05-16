@@ -9,13 +9,12 @@ buildSpeed: 1.05
 mineTier: 1
 mineSpeed: 8.0
 buildRange: 150
-strafePenalty: 0.5
+strafePenalty: 0.35
 engineSize: 2
+engineOffset: 4
 trailLength: 2
 speed: 5.5
-targetGround: true
-targetAir: true
-rotateSpeed: 5.66
+rotateSpeed: 9
 
 weapons: [
 	{

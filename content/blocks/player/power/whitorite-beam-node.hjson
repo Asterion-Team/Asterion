@@ -1,0 +1,22 @@
+type: BeamNode
+research: vent-burner
+requirements: [
+    pyrite/10
+]
+name: Whitorite beam node
+description: Transfers energy on very long distances.
+squareSprite: false
+hasPower: true
+consumesPower: true
+outputsPower: true
+consumes: {
+  powerBuffered: 240
+}
+researchCostMultiplier: 0.25
+drawDisabled: false
+underBullets: true
+size: 1
+range: 10
+laserColor1: d86bff
+laserColor2: 8054ba              
+category: power

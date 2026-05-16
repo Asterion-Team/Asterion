@@ -110,8 +110,9 @@ weapons: [
     cooldownTime: 75
 	parentizeEffects: true
     recoil: 2
-    reload: 45
-    shootSound: shootBlast
+    reload: 150
+    shootSound: shootEnergy
+    shootSoundVolume: 3
     bullet: {
      damage: 195
      pierce: true
@@ -184,6 +185,8 @@ weapons: [
      intervalRandomSpread: 360
      despawnEffect: none
      hitEffect: none
+     despawnSound: shootPulsar
+     hitSound: shootPulsar
      intervalBullet: {
         type: LightningBulletType
         damage: 25

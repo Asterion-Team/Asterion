@@ -1,0 +1,18 @@
+//localizedName: Impact point
+captureWave: 15
+research: entry-point
+planet: asterion
+sector: 179
+difficulty: 1
+
+research: {
+parent: entry-point
+requiresUnlock: false
+    objectives: [
+        {
+            type: SectorComplete
+            preset: entry-point
+        }
+    ]
+}
+

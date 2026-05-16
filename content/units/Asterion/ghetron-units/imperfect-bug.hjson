@@ -13,7 +13,7 @@ segments: 2
 segmentScl: 1
 segmentPhase: 2
 segmentMag: 2
-rotateSpeed: 1
+rotateSpeed: 7
 drag: 0.4
 omniMovement: false
 

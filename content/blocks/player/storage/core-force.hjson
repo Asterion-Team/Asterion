@@ -21,7 +21,6 @@ requirements: [
 research: faction-resemblance
 /*
 research: {
-	root: true
 	name: Asterion
 	requiresUnlock: false
 	planet: as-asterion

@@ -12,10 +12,9 @@ density: 14862
 duration: 2359
 useWindVector: true
 drawNoise: true
-opacityMultiplier: 0.23
+opacityMultiplier: 0.7
 baseSpeed: 4
 sound: windhowl
-//sound: "as-ash-wind"
 soundVol: 0.62
 soundVolMin: 0.37
 force: 1.87

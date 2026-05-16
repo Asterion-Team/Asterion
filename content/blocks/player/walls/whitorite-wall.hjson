@@ -1,5 +1,5 @@
 name: Whitorite wall
-health: 640
+health: 340
 armor: 2
 size: 1
 requirements: [
@@ -8,4 +8,3 @@ requirements: [
 category: defense
 research: core-force
 researchCostMultiplier: 0.50
-buildCostMultiplier: 0.5
