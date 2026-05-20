@@ -110,11 +110,15 @@ weapons: [
     cooldownTime: 75
 	parentizeEffects: true
     recoil: 2
+<<<<<<< Updated upstream
     reload: 150
+=======
+    reload: 90
+>>>>>>> Stashed changes
     shootSound: shootEnergy
     shootSoundVolume: 3
     bullet: {
-     damage: 195
+     damage: 115
      pierce: true
      pierceCap: 2
      pierceBuilding: true

@@ -1,0 +1,136 @@
+type: AccelItemTurret
+size: 4
+outlineColor: "1c1d1f"
+requirements: [
+    whitorite/145
+    pyrite/75
+    irmenite/65
+]
+category: turret
+reload: 300
+health: 980
+speedUpPerShoot: 7
+cooldownInterval: 240
+cooldownSpeed: 0.35
+maxAccel: 49
+shootSound: shootMachineGun
+shake: 2.25
+shootY: 1
+consumes: { 
+	coolant: {
+		amount: 0.1
+	}
+}
+coolantMultiplier: 40
+recoil: 3
+range: 240
+rotateSpeed: 1.45
+inaccuracy: 5
+ammoTypes: {
+    irmenite: {
+        knockback: 3.8
+        pierce: true
+        pierceCap: 2
+        width: 19
+        height: 23
+        damage: 37
+        speed: 24
+        lifetime: 10
+        frontColor: abe0e5
+        backColor: 8FAFC0
+        trailColor: 8FAFC0
+        trailLength: 8
+        trailWidth: 2.85
+        hitColor: abe0e5
+        despawnShake: 1
+        hitShake: 2.1
+        shootEffect: shootBigColor
+        smokeEffect: {
+            particles: 6
+            sizeFrom: 3
+            sizeTo: 0
+            colorFrom: abe0e5
+            colorTo: abe0e5
+            cone: 15
+            length: 55
+            lifetime: 20
+        }
+        hitEffect: [
+            {
+                particles: 7
+                line: true
+                lenFrom: 8
+                lenTo: 0
+                strokeFrom: 1
+                strokeTo: 1
+                colorFrom: abe0e5
+                colorTo: abe0e5
+                cone: 15
+                length: 75
+                lifetime: 15
+            }
+            {
+                particles: 8
+                sizeFrom: 2.3
+                sizeTo: 0
+                colorFrom: abe0e5
+                colorTo: abe0e5
+                cone: 35
+                length: -65
+                lifetime: 15
+            }
+            {
+                type: WaveEffect
+                sizeFrom: 2
+                sizeTo: 5
+                strokeFrom: 3
+                strokeTo: 0
+                colorFrom: abe0e5
+                colorTo: abe0e5
+                lifetime: 12
+            }
+        ]
+        despawnEffect: [
+            {
+                particles: 6
+                sizeFrom: 2.85
+                sizeTo: 0
+                colorFrom: abe0e5
+                colorTo: abe0e5
+                cone: 15
+                length: 77
+                lifetime: 20
+            }
+            {
+                particles: 4
+                line: true
+                lenFrom: 6
+                lenTo: 0
+                strokeFrom: 1
+                strokeTo: 1
+                colorFrom: abe0e5
+                colorTo: abe0e5
+                cone: 15
+                length: 35
+                lifetime: 20
+            }
+            {
+                type: WaveEffect
+                sizeFrom: 3
+                sizeTo: 11
+                strokeFrom: 2
+                strokeTo: 0
+                colorFrom: abe0e5
+                colorTo: abe0e5
+                lifetime: 15
+            }
+        ]
+        weaveScl: 0.5
+        weaveMag: 1.1
+    }
+}
+category: turret 
+drawer: {
+	type: DrawTurret
+	basePrefix: ast-
+}

@@ -20,6 +20,9 @@ version: "Alpha 1.0"
 minGameVersion: 155
 
 hideBrowser: true
+dependencies: [
+	hjsonpp
+]
 
 contentOrder: [
 	// Items
@@ -54,4 +57,11 @@ contentOrder: [
 	zion
 	methane
 	verdyne
+
+	// Factions
+	faction-resemblance
+	faction-orion
+	faction-pyro
+	faction-extinguished
+	faction-techno
 ]

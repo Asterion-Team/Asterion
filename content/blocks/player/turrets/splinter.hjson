@@ -2,7 +2,11 @@
 outlineColor: "1c1d1f"
 name: "Splinter"
 description: "Shoots piercing spears."
+<<<<<<< Updated upstream
 health: 720
+=======
+health: 620
+>>>>>>> Stashed changes
 shootSound: shootSplinter
 moveWhileCharging: false
 rotateSpeed: 1.6
@@ -18,7 +22,6 @@ consumes: {
 shoot: {
 	firstShotDelay: 25
 }
-researchCostMultiplier: 0.4
 inaccuracy: 0
 shootCone: 0.1
 
@@ -401,15 +404,19 @@ ammoTypes: {
 	}
 }
 requirements: [
-  whitorite/45
-  pyrite/15
+  whitorite/100
+  pyrite/55
 ]
 research: {
 	planet: as-asterion
 	parent: core-force
 	requirements: [
 		whitorite/75
+<<<<<<< Updated upstream
 		pyrite/45
+=======
+		pyrite/65
+>>>>>>> Stashed changes
 	]
 }
 category: turret 

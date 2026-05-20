@@ -3,6 +3,8 @@ description: "It is the second resource on the planet, massively used in electro
 color: "ffe4a0"
 hardness: 1
 cost: 1.2
+alwaysUnlocked: true
+requiresUnlock: false
 
 explosiveness: 0
 flammability: 0

@@ -1,8 +1,6 @@
 const splinter = extend(ItemTurret, "splinter", {});
 
-const trasher = extend(ItemTurret, "trasher", {});
-
-const breakthrough = extend(ItemTurret, "breakthrough", {});
+const decay = extend(ItemTurret, "decay", {});
 
 const glare = extend(ContinuousLiquidTurret, "glare", {});
 
@@ -28,4 +26,4 @@ const terror = extend(ItemTurret, "terror", {});
 
 const robber = extend(PointDefenseTurret, "robber", {});
 
-const destroyer = extend(ItemTurret, "destroyer", {});
+const destroyer = extend(LaserTurret, "destroyer", {});

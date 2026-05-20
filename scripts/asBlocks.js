@@ -41,15 +41,15 @@ const silicateWall = extend(Wall, "silicate-wall", {
 });
 silicateWall.buildType = () => extend(Wall.WallBuild, silicateWall, {
         time: 0,
-    updateTile(){
+        updateTile(){
         this.super$updateTile();
-        this.time += 1;
-        if (this.damaged() && this.time >= 250 && this.canConsume()) {
-        this.time = 0;
-        this.heal(this.maxHealth * 0.02);
-        Fx.healBlockFull.at(this.x, this.y, this.block.size, Color.valueOf("ef9ef5"), this.block);
-    }
-  }
+            this.time += 1;
+            if (this.damaged() && this.time >= 250 && this.canConsume()) {
+                this.time = 0;
+                this.heal(this.maxHealth * 0.02);
+                Fx.healBlockFull.at(this.x, this.y, this.block.size, Color.valueOf("ef9ef5"), this.block);
+            }
+        }
 })
 
 const silicateWallLarge = extend(Wall, "silicate-wall-large", {
