@@ -20,6 +20,7 @@ consumes: {
 	coolant: {
 		amount: 0.1
 	}
+    power: 1.5
 }
 coolantMultiplier: 40
 recoil: 3

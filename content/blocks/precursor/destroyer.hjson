@@ -26,6 +26,7 @@
   shootType: {
     type: ContinuousLaserBulletType
     length: 3200
+    shake: 15
     width: 20
     lifetime: 150
     color: aaf3e7

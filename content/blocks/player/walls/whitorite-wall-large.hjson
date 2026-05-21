@@ -8,3 +8,4 @@ requirements: [
 category: defense
 research: whitorite-wall
 researchCostMultiplier: 0.3
+buildCostMultiplier: 2.5

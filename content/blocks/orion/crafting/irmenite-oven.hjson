@@ -1,7 +1,6 @@
 type: GenericCrafter
 name: Irmenite oven
 description: "Producing irmenite from quartz and whitorite"
-details: "First of Orion fraction technology"
 size: 2
 category: crafting
 requirements: [

@@ -1,5 +1,5 @@
 name: "Whitorite Router"
-description: "Distributes objects in different directions."
+description: "Distributes items in different directions."
 category: distribution
 underBullets: true
 health: 65

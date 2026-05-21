@@ -8,3 +8,4 @@ requirements: [
 category: defense
 research: core-force
 researchCostMultiplier: 0.50
+buildCostMultiplier: 2.5
