@@ -16,9 +16,6 @@ Events.on(ClientLoadEvent, e => {
 	Vars.control.sound.ambientMusic.add(fearintheair);
 	Vars.control.sound.ambientMusic.add(importantTerritory);
 	// Vars.control.sound.bossMusic.add(ascendancy); this will be on some important sectors.
-<<<<<<< Updated upstream
-});
-=======
 });
 
 /* 
@@ -26,4 +23,3 @@ Events.on(WorldLoadEvent, e => {
 	// Vars.control.sound.bossMusic = Seq.with(ascendancy, ascendancy);
 });
 */
->>>>>>> Stashed changes

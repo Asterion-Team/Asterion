@@ -2,11 +2,7 @@
 outlineColor: "1c1d1f"
 name: "Splinter"
 description: "Shoots piercing spears."
-<<<<<<< Updated upstream
-health: 720
-=======
 health: 620
->>>>>>> Stashed changes
 shootSound: shootSplinter
 moveWhileCharging: false
 rotateSpeed: 1.6
@@ -412,11 +408,7 @@ research: {
 	parent: core-force
 	requirements: [
 		whitorite/75
-<<<<<<< Updated upstream
-		pyrite/45
-=======
 		pyrite/65
->>>>>>> Stashed changes
 	]
 }
 category: turret 

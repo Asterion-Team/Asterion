@@ -1,7 +1,3 @@
-<<<<<<< Updated upstream
-type: ItemTurret
-=======
->>>>>>> Stashed changes
 size: 2
 name: Decay
 description: "Shoots a piercing needle"
@@ -19,11 +15,7 @@ researchCostMultiplier: 0.75
 outlineColor: "1c1d1f"
 requirements: [
     whitorite/60
-<<<<<<< Updated upstream
-    pyrite/55
-=======
     pyrite/75
->>>>>>> Stashed changes
 ]
 consumes: { 
 	coolant: {
