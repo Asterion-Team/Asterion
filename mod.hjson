@@ -3,20 +3,20 @@ displayName: "Asterion"
 author: "[white] [purple]|Asterion [yellow]Team|[white] "
 description:
 '''
-	This is collaboration mod.
+This is collaboration mod.
 
-	[white] |[purple]Asterion [yellow]Team[white]| []
-	Sputnuc — creator, coder, spriter, mapper
-	Bloody Ocean — spriter, coder
-	AnDashik — coder, spriter, mapper
-	Ace — composer
-	R.O.T — coder, spriter
-	Sundered — some sprites
-	Los Sasikos - help with balance & sprites
+[white][purple]Asterion [yellow]Team[white][]
+[#92d3ff[]]Sputnuc[white[]] — creator, coder, spriter, mapper
+[#ffa0a0[]]Bloody Ocean[white[]] — spriter, coder
+[#d13050[]]AnDashik[white[]] — coder, spriter, mapper
+[#a3e7b8[]]Ace[white[]] — composer
+[#5245c9[]]R.O.T[white[]] — coder, spriter
+[#e2478f[]]Sundered[white[]] — some sprites
+[#dbddca[]]Los Sasikos[white[]] - help with balance & sprites
 '''
-subtitle: "Rework! Alpha 0.1"
+subtitle: "Rework! Alpha 0.1.1"
 
-version: "Alpha 1.0"
+version: "Alpha 0.1.1"
 minGameVersion: 155
 
 hideBrowser: true
