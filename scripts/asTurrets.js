@@ -1,4 +1,4 @@
-const splinter = extend(ItemTurret, "splinter", {});
+/* const splinter = extend(ItemTurret, "splinter", {});
 
 const decay = extend(ItemTurret, "decay", {});
 

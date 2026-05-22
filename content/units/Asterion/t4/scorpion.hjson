@@ -229,4 +229,36 @@ weapons: [
             }
         }
     }
+    {
+        display: false
+        x: 0
+        y: -5.5
+        mirror: false
+        recoil: 0
+        reload: 2000
+        shootSound: shootPulsar
+        shootStatus: high_energy_output
+        shootStatusDuration: 300
+        alwaysShooting: true
+        inaccuracy: 360
+        shoot: {
+            shots: 30
+            shotDelay: 10
+        }
+
+        bullet: {
+            type: LightningBulletType
+            damage: 13
+            lifetime: 1
+            hitEffect: hitLancer
+            despawnEffect: none
+            hitEffect: none
+            shootEffect: none
+            lightningColor: ffffff
+            lightningLength: 15
+            inaccuracy: 360
+            lightningLengthRand: 0
+            keepVelocity: false
+        }
+    }
 ]

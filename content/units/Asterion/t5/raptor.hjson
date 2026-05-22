@@ -110,7 +110,7 @@ weapons: [
     cooldownTime: 75
 	parentizeEffects: true
     recoil: 2
-    reload: 90
+    reload: 65
     shootSound: shootEnergy
     shootSoundVolume: 3
     bullet: {

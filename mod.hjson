@@ -64,4 +64,12 @@ contentOrder: [
 	faction-pyro
 	faction-extinguished
 	faction-techno
+
+	// Turrets
+	splinter
+	decay
+	breakthrough
+	
+	// End turret
+	destroyer
 ]
