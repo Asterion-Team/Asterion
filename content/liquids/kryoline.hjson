@@ -1,14 +1,17 @@
 name: "Kryoline"
 description: "An aggressive cryolitic acid used in advanced cooling systems."
-color: "4686F1"
-research: zion
-barColor: "6BA2FFFF"
-gasColor: "B4D0FF"
-lightColor: "6BA2FFFF"
-temperature: -0.05
-flammability: 0
+
+color: "579adc"
+gas: false
+gasColor: "f39560"
+barColor: "f39560"
+lightColor: "476fbfd3"
+coolant: true;
+
 explosiveness: 0
-liquid: true
-explosive: false
-coolant: true
-heatCapacity: 0.85
+flammability: 0
+heatCapacity: 0.75
+viscosity: 0.3
+temperature: 0.4
+
+research: oxylene

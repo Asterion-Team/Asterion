@@ -2,45 +2,23 @@
 generator: SerpuloPlanetGenerator
 defaultCore: core-force
 
-hiddenItems: [
-    "copper"
-    "lead"
-    "scrap"
-    "graphite"
-    "coal"
-    "titanium"
-    "thorium"
-    "silicon"
-    "plastanium"
-    "phase-fabric"
-    "sand"
-    "surge-alloy"
-    "spore-pod"
-    "blast-compound"
-    "pyratite"
-    "metaglass"
-    "beryllium"
-    "oxide"
-    "tungsten"
-    "carbide"
-    "fissile-matter"
-    "dormant-cyst"
-]
-
 itemWhitelist: [
-whitorite
-irmenite
-ashotite
-quartz-sand
-magnetite
-blacktite
-kiten
-zionitium
-zincum
-cobalt
-fractone
-graphene
-verdyne-steel
+	whitorite
+	pyrite
+	quartz
+	zincum
+	blacktite
+	magnetite
+	calcite
+	ghetron-flesh
+	irmenite
+	silicate
+	ashotite
+	graphene
+	cobalt
+	zionitium
+	verdyneSteel
+	fractone
 ]
 
 clearSectorOnLose: true
@@ -69,8 +47,8 @@ visible: true
 allowLaunchToNumbered: false 
 
 mesh: [
- {
- // cryoline oceans/seas
+	{
+	// Cryoline oceans/seas
 	type: SunMesh 
 	divisions: 6
 	octaves: 1
@@ -80,75 +58,75 @@ mesh: [
 	mag: 1
 	colorScale: 1
 	colors: [
-	  7e98f2,
-	  8fc1ff,
-	  8fc1ff
+		7e98f2
+	8fc1ff
+		8fc1ff
 	]
-  }
- {
- //mesh1
-    type: NoiseMesh
+	}
+	{
+	// Mesh (Stony surface of planet?)
+	type: NoiseMesh
 	bloom: false
-    seed: 374
-    color1: 54504c
-    color2: 73645e
-    divisions: 6
-    radius: 0.80
-    octaves: 4
-    persistence: 0.53
+	seed: 374
+	color1: "5e5a61" // old — 54504c
+	color2: "747687" // old — 73645e
+	divisions: 6
+	radius: 0.80
+	octaves: 4
+	persistence: 0.53
 	coct: 1.8
-    cper: 2.2
-    scale: 0.4
-    mag: 1.2
- }
- {
- // puzzle biome?
-    type: NoiseMesh
+	cper: 2.2
+	scale: 0.4
+	mag: 1.2
+	}
+	{
+	// Puzzle biome? Ghetron forests?
+	type: NoiseMesh
 	bloom: true
-    seed: 821
-    color1: 9e70db83
-    color2: 40389683
-    divisions: 6
-    radius: 0.773
-    octaves: 5
-    persistence: 0.8
+	seed: 821
+	color1: 9e70db
+	color2: 403896
+	divisions: 6
+	radius: 0.773
+	octaves: 5
+	persistence: 0.8
 	coct: 0.3
-    cper: 0.2
-    scale: 0.6
-    mag: 1.43
- }
- {
- // puzzle biome? (2)
-    type: NoiseMesh
+	cper: 0.2
+	scale: 0.6
+	mag: 1.43
+	}
+	{
+	// Puzzle biome? Ghetron forests? (2)
+	type: NoiseMesh
 	bloom: true
-    seed: 821
-    color1: 5d5bba83
-    color2: a689f583
-    divisions: 6
-    radius: 0.709
-    octaves: 5
-    persistence: 1.16
+	seed: 821
+	color1: 5d5bba
+	color2: a689f5
+	divisions: 6
+	radius: 0.709
+	octaves: 5
+	persistence: 1.16
 	coct: 0.3
-    cper: 0.2
-    scale: 0.6
-    mag: 2.3
- }
- {
- // brown mesh
-    type: NoiseMesh
+	cper: 0.2
+	scale: 0.6
+	mag: 2.3
+	}
+	{
+	// Mesh (Mountains? Endomineous biome?)
+	type: NoiseMesh
 	bloom: true
-    seed: 821
-    color1: 3b2d2a
-    color2: 3b3b36
-    divisions: 6
-    radius: 0.74
-    octaves: 7
-    persistence: 0.85
+	seed: 821
+	color1: "473637" // old — 3b2d2a
+	color2: "524b47" // old — 3b3b36
+	divisions: 6
+	radius: 0.74
+	octaves: 7
+	persistence: 0.85
 	coct: 3.2
-    cper: 2.6
-    scale: 0.82
-    mag: 2.37
- }
+	cper: 2.6
+	scale: 0.82
+	mag: 2.37
+	}
 ]
 
 //bloom: false

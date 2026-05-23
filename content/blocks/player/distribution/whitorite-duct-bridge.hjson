@@ -1,0 +1,19 @@
+name: "Whitorite Duct Bridge"
+description": "Acts as a bridge for crossing pipelines or terrain."
+health: 50
+underBullets: true
+size: 1
+requirements: [
+	whitorite/6
+	pyrite/8
+] 
+category: distribution
+research: whitorite-router
+squareSprite: false
+transportTime: 0.1
+range: 6
+isDuct: true
+hasItems: true
+itemCapacity: 5
+underBullets: true
+researchCostMultiplier: 0.25

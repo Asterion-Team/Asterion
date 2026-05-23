@@ -1,5 +1,5 @@
 name: Blast
-description: "Explodes itself and incends enemy units. \n[white]Faction: [#c75432]Pyro[]."
+description: "Explodes itself and incends enemy units. \n[]Faction: [#c75432]«Pyro»[]."
 type: legs
 outlineColor: 2b2828
 speed: 0.75

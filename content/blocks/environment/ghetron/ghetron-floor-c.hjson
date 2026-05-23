@@ -1,5 +1,6 @@
-name: Ghetron Floor (Dead)
+name: "Ghetron Vines (Dead)"
 variants: 4
 type: Floor
 //make sense
-decoration: egg-small-decor-dead
+decoration: ghetron-dead-egg-small
+wall: getron-dead-wall

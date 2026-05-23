@@ -1,13 +1,16 @@
 name: "Oxylene"
 description: "A liquid having an inert substance that allows it to be used in fusion."
-color: "c548d9"
-research: biolume
-barColor: "c548d9"
-gasColor: "a436bf3f"
-lightColor: "a436bf3f"
-temperature: 0.17
-flammability: 0.12
-explosiveness: 0.4
-liquid: true
-viscosity: 0.13
-heatCapacity: 0.1
+
+color: "c365df"
+gas: false
+gasColor: "c365df"
+barColor: "c365df"
+coolant: false;
+
+explosiveness: 0
+flammability: 0.6
+heatCapacity: 0
+viscosity: 0.5
+temperature: 0.15
+
+research: endomine

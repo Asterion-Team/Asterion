@@ -1,0 +1,63 @@
+type: ItemTurret
+size: 2
+name: Decay
+description: "Shoots a piercing needle"
+category: turret
+research: {
+    parent: splinter
+    objectives: [
+        {
+            type: Research
+            content: vent-burner
+        }
+    ]
+}
+researchCostMultiplier: 0.75
+outlineColor: "1c1d1f"
+requirements: [
+    whitorite/60
+    pyrite/75
+]
+consumes: { 
+	coolant: {
+		amount: 0.5
+	}
+    power: 0.25
+}
+shootCone: 1
+range: 140
+reload: 180
+shake: 3
+rotateSpeed: 2
+shootSound: shootFuse
+ammoTypes: {
+    pyrite: {
+        type: ShrapnelBulletType
+        fromColor: fff1cf
+        toColor: e8cd89
+        damage: 45
+        width: 11
+        length: 145
+        ammoMultiplier: 1
+        status: slow
+        statusDuration: 120
+        smokeEffect: none
+        shootEffect: {
+            particles: 7
+            length: 50
+            cone: 35
+            line: true
+            lenFrom: 6
+            lenTo: 0
+            strokeFrom: 1.1
+            strokeTo: 0.85
+            lifetime: 18
+            colorFrom: fff1cf
+            colorTo: fff1cf
+        }
+    }
+}
+drawer: {
+	type: DrawTurret
+	basePrefix: ast-
+}

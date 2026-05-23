@@ -1,0 +1,20 @@
+name: "Faction: [#d0d8e8]«Orion»[]"
+description: "//TODO — enemy"
+customShadow: true
+placeablePlayer: false
+BuildVisibility: hidden
+
+/*
+requirements: [
+	whiterite/50
+]
+*/
+
+research: {
+	root: true
+	name: "Faction: [#d0d8e8]«Orion»[]"
+	requiresUnlock: false
+	planet: as-asterion
+}
+researchCostMultiplier: 0.1
+alwaysUnlocked: true

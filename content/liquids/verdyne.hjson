@@ -1,10 +1,16 @@
 name: "Verdyne"
-description: ""
-color: "6e99f0"
+description: "//TODO"
+
+color: "5283ef"
+gas: true;
+gasColor: "5283ef"
+barColor: "5283e
+coolant: false
+
+explosiveness: 1.35
+flammability: 0
+heatCapacity: 0.7
+viscosity: 0.6
+temperature: 0.5
+			
 research: zion
-temperature: 0.3
-flammability: 0.3
-explosiveness: 0.3
-gas: true
-explosive: false
-viscosity: 0.05

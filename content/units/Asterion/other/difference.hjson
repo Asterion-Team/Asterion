@@ -1,5 +1,5 @@
 name: Differential
-description: Fires dual elemental weapons. Causes thermal shock to targets.
+description: "Fires dual elemental weapons. Causes thermal shock to targets. \n[]Faction: [#c75432]«Pyro»[]."
 type: mech
 speed: 0.35
 flying: false

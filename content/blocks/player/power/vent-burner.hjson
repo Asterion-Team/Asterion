@@ -1,0 +1,32 @@
+type: ThermalGenerator
+name: Vent burner
+research: {
+    parent: core-force
+    objectives: [
+        {
+            type: SectorComplete
+            preset: entry-point
+        }
+    ]
+}
+category: power
+requirements: [
+    whitorite/55
+    pyrite/45
+]
+powerProduction: 0.2222222222222222222222
+displayEfficiencyScale: 0.1111111111111111111
+attribute: methane
+minEfficiency: 8.99999
+size: 3
+displayEfficiency: false
+drawer: [
+    {
+        type: DrawDefault
+    }
+    {
+        type: DrawGlowRegion
+        alpha: 0.085
+        color: f7c0fc
+    }
+]

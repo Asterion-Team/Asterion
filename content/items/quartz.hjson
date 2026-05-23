@@ -1,0 +1,13 @@
+name: "Quartz"
+description: "Sharp and hardened crystals."
+color: "383574"
+hardness: 1
+cost: 0.7
+
+explosiveness: 0
+flammability: 0
+radioactivity: 0
+charge: 0
+alwaysUnlocked: true
+requiresUnlock: false
+research: whitorite

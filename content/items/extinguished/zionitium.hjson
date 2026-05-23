@@ -1,0 +1,12 @@
+name: "Zionitium"
+description: "//REDO \nFrozen mixture of Zion and Verdyne."
+color: "5c5b69"
+hardness: 1
+cost: 4.2
+
+explosiveness: 1.45
+flammability: 0
+radioactivity: 0
+charge: 0
+
+research: cobalt

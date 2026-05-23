@@ -1,32 +1,76 @@
-{
-"name": "as",
-"displayName": "Asterion",
-"description":
-  '''
+name: "as"
+displayName: "Asterion"
+author: "[white] [purple]|Asterion [yellow]Team|[white] "
+description:
+'''
 This is collaboration mod.
 
-[white] [purple]|Asterion [yellow]Team|[white] 
-Developers/Helpers:
-  Sputnuc - Creator,coder, spriter, mapper
-  bloody_ocean1846_66553 - Spriter
-  sundered8134 - Spriter
-  R.O.T - coder, spriter
-  andashik - coder, spriter, mapper
-  ace1020spawn - composer,mapper
-  los_sasikos - balancer
-  gg_word - WTF man!? Where is russian translate!?
-  itz.craft_ - funny man
-  lehanchic25 - funny man
-  '''
-"author": "[white] [purple]|Asterion [yellow]Team|[white] ",
-"version": "pre 0.96.5",
-"minGameVersion": 147,
-"subtitle": "Beta V0.96.5",
-"hideBrowser": "true"
-}
+[white][purple]Asterion [yellow]Team[white][]
 
+[#92d3ff[]]Sputnuc [white[]]— [accent[]]creator.
+[#ffa0a0[]]Bloody Ocean [white[]]— [accent[]]spriter.
+[#d13050[]]AnDashik [white[]]— [accent[]]coder, spriter, mapper.
+[#a3e7b8[]]Ace [white[]]— [accent[]]composer.
+[#5245c9[]]R.O.T [white[]]— [accent[]]coder, spriter.
+[#e2478f[]]Sundered [white[]]— [accent[]]some sprites.
+[#dbddca[]]Los Sasikos [white[]]— [accent[]]help with balance & sprites.
+'''
+subtitle: "Rework! Alpha 0.1.1"
 
+version: "Alpha 0.1.1"
+minGameVersion: 155
 
+hideBrowser: true
+dependencies: [
+	hjsonpp
+]
 
+contentOrder: [
+	// Items
+	whitorite
+	pyrite
+	quartz
+	zincum
+	blacktite
+	magnetite
+	calcite
+	ghetron-flesh
+	// Items: Orion
+	irmenite
+	silicate
+	// Items: Pyro
+	ashotite
+	graphene
+	// Items: Extinguished
+	cobalt
+	zionitium
+	// Items: Techno
+	verdyneSteel
+	fractone
+	
+	// Liquids
+	endomine
+	oxylene
+	kryoline
+	ghetron
+	
+	// Gases
+	zion
+	methane
+	verdyne
 
+	// Factions
+	faction-resemblance
+	faction-orion
+	faction-pyro
+	faction-extinguished
+	faction-techno
 
+	// Turrets
+	splinter
+	decay
+	breakthrough
+	
+	// End turret
+	destroyer
+]

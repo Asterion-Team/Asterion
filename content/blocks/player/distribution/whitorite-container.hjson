@@ -1,0 +1,16 @@
+type: StorageBlock
+category: distribution
+name: Container
+description: "Stores items in larger quantities. Fragile."
+size: 2
+squareSprite: false
+health: 550
+itemCapacity: 300
+
+requirements: [
+	irmenite/150
+	pyrite/95
+]
+
+research: core-force
+researchCostMultiplier: 0.10

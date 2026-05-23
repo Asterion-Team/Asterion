@@ -1,11 +1,12 @@
 type: tank
 name: Twilight
-description: "//TODO T7 \n[white]Faction: [#d26e64][Extinguished]."
+description: "//TODO T7 \n[]Faction: [#d26e64]«Extinguished»[]."
 hitSize: 14
-flying: false
 omniMovement: false
-health: 980
-armor: 7
+faceTarget: false
+rotateMoveFirst: true
+health: 780
+armor: 8
 speed: 0.37
 rotateSpeed: 1.1
 itemCapacity: 0
@@ -35,7 +36,8 @@ weapons: [
     x: 0
     y: -1
     mirror: false
-    shootSound: shockBlast
+    shootSound: shootCleroi
+    rotateSpeed: 3
     reload: 75
     recoil: 1.5
     predictTarget: false
@@ -49,12 +51,11 @@ weapons: [
     }
     bullet: {
      type: BasicBulletType
-     type: BasicBulletType
      sprite: missile-large
-     damage: 42.5
+     damage: 34
      speed: 2
      drag: -0.04
-     lifetime: 45
+     lifetime: 41
      width: 9
      height: 13
      backColor: bc5451 

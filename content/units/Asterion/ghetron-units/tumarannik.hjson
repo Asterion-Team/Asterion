@@ -5,17 +5,15 @@ flying: false
 hitSize: 13
 itemCapacity: 25
 outlineColor: 24232e
-targetAir: false
-targetGround: true
 mechLegColor: 24232e 
 outlineRadius: 0
 mechFrontSway: 0.9
 mechStepParticles: true
-stepShake: 1
+stepShake: 0.1
 drawCell: false
 drownTimeMultiplier: 8
 rotateSpeed: 3
-health: 240
+health: 110
 armor: 1
 range: 40
 
@@ -83,78 +81,73 @@ weapons: [
     ignoreRotation:true
     reload: 100
     recoil: 0.8
-x: 0
-y: 0
-mirror: false
-shootSound: smoke-tumarannik
+    x: 0
+    y: 0
+    mirror: false
+    shootSound: smoke-tumarannik
+    shootOnDeath: true
+    shootCone: 360
+    bullet: {
+        rangeOverride: 40
+        instantDisappear: true
+        collidesTiles: false
+        killShooter: true
+        hittable: false
+        collides: false
+        buildingDamageMultiplier: 1.2
+        splashDamage: 50
+        splashDamageRadius: 60
 
-bullet: {
-type: BasicBulletType
-damage: 0
-lifetime: 1
-killShooter: true
-buildingDamageMultiplier: 1.2
-width: 0
-height: 0
-speed: 0
-backColor: ff6e6e 
-frontColor: ff6e6e 
-splashDamage: 50
-splashDamageRadius: 32
-
-shootEffect:{
-type: MultiEffect
-effects: [
-{
-type: ParticleEffect 
-colorFrom: bf92f9
-colorTo: bf92f9
-particles: 27
-cone: 360
-length: 35
-baseLength: 1
-lightScl: 3
-lifetime: 180
-lightOpacity: 2
-spin: 0
-sizeFrom: 5
-sizeTo: 0 
-offset: 1
-}
-{
-type: ParticleEffect 
-colorFrom: 8a73c6
-colorTo: 8a73c6
-particles: 27
-cone: 360
-length: 35
-lifetime: 180
-baseLength: 1
-lightScl: 3
-lightOpacity: 2
-spin: 0
-sizeFrom: 9
-sizeTo: 0 
-offset: 1
-}
-{
-type: ParticleEffect 
-colorFrom: 665c9f
-colorTo: 665c9f
-lifetime: 180
-particles: 27
-cone: 360
-length: 35
-baseLength: 1
-lightScl: 3
-lightOpacity: 2
-spin: 0
-sizeFrom: 8
-sizeTo: 0 
-offset: 1
-}
-]
-}
-}
-}
+        shootEffect:[
+            {
+            type: ParticleEffect 
+            colorFrom: bf92f9
+            colorTo: bf92f9
+            particles: 27
+            cone: 360
+            length: 35
+            baseLength: 1
+            lightScl: 3
+            lifetime: 180
+            lightOpacity: 2
+            spin: 0
+            sizeFrom: 5
+            sizeTo: 0 
+            offset: 1
+            }
+            {
+            type: ParticleEffect 
+            colorFrom: 8a73c6
+            colorTo: 8a73c6
+            particles: 27
+            cone: 360
+            length: 35
+            lifetime: 180
+            baseLength: 1
+            lightScl: 3
+            lightOpacity: 2
+            spin: 0
+            sizeFrom: 9
+            sizeTo: 0 
+            offset: 1
+            }
+            {
+            type: ParticleEffect 
+            colorFrom: 665c9f
+            colorTo: 665c9f
+            lifetime: 180
+            particles: 27
+            cone: 360
+            length: 35
+            baseLength: 1
+            lightScl: 3
+            lightOpacity: 2
+            spin: 0
+            sizeFrom: 8
+            sizeTo: 0 
+            offset: 1
+            }
+        ]
+        }
+    }
 ]

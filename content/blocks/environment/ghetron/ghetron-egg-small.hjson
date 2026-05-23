@@ -1,0 +1,4 @@
+name: "Ghetron Egg (Small)"
+type: Prop
+variants: 3
+breakSound: plantBreak

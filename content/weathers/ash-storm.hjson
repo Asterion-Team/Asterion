@@ -1,0 +1,26 @@
+type: ParticleWeather
+name: "Ash Storm"
+color: a8a7a5
+noiseColor: 4d4744de
+particleColor: "47444204" //4a423e3f
+particleRegion: as-ash-wind-ash
+status: as-in-ash
+statusDuration: 978
+sizeMax: 215
+sizeMin: 7
+density: 5253
+duration: 2359
+useWindVector: true
+drawNoise: true
+opacityMultiplier: 0.23
+baseSpeed: 4
+sound: ashStorm
+soundVol: 2
+soundVolMin: 1.2
+force: 1.87
+noisePath: "fog"
+noiseScale: 862
+noiseLayerSpeedM: 1.78
+noiseLayerAlphaM: 0.83
+noiseLayerSclM: 0.63
+noiseLayers: 3

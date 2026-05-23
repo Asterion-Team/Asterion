@@ -1,0 +1,26 @@
+type: ParticleWeather
+name: "Ash Wind"
+color: a8a7a5
+noiseColor: 4d4744de
+particleColor: "47444204" //4a423e3f
+particleRegion: as-ash-wind-ash
+status: as-in-ash
+statusDuration: 978
+sizeMax: 240
+sizeMin: 10
+density: 14862
+duration: 2359
+useWindVector: true
+drawNoise: true
+opacityMultiplier: 0.7
+baseSpeed: 4
+sound: windhowl
+soundVol: 0.62
+soundVolMin: 0.37
+force: 1.87
+noisePath: "fog"
+noiseScale: 862
+noiseLayerSpeedM: 1.78
+noiseLayerAlphaM: 0.83
+noiseLayerSclM: 0.63
+noiseLayers: 3

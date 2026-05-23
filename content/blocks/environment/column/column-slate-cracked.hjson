@@ -1,0 +1,11 @@
+type: Floor
+name: "Cracked Column slate"
+blendGroup: column-slate
+attributes: {
+	water: -0.85
+	heat: 0.05
+	steam: 0.15
+  }
+variants: 4
+wall: column-wall
+decoration: column-boulder

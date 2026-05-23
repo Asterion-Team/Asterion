@@ -1,0 +1,11 @@
+name: Whitorite large wall
+health: 1360
+armor: 2
+size: 2
+requirements: [
+	whitorite/24
+]
+category: defense
+research: whitorite-wall
+researchCostMultiplier: 0.3
+buildCostMultiplier: 2.5

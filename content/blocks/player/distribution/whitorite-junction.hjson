@@ -1,0 +1,13 @@
+name: "Whitorite Junction"
+description: "Allows for crossing two pipelines."
+underBullets: true
+health: 65
+size: 1
+speed: 7
+requirements: [
+	whitorite/2
+]
+squareSprite: false
+category: distribution
+research: whitorite-router
+researchCostMultiplier: 0.25

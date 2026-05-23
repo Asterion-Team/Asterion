@@ -1,11 +1,15 @@
 //НЕ ПОНИМАЕШЬ. НЕ ТРОШЬ БЛЯТЬ - R.O.T.
 //не крычы на ​​мяне :( - AnDashik
 //Core units
-const graviton = extend(UnitType, "graviton", {});
-graviton.constructor = () => extend(UnitEntity, {});
 
-const ester = extend(UnitType, "ester", {});
-ester.constructor = () => extend(UnitEntity, {});
+const attraction = extend(UnitType, "attraction", {});
+attraction.constructor = () => extend(UnitEntity, {});
+
+const magnetism = extend(UnitType, "magnetism", {});
+magnetism.constructor = () => extend(UnitEntity, {});
+
+const gravity = extend(UnitType, "gravity", {});
+gravity.constructor = () => extend(UnitEntity, {});
 
 //Orion (Hunter) units
 const varan = extend(UnitType, "varan", {});

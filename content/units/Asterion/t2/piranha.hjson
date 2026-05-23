@@ -1,5 +1,5 @@
 name: piranha
-description: "Slows down enemies with a laser. Capable of taking off. \n[white]Faction: [#d0d8e8]Orion[]."
+description: "Slows down enemies with a laser. Capable of taking off. \n[]Faction: [#d0d8e8]«Orion»[]."
 type: mech
 outlineColor: 22262b
 research: orion-reconstructor
@@ -39,11 +39,16 @@ weapons: [
   name: piranha-weapon
   x: -8.5
   y: 0
-  reload: 30
+  reload: 60
   mirror: true
   recoil: 2
   layerOffset: -0.01
-  shootSound: sap
+  inaccuracy: 10
+  shootSound: shootSap
+  shoot: {
+    shots: 3
+    shotDelay: 6
+  }
   bullet: {
     type: SapBulletType
     sapStrength: 0.4

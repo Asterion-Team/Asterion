@@ -1,3 +1,4 @@
 type: TreeBlock
 name: Ghetron Tree
 variants: 0
+shadowOffset: -9

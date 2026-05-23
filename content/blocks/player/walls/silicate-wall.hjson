@@ -1,0 +1,29 @@
+name: "Silicate Wall"
+size: 1
+health: 900
+armor: 120
+
+update: true
+absorbLasers: true
+conductivePower: true
+
+consumes: {
+	power: 0.25
+}
+
+requirements: [
+	magnetite/1
+	silicate/10
+	graphene/2
+]
+
+baseColor: ef9ef5
+phaseColor: ef9ef5
+phaseBoost: 0
+phaseRangeBoost: 0
+healPercent: 2
+range: 2.75
+
+research: magnetite-wall-large
+researchCostMultiplier: 0.5
+category: defense

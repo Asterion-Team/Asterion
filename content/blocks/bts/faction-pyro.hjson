@@ -1,0 +1,21 @@
+name: "Faction: [#c75432]«Pyro»[]"
+description: "//TODO — enemy"
+size: 2
+customShadow: true
+placeablePlayer: false
+BuildVisibility: hidden
+
+/*
+requirements: [
+	whiterite/50
+]
+*/
+
+research: {
+	root: true
+	name: "Faction: [#c75432]«Pyro»[]"
+	requiresUnlock: false
+	planet: as-asterion
+}
+researchCostMultiplier: 0.1
+alwaysUnlocked: true

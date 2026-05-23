@@ -1,5 +1,5 @@
 name: raptor
-description: "Fires a volley of lasers. From time to time, the Predator needs to release excess energy in order not to explode. Is the strongest of the Orion... (Or not). \n[white]Faction: [#d0d8e8]Orion[]."
+description: "Fires a volley of lasers. From time to time, the Predator needs to release excess energy in order not to explode. Is the strongest of the Orion... (Or not). \n[]Faction: [#d0d8e8]«Orion»[]."
 type: mech
 speed: 0.40
 flying: false
@@ -7,6 +7,9 @@ research: orion-assembler
 hitSize: 28
 itemCapacity: 130
 outlineColor: 1f1f26
+stepSound: mechStepHeavy
+stepSoundPitch: 0.85
+stepSoundVolume: 0.46
 targetAir: true
 targetGround: true
 mechLegColor: 1f1f26
@@ -83,15 +86,15 @@ weapons: [
     name: raptor-weapon
     cone: 45
     parts: [
-    {
-        type: RegionPart
-        suffix: -heat
-        progress: warmup
-        blending: additive
-        color: 30fdf3
-        layerOffset: -0.1
-        outline: false
-    }
+        {
+            type: RegionPart
+            suffix: -heat
+            progress: warmup
+            blending: additive
+            color: 30fdf3
+            layerOffset: -0.1
+            outline: false
+        }
     ]
     
     shootY: 17.5
@@ -107,17 +110,18 @@ weapons: [
     cooldownTime: 75
 	parentizeEffects: true
     recoil: 2
-    reload: 45
-    shootSound: blaster-shot-2
+    reload: 65
+    shootSound: shootEnergy
+    shootSoundVolume: 3
     bullet: {
-     damage: 195
+     damage: 115
      pierce: true
      pierceCap: 2
      pierceBuilding: true
      height: 19
      width: 16
-     backColor: 4165AB
      frontColor: 9DBDFA
+     backColor: 769ade
      speed: 12
      lifetime: 30
      trailLength: 14
@@ -126,17 +130,40 @@ weapons: [
      trailInterval: 1
      trailRotation: true
      shootEffect: [
-     {
-      type: ParticleEffect
-      particles: 13
-      sizeFrom: 3.5
-      sizeTo: 0
-      colorFrom: 9DBDFA
-      colorTo: 9DBDFA00
-      length: 29
-      cone: 25
-      lifetime: 20
-     }
+        {
+            type: ParticleEffect
+            particles: 12
+            sizeFrom: 3.5
+            sizeTo: 0
+            colorFrom: bed2f7
+            colorTo: bed2f7
+            length: 65
+            cone: 25
+            lifetime: 20
+        }
+        {
+            line: true
+            particles: 7
+            cone: 45
+            length: 24
+            colorFrom: bed2f7
+            colorTo: 4165AB
+            lenFrom: 6.7
+            lenTo: 0
+            strokeFrom: 1.75
+            strokeTo: 1
+            lifetime: 20
+        }
+        {
+            type: WaveEffect
+            sizeFrom: 0
+            sizeTo: 6
+            strokeFrom: 3
+            strokeTo: 0
+            colorFrom: bed2f7
+            colorTo: bed2f7
+            lifetime: 20
+        }
      ]
      trailEffect: {
       type: ParticleEffect
@@ -147,6 +174,7 @@ weapons: [
       colorTo: 4165AB
       length: 4.5
       baseLength: 4.8
+      lifetime: 25
     }
      lightning: 5
      lightningLength: 10
@@ -155,6 +183,10 @@ weapons: [
      intervalBullets: 2
      bulletInterval: 2
      intervalRandomSpread: 360
+     despawnEffect: none
+     hitEffect: none
+     despawnSound: shootPulsar
+     hitSound: shootPulsar
      intervalBullet: {
         type: LightningBulletType
         damage: 25
@@ -178,16 +210,15 @@ weapons: [
         mirror: false
         recoil: 0
         reload: 3000
-        shootSound: spark
+        shootSound: shootPulsar
         shootStatus: high_energy_output
-        shootStatusDuration: 450
+        shootStatusDuration: 330
         alwaysShooting: true
+        inaccuracy: 360
         shoot: {
-            firstShotDelay: 100
             type: ShootSpread
-            shots: 30
-            shotDelay: 19
-            shotSpread: 360
+            shots: 33
+            shotDelay: 10
         }
 
         bullet: {

@@ -1,0 +1,44 @@
+type: GenericCrafter
+name: Irmenite oven
+description: "Producing irmenite from quartz and whitorite"
+size: 2
+category: crafting
+requirements: [
+    whitorite/45
+    pyrite/55
+]
+research: {
+    parent: faction-orion
+    objectives: [
+        {
+            type: SectorComplete
+            preset: quartz-valley
+        }
+    ]
+}
+craftTime: 60
+consumes: {
+    items: [
+        whitorite/2
+        quartz/3
+    ]
+    power: 0.5
+}
+ambientSound: smelter
+ambientSoundVolume: 0.05
+craftEffect: smeltsmoke
+drawer: [
+    {
+        type: DrawDefault
+    }
+    {
+        type: DrawFlame
+        flameRadius: 2.85
+        flameRadiusIn: 1.05
+        flameRadiusScl: 4
+        flameRadiusMag: 0.8
+        flameRadiusInMag: 0.65 
+        flameColor: "f0feff"
+    }
+]
+outputItem: irmenite/2

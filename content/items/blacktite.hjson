@@ -1,10 +1,12 @@
 name: "Blacktite",
 description: "It's black, that's all I can say."
-color: "504e61"
-hardness: 1
-research: irmenite
-charge: 0.0,
+color: "4f4965"
+hardness: 4
+cost: 4.1
+
 explosiveness: 0
 flammability: 0
 radioactivity: 0
-cost: 3.5
+charge: 0
+
+research: zincum

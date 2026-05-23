@@ -1,15 +1,12 @@
-{
-  "type": "TallWall",
-  "name": "Puzzle crystall",
-  "emitLight": true,
-  "lightRadius": 32,
-  "lightColor": "7cc3d948",
-  "attributes": {
-    "heat": 0.2,
-	"light": 2
-  },
-  "variants": 2,
-  "clipSize": 64,
-  "shadowAlpha": 1.7,
-  "shadowOffset": -1.5
+type: TallWall"
+name: "Puzzle Crystall",
+emitLight: true
+lightRadius: 32
+lightColor: "7cc3d948"
+attributes: {
+	heat: 0.2
+	light: 2
 }
+variants: 2
+shadowAlpha: 1.7
+shadowOffset: -1.5

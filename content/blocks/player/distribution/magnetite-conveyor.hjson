@@ -1,0 +1,36 @@
+name: "Magnetite Stack Conveyor"
+loadEffect: {
+	type: ParticleEffect
+	line: true
+	particles: 4
+	lifetime: 30
+	length: 15
+	baseLength: -15
+	cone: 360
+	lenFrom: 5
+	lenTo: 0
+	colorFrom: D7D7D7
+	colorTo: AEAEAE
+}
+unloadEffect: {
+	type: ParticleEffect
+	line: true
+	particles: 4
+	lifetime: 15
+	length: 15
+	baseLength: 15
+	cone: 360
+	lenFrom: 5
+	lenTo: 0
+	colorFrom: D7D7D7
+	colorTo: AEAEAE
+}
+health: 300
+speed: 0.10
+itemCapacity: 25
+requirements: [
+	magnetite/1
+	pyrite/3
+]
+research: whitorite-duct
+category: distribution

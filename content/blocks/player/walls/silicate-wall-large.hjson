@@ -1,0 +1,29 @@
+name: "Large Silicate Wall"
+size: 2
+health: 3600
+armor: 120
+
+update: true
+absorbLasers: true
+conductivePower: true
+
+consumes: {
+	power: 1
+}
+
+requirements: [
+	magnetite/4
+	silicate/40
+	graphene/8
+]
+
+baseColor: ef9ef5
+phaseColor: ef9ef5
+phaseBoost: 0
+phaseRangeBoost: 0
+healPercent: 8
+range: 9
+
+research: silicate-wall
+researchCostMultiplier: 0.5
+category: defense

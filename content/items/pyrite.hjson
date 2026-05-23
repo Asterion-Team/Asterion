@@ -1,0 +1,14 @@
+name: "Pyrite"
+description: "It is the second resource on the planet, massively used in electronics."
+color: "ffe4a0"
+hardness: 1
+cost: 1.2
+alwaysUnlocked: true
+requiresUnlock: false
+
+explosiveness: 0
+flammability: 0
+radioactivity: 0
+charge: 0.25
+
+research: whitorite

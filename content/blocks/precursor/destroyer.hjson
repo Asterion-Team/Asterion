@@ -1,0 +1,403 @@
+  type: LaserTurret
+  name: Destroyer
+  outlineColor: 22262b
+  size: 9
+  health: 11000
+  maxAmmo: 640
+  canOverdrive: false
+  recoil: 7
+  buildVisibility: sandboxOnly
+  unitSort: strongest
+  outlineRadius: 5
+  minWarmup: 0.99
+  shootWarmupSpeed: 0.008
+  shake: 95
+  ammoPerShot: 280
+  requirements: []
+  category: turret
+  reload: 1200
+  rotateSpeed: 0.3
+  coolantMultiplier: 0.35
+  shootDuration: 480
+  shoot: {
+    firstShotDelay: 150
+  }
+  range: 1000
+
+  shootType: {
+    type: ContinuousLaserBulletType
+    length: 3200
+    shake: 15
+    width: 20
+    lifetime: 150
+    color: aaf3e7
+    damage: 10000
+    colors: [
+      ffffff36, ffffff56, fffffffb, ffffff
+    ]
+    shootEffect: [
+      {
+        type: ParticleEffect
+        rotWithParent: true
+        followParent: true
+        cone: 0
+        length: -5
+        baseLength: 10
+        randLength: false
+        colorFrom: ffffff
+        colorTo: ffffff00
+        particles: 1
+        lifetime: 530
+        interp: linear
+        sizeFrom: 60
+        sizeTo: 90
+        sizeInterp: linear
+        region: as-inclined-wave-big
+        offset: 90
+      }
+    ]
+  }
+  firingMoveFract: 0
+  shootSound: destructionBeamShoot
+  shootSoundVolume: 5
+
+  consumes: {
+    power: 566.666666666666666
+	  coolant: { 
+       amount: 2
+    }
+  }
+  drawer: {
+   type: DrawTurret
+   basePrefix: ast-
+   parts: [
+    {
+      type: RegionPart
+      suffix: "-side-jointt2"
+      mirror: true
+      x: 20.5
+      y: -16
+      under: true
+      moveY: -2
+      moveX: 3
+      progress: warmup
+      outline: false
+      children: [
+        {
+          type: RegionPart
+          suffix: -side
+          mirror: true
+          under: false
+          children: [
+            {
+              type: RegionPart
+              suffix: "-side-rune"
+              progress: warmup
+              mirror: true
+              colorTo: 7fd9fff3
+              color: 669ed400
+              progress: warmup
+              blending: additive
+              outline: false
+            }
+          ]
+        }
+      ]
+    }
+    {
+      type: RegionPart
+      suffix: "-runes"
+      progress: warmup
+      mirror: false
+      colorTo: 7fd9fff3
+      color: 669ed400
+      progress: warmup
+      blending: additive
+      outline: false
+    }
+    //shape
+    {
+      type: ShapePart
+      circle: true
+      radius: 12
+      radiusTo: 12
+      stroke: 0
+      strokeTo: 1.7
+      color: aaf3e7
+      colorTo: aaf3e7
+      hollow: true
+      layer: 110
+      y: -20
+    }
+    {
+      type: ShapePart
+      circle: true
+      radius: 7
+      radiusTo: 7
+      stroke: 0
+      strokeTo: 1
+      color: aaf3e7
+      colorTo: aaf3e7
+      hollow: true
+      layer: 110
+      y: -20
+    }
+    //halo
+    {
+      type: HaloPart
+      y: -20
+      haloRadius: 12
+      haloRadiusTo: 12
+      haloRotateSpeed: 0.7
+      tri: true
+      shapes: 2
+      color: aaf3e7
+      colorTo: aaf3e7
+      radius: 0
+      radiusTo: 4
+      triLength: 0
+      triLengthTo: 15
+      layer: 110
+    }
+    {
+      type: HaloPart
+      y: -20
+      haloRadius: 12
+      haloRadiusTo: 12
+      haloRotateSpeed: 0.7
+      tri: true
+      shapes: 2
+      color: aaf3e7
+      colorTo: aaf3e7
+      radius: 0
+      radiusTo: 4
+      triLength: 0
+      triLengthTo: 5
+      shapeRotation: 180
+      layer: 110
+    }
+    //2th halo
+    {
+      type: HaloPart
+      y: -20
+      haloRadius: 12
+      haloRadiusTo: 12
+      haloRotateSpeed: 0.7
+      tri: true
+      shapes: 4
+      color: aaf3e7
+      colorTo: aaf3e7
+      radius: 0
+      radiusTo: 4
+      triLength: 0
+      triLengthTo: 8
+      layer: 110
+    }
+    {
+      type: HaloPart
+      y: -20
+      haloRadius: 12
+      haloRadiusTo: 12
+      haloRotateSpeed: 0.7
+      tri: true
+      shapes: 4
+      color: aaf3e7
+      colorTo: aaf3e7
+      radius: 0
+      radiusTo: 4
+      triLength: 0
+      triLengthTo: 3
+      shapeRotation: 180
+      layer: 110
+    }
+    //3th halo
+    {
+      type: HaloPart
+      y: -20
+      haloRadius: 12
+      haloRadiusTo: 12
+      haloRotateSpeed: 0.9
+      tri: true
+      shapes: 3
+      color: aaf3e7
+      colorTo: aaf3e7
+      radius: 0
+      radiusTo: 4
+      triLength: 0
+      triLengthTo: 12
+      layer: 110
+    }
+    {
+      type: HaloPart
+      y: -20
+      haloRadius: 12
+      haloRadiusTo: 12
+      haloRotateSpeed: 0.9
+      tri: true
+      shapes: 3
+      color: aaf3e7
+      colorTo: aaf3e7
+      radius: 0
+      radiusTo: 4
+      triLength: 0
+      triLengthTo: 3
+      shapeRotation: 180
+      layer: 110
+    }
+    //4th halo
+    {
+      type: HaloPart
+      y: -20
+      haloRadius: 12
+      haloRadiusTo: 12
+      haloRotateSpeed: 0.6
+      tri: true
+      shapes: 4
+      color: aaf3e7
+      colorTo: aaf3e7
+      radius: 0
+      radiusTo: 4
+      triLength: 0
+      triLengthTo: 10
+      layer: 110
+    }
+    {
+      type: HaloPart
+      y: -20
+      haloRadius: 12
+      haloRadiusTo: 12
+      haloRotateSpeed: 0.6
+      tri: true
+      shapes: 4
+      color: aaf3e7
+      colorTo: aaf3e7
+      radius: 0
+      radiusTo: 4
+      triLength: 0
+      triLengthTo: 3
+      shapeRotation: 180
+      layer: 110
+    }
+    //Charge progress
+    {
+      x: 5
+      y: 33
+      type: HaloPart
+      shapes: 1
+      tri: true
+      radius: 2
+      radiusTo: 3
+      haloRadius: 1
+      haloRadiusTo: 3
+      layer: 110
+      triLength: 0
+      triLengthTo: 65
+      color: aaf3e7
+      colorTo: aaf3e7
+      progress: charge
+    }
+    {
+      x: -5
+      y: 33
+      type: HaloPart
+      shapes: 1
+      tri: true
+      radius: 2
+      radiusTo: 3
+      haloRadius: 1
+      haloRadiusTo: 3
+      layer: 110
+      triLength: 0
+      triLengthTo: 65
+      color: aaf3e7
+      colorTo: aaf3e7
+      progress: charge
+    }
+    //Tri
+    {
+      x: 0
+      y: 33
+      type: HaloPart
+      shapes: 1
+      tri: true
+      radius: 2
+      radiusTo: 6
+      haloRadius: 1
+      haloRadiusTo: 3
+      layer: 110
+      triLength: 0
+      triLengthTo: 5
+      color: aaf3e700
+      colorTo: aaf3e7
+      progress: charge
+    }
+    {
+      x: 0
+      y: 33
+      type: HaloPart
+      shapes: 1
+      tri: true
+      radius: 2
+      radiusTo: 6
+      haloRadius: 4
+      haloRadiusTo: 15
+      layer: 110
+      triLength: 0
+      triLengthTo: 5
+      color: aaf3e700
+      colorTo: aaf3e7
+      progress: charge
+    }
+    {
+      x: 0
+      y: 33
+      type: HaloPart
+      shapes: 1
+      tri: true
+      radius: 2
+      radiusTo: 6
+      haloRadius: 7
+      haloRadiusTo: 27
+      layer: 110
+      triLength: 0
+      triLengthTo: 5
+      color: aaf3e700
+      colorTo: aaf3e7e3
+      progress: charge
+    }
+    {
+      x: 0
+      y: 33
+      type: HaloPart
+      shapes: 1
+      tri: true
+      radius: 2
+      radiusTo: 6
+      haloRadius: 10
+      haloRadiusTo: 39
+      layer: 110
+      triLength: 0
+      triLengthTo: 5
+      color: aaf3e700
+      colorTo: aaf3e7a8
+      progress: charge
+    }
+    {
+      x: 0
+      y: 33
+      type: HaloPart
+      shapes: 1
+      tri: true
+      radius: 2
+      radiusTo: 6
+      haloRadius: 13
+      haloRadiusTo: 51
+      layer: 110
+      triLength: 0
+      triLengthTo: 5
+      color: aaf3e700
+      colorTo: aaf3e75d
+      progress: charge
+    }
+   ]
+    }

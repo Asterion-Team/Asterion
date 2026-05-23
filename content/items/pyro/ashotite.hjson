@@ -1,0 +1,12 @@
+name: "Ashotite"
+description: "//REDO \nA highly flammable material used in generators and turrets."
+color: "b94c34"
+hardness: 1
+cost: 1.3
+
+explosiveness: 0.35
+flammability: 1.6
+radioactivity: 0
+charge: 0
+
+research: core-force

@@ -2,7 +2,7 @@ type: flying
 outlineColor: "1c1a1b" //Old -> 2b2828 2b2828 or 1f1f26
 outlineRadius: 4
 name: "Fire"
-description: "Fires flameable bombs on ground buildings and units."
+description: "Fires flameable bombs on ground buildings and units. \n[]Faction: [#c75432]«Pyro»[]."
 flying: true
 health: 8000
 armor: 4

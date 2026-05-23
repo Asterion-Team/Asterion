@@ -1,0 +1,10 @@
+type: Floor
+name: "Split Column Slate"
+blendGroup: column-slate
+attributes: {
+	water: -0.35
+	steam: 0.4
+	heat: 0.2
+  }
+variants: 4
+wall: column-wall

@@ -1,5 +1,5 @@
-speedMultiplier : 1.15
-damage: 0.4
+speedMultiplier : 0.9
+healthMultiplier: 0.9
 color : 8c6e6d
 name : Fading (T1)
 

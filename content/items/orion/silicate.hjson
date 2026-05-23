@@ -1,0 +1,12 @@
+name: "Silicate"
+description: "//REDO \nCobalt silicate."
+color: "90ada7"
+hardness: 5
+cost: 5.5
+
+explosiveness: 0.15
+flammability: 0
+radioactivity: 0.6
+charge: 1.4
+
+research: irmenite

@@ -1,0 +1,12 @@
+name: "Fractone"
+description: "//REDO \nA hard stone with a thin layer of metal, it is little studied but has many interesting abilities..."
+color: "5c5b69"
+hardness: 4
+cost: 5.7
+
+explosiveness: 0
+flammability: 0
+radioactivity: 0
+charge: 0
+
+research: verdyne-steel
