@@ -1,0 +1,33 @@
+type: UnitFactory
+size: 3
+name: "Pyro's factory"
+description: "Creates «Spark» units"
+category: units
+research: faction-pyro
+researchCost: [
+    whitorite/300
+    pyrite/250
+    zincum/450
+]
+requirements: [
+    whitorite/125
+    pyrite/85
+    zincum/50
+]
+consumes: {
+    power: 1
+    liquids: [
+        methane/0.125
+    ]
+}
+configurable: false
+plans: [
+    {
+        unit: spark-u
+        requirements: [
+            zincum/10
+            ashotite/15
+        ]
+        time: 600
+    }
+]

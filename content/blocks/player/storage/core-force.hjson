@@ -8,7 +8,7 @@ health: 2500
 
 //absorbLasers: true
 itemCapacity: 3500
-unitCapModifier: 7
+unitCapModifier: 12
 unitType: attraction
 incinerateNonBuildable: false
 isFirstTier: true

@@ -1,0 +1,30 @@
+type: UnitFactory
+size: 3
+name: "Orion's factory"
+description: "Creates «Varan» units"
+category: units
+research: faction-orion
+researchCost: [
+    whitorite/200
+    pyrite/150
+    irmenite/150
+]
+requirements: [
+    whitorite/65
+    pyrite/35
+    irmenite/50
+]
+consumes: {
+    power: 1.5
+}
+configurable: false
+plans: [
+    {
+        unit: varan
+        requirements: [
+            whitorite/45
+            irmenite/30
+        ]
+        time: 1800
+    }
+]

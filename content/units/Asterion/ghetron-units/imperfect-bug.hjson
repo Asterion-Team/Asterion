@@ -3,12 +3,11 @@ name: "Imperfect Bug"
 
 outlineColor: 42413e
 outlineRadius: 0
-
-health: 240
+controller: HugAI
+health: 110
 armor: 2
 speed: 0.6
 hitSize: 10
-
 segments: 2
 segmentScl: 1
 segmentPhase: 2

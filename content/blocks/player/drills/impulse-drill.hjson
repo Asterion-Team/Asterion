@@ -11,7 +11,7 @@ requirements: [
 	pyrite/15
 ]
 
-tier: 1
+tier: 2
 drillTime: 240 // 5 * 60
 drillEffect: [mineImpact, mineImpactWave ]
 liquidBoostIntensity: 1.5

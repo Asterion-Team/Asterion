@@ -3,7 +3,7 @@ outlineColor: 1f1f26
 name: Attraction
 description: Guard of the core «Force». Attraction shoots fast healing bullets.
 flying: true
-health: 280
+health: 140
 hitSize: 12.5
 buildSpeed: 1.05
 mineTier: 1
@@ -13,8 +13,9 @@ strafePenalty: 0.35
 engineSize: 2
 engineOffset: 4
 trailLength: 2
-speed: 5.5
-rotateSpeed: 9
+trailWidth: 0.9
+speed: 6.5
+rotateSpeed: 13
 
 weapons: [
 	{
@@ -70,11 +71,10 @@ weapons: [
 				sizeFrom: 3
 				sizeTo: 6
 				lifetime: 15
-				strokeFrom: 2
-				sizeTo: 0
+				strokeFrom: 1
+				strokeTo: 0
 				colorFrom: e39fe1
-				colorTo: d66bd3
-
+				colorTo: e39fe1
 			}
 			{
 				cone: 35
@@ -92,14 +92,13 @@ weapons: [
 		]
 		despawnEffect: {
 			type: WaveEffect
-			sizeFrom: 4
+			sizeFrom: 3
 			sizeTo: 6
 			lifetime: 25
 			strokeFrom: 3
-			sizeTo: 0
 			colorFrom: e39fe1
 			colorTo: d66bd3
-		}
+			}
 		}
 	}
-	]
+]

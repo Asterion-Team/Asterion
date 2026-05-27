@@ -56,8 +56,57 @@ ammoTypes: {
             colorTo: fff1cf
         }
     }
+    ashotite: {
+        type: ShrapnelBulletType
+        fromColor: f7844f
+        toColor: b94c34
+        damage: 75
+        width: 12
+        length: 154
+        rangeChange: 8
+        ammoMultiplier: 2
+        reloadMultiplier: 0.85
+        shake: 3
+        status: melting
+        statusDuration: 180
+        smokeEffect: none
+        shootEffect: [
+            {
+                particles: 8
+                length: 70
+                cone: 25
+                line: true
+                lenFrom: 8
+                lenTo: 0
+                strokeFrom: 1.1
+                strokeTo: 0.85
+                lifetime: 18
+                colorFrom: f7844f
+                colorTo: f7844f
+            }
+            {
+                particles: 3
+                length: 15
+                sizeFrom: 3
+                sizeTo: 0
+                lifetime: 18
+                colorFrom: f7844f
+                colorTo: f7844f
+            }
+            {
+                particles: 2
+                length: 35
+                sizeFrom: 2
+                sizeTo: 0
+                lifetime: 18
+                colorFrom: e2e2e2
+                colorTo: b1b1b160
+            }
+        ]
+    }
 }
 drawer: {
 	type: DrawTurret
 	basePrefix: ast-
 }
+outlineColor: "1c1d1f"

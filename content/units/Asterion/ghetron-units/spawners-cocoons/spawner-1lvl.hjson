@@ -15,6 +15,7 @@ mechStepParticles: false
 stepShake: 0
 drownTimeMultiplier: 0
 rotateSpeed: 0
+physics: false
 health: 600
 armor: 7
 range: 152

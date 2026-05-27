@@ -5,7 +5,8 @@ hitSize: 11
 omniMovement: false
 faceTarget: false
 rotateMoveFirst: true
-tankMoveVolume: 0.3
+tankMoveVolume: 0.15
+tankMoveSound: tankMoveSmall
 health: 450
 armor: 6
 speed: 0.42

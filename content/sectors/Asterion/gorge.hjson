@@ -1,16 +1,15 @@
-//localizedName: The point of occupation
-captureWave: 20
+
 planet: asterion
-sector: 13
-difficulty: 1
+sector: 63
+difficulty: 3
 alwaysUnlocked: false
 research: {
-parent: shelter
+parent: impact-point
 requiresUnlock: false
 objectives: [
 {
 type: SectorComplete
-preset: shelter
+preset: impact-point
   }
  ]
 }

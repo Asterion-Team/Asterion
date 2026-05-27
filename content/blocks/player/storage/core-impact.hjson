@@ -7,7 +7,7 @@ size: 4
 health: 3800
 
 itemCapacity: 5000
-unitCapModifier: 16
+unitCapModifier: 18
 unitType: magnetism
 outputsPower: true
 isFirstTier: false
@@ -16,6 +16,7 @@ buildVisibility: shown
 requirements: [
 	whitorite/1700
 	pyrite/500
+	irmenite/650
 	zincum/1250
 ]
 

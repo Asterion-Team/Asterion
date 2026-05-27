@@ -1,0 +1,52 @@
+type: AttributeCrafter
+attribute: "ash"
+baseEfficiency: 1
+boostScale: 0.0555555555555
+name: Ashotite press
+description: "compresses ash in the atmosphere along with methane and quartz to produce ashotite"
+size: 3
+category: crafting
+research: faction-pyro
+requirements: [
+    whitorite/120
+    pyrite/85
+    irmenite/75
+]
+consumes: {
+    liquids: [
+        "methane/0.25"
+    ]
+    items: [
+        "quartz/2"
+    ]
+    power: 1
+}
+craftTime: 60
+outputItem: "ashotite/2"
+drawer: [
+    {
+        type: DrawRegion
+        suffix: "-bottom"
+    }
+    {
+        type: DrawRegion
+        suffix: "-rotor"
+        spinSprite: true
+        rotateSpeed: 12
+        x: -5
+    }
+    {
+        type: DrawRegion
+        suffix: "-rotor"
+        spinSprite: true
+        rotateSpeed: -12
+        x: 5
+    }
+    {
+        type: DrawLiquidTile
+        drawLiquid: methane
+    }
+    {
+        type: DrawDefault
+    }
+]

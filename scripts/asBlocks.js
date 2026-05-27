@@ -1,6 +1,6 @@
 // Логистика. Logistic
 // Взят пример из sapphirum
-//пример: const "кодовое название предмета" = extend("Класс/type", "в кавычках название блока json", {});
+//пример: const "имя объекта" = extend("Класс", "инициалы объекта json", {});
 
 const whitoriteDuct = extend(Duct, "whitorite-duct", {});
 
@@ -20,7 +20,10 @@ const whitoriteInvertedGateway = extend(OverflowGate, "whitorite-inverted-gatewa
 
 const magnetiteConveyor = extend(StackConveyor,"magnetite-conveyor", {});
 
+const whitoriteUnloader = extend(Unloader, "whitorite-unloader", {});
+
 // Walls, Стены (НУ А ХУЛЕ)
+
 const whitoriteWall = extend(Wall, "whitorite-wall", {});
 
 const whitoriteWallLarge = extend(Wall, "whitorite-wall-large", {});

@@ -1,0 +1,12 @@
+name: "Americium"
+description: "The highly radioactive metal is used in reactors and complex buildings"
+color: "97ffe6"
+hardness: 4
+cost: 4.5
+
+explosiveness: 0
+flammability: 0
+radioactivity: 0.75
+charge: 0.15
+
+research: magnetite

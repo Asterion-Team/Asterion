@@ -39,7 +39,7 @@ weapons: [
   name: piranha-weapon
   x: -8.5
   y: 0
-  reload: 60
+  reload: 45
   mirror: true
   recoil: 2
   layerOffset: -0.01
@@ -51,11 +51,11 @@ weapons: [
   }
   bullet: {
     type: SapBulletType
-    sapStrength: 0.4
+    sapStrength: 0.25
     length: 75
     width: 0.45
     lifetime: 15
-    damage: 28
+    damage: 30
     hitColor: d0d8e8 
     color: a1b1d0
     status: slow

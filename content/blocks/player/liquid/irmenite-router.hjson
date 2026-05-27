@@ -1,0 +1,11 @@
+type: LiquidRouter
+name: Irmenite liquid router
+category: liquid
+research: irmenite-conduit
+solid: false
+underBullets: true
+liquidCapacity: 50
+researchCostMultiplier: 1
+requirements: [
+    irmenite/5
+]

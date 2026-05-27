@@ -43,11 +43,11 @@ weapons: [
     rotate: true
     rotationLimit: 22
     recoil: 1.5
-    reload: 35
+    reload: 25
     shootSound: shootAvert
     bullet: {
       type: BasicBulletType
-      damage: 20
+      damage: 25
       lifetime: 20
       width: 7
       height: 15

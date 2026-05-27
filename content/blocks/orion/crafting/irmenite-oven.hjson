@@ -16,7 +16,7 @@ research: {
         }
     ]
 }
-craftTime: 60
+craftTime: 120
 consumes: {
     items: [
         whitorite/2

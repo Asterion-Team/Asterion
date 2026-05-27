@@ -1,0 +1,9 @@
+type: Conduit
+name: Irmenite conduit
+category: liquid
+research: faction-orion
+researchCostMultiplier: 1
+rotBridgeReplacement: irmenite-bridge
+requirements: [
+    irmenite/1
+]

@@ -5,7 +5,7 @@ hitSize: 22
 flying: false
 omniMovement: false
 targetAir: false
-health: 3600
+health: 2600
 armor: 10
 speed: 0.35
 rotateSpeed: 0.85
@@ -42,60 +42,124 @@ weapons: [
     x: 0
     y: 0
     mirror: false
-    shootSound: shockBlast
-    reload: 180
+    shootSound: shootNavanax
+    reload: 120
     recoil: 2
-    shake: 2
+    shake: 5
     shootStatus: fading-t1
     shootStatusDuration: 90
-    velocityRnd: 0.14
-    inaccuracy: 5
+    inaccuracy: 1
     rotateSpeed: 1.1
-    shoot: {
-    shots: 18
-    shotDelay: 3
-    }
+    shootY: 13
     bullet: {
         type: BasicBulletType
-        damage: 15
-        splashDamage: 22
-        splashDamageRadius: 25
-        speed: 8
-        lifetime: 22
-        width: 12
-        height: 12
-        backColor: bc5451 
+        sprite: missile-large
+        damage: 145
+        splashDamage: 86
+        splashDamageRadius: 26
+        speed: 16
+        lifetime: 16
+        width: 16
+        height: 23
+        backColor: cc6556 
         frontColor: e98878
-        trailColor: bc5451 
-        trailWidth: 2.6
-        trailLength: 6
-        shootEffect: none
+        trailColor: e98878 
+        trailWidth: 3.4
+        trailLength: 8
+        status: fading-t2
+        statusDuration: 60
+        shootEffect: [
+            {
+                particles: 6
+                line: true
+                cone: 15
+                length: 65
+                lenFrom: 8
+                lenTo: 0
+                strokeFrom: 2
+                strokeTo: 1
+                colorFrom: e98878
+                colorTo: e98878
+                lifetime: 15
+                sizeInterp: linear
+                interp: circleOut
+            }
+            {
+                type: WaveEffect
+                sizeFrom: 2
+                sizeTo: 9
+                strokeFrom: 2
+                strokeTo: 0
+                lifetime: 15
+                colorFrom: e98878
+                colorTo: e98878
+            }
+            {
+                particles: 9
+                line: true
+                cone: 90
+                length: -35
+                lenFrom: 5
+                lenTo: 0
+                strokeFrom: 1.25
+                strokeTo: 1
+                colorFrom: e98878
+                colorTo: e98878
+                lifetime: 15
+                sizeInterp: linear
+                interp: circleOut
+            }
+        ]
         smokeEffect: none
-        hitEffect:  {
+        hitEffect: [
+            {
                 type: WaveEffect
                 colorFrom: e98878
-                colorTo: bc545100
+                colorTo: e98878
                 sizeFrom: 4
                 sizeTo: 7
-                lightScl: 3
-                lightOpacity: 1
                 sides: 3
                 strokeFrom: 2
                 strokeTo: 0
+                lifetime: 20
             }
+            {
+                type: WaveEffect
+                colorFrom: e98878
+                colorTo: e98878
+                sizeFrom: 4
+                sizeTo: 21
+                sides: 5
+                strokeFrom: 2
+                strokeTo: 0
+                lifetime: 20
+            }
+            {
+                particles: 6
+                line: true
+                cone: 65
+                length: 45
+                lenFrom: 6
+                lenTo: 0
+                strokeFrom: 1.5
+                strokeTo: 1
+                colorFrom: e98878
+                colorTo: e98878
+                lifetime: 20
+                sizeInterp: linear
+                interp: circleOut
+            }
+        ]
         despawnEffect: {
             type: MultiEffect
             effects: [
             {
                 type: ParticleEffect
                 colorFrom: e98878
-                colorTo: bc5451
-                particles: 6
-                length: 20
+                colorTo: e98878
+                particles: 7
+                length: 34
                 baseLength: 6
-                lightScl: 3
-                lightOpacity: 2
-                spin: 0
                 sizeFrom: 3
                 sizeTo: 0
                 lifetime: 25
@@ -103,7 +167,7 @@ weapons: [
             {
                 type: WaveEffect
                 colorFrom: e98878
-                colorTo: bc5451
+                colorTo: e98878
                 sizeFrom: 0
                 sizeTo: 11
                 lightScl: 3

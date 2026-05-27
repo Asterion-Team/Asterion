@@ -1,0 +1,13 @@
+type: DirectionLiquidBridge
+name: Irmenite bridge conduit
+category: liquid
+research: irmenite-router
+liquidCapacity: 60
+floating: true
+range: 5
+hasPower: false
+arrowSpacing: 7
+researchCostMultiplier: 1
+requirements: [
+    irmenite/10
+]

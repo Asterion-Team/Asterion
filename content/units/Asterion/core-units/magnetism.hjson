@@ -3,18 +3,18 @@ outlineColor: 22262b
 name: Magnetism
 description: "Guard of the core: Impact. Shoots energy spears"
 flying: true
-health: 570
+health: 220
 hitSize: 12
 buildSpeed: 2.5
-engineSize: 3
+engineSize: 1.5
 mineSpeed: 19
 mineTier: 2
-speed: 5
-trailLength: 4
+speed: 8
+trailLength: 2
 trailWidth: 0.9
 targetGround: true
 targetAir: true
-rotateSpeed: 6
+rotateSpeed: 18
 weapons: [
 	{
 	name: magnetism-weapon
@@ -50,32 +50,47 @@ weapons: [
 		trailLength: 5
 		trailColor: deb65f
 		trailWidth: 1
+		shrinkY: 0
 		speed: 8
 		width: 7
 		height: 10
 		sprite: as-star-bullet
-		hitEffect: {
-			type: ParticleEffect
-			particles: 4
-			line: true
-			lenFrom: 0
-			lenTo: 8
-			strokeFrom: 1.1
-			strokeTo: 1
-			colorFrom: deb65f
-			colorTo: deb65f00
-			length: 45
-			lifetime: 25
-			cone: 25
-		}
+		hitEffect: [
+			{
+				type: ParticleEffect
+				particles: 4
+				line: true
+				lenFrom: 8
+				lenTo: 0
+				strokeFrom: 1.1
+				strokeTo: 1
+				colorFrom: deb65f
+				colorTo: deb65f
+				length: 45
+				lifetime: 15
+				cone: 25
+
+			}
+			{
+				type: WaveEffect
+				sizeFrom: 2
+				sizeTo: 5
+				colorFrom: deb65f
+				colorTo: deb65f
+				strokeFrom: 2
+				strokeTo: 0
+				lifetime: 15
+			}
+		]
 		despawnEffect: {
 			type: WaveEffect
 			sizeFrom: 0
 			sizeTo: 12
 			colorFrom: deb65f
-			colorTo: deb65f00
+			colorTo: deb65f
 			strokeFrom: 3
 			strokeTo: 0
+			lifetime: 15
 		}
 		buildingDamageMultiplier: 0.01
 		}

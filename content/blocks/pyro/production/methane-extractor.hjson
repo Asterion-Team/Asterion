@@ -1,0 +1,46 @@
+type: AttributeCrafter
+size: 3
+category: production
+research: faction-pyro
+requirements: [
+    whitorite/65,
+    pyrite/35,
+    irmenite/45
+]
+name: "Methane extractor"
+description: "Extracts methane from vents"
+attribute: "methane"
+minEfficiency: 8.99999999999999999
+boostScale: 0.1111111111
+baseEfficiency: 0
+displayEfficiency: false
+craftTime: 120
+hasLiquids: true
+liquidCapacity: 50
+consumes: {
+    power: 0.5
+}
+outputLiquid: "methane/0.25"
+drawer: [
+    {
+        type: DrawRegion
+        suffix: "-bottom"
+    }
+    {
+        type: DrawRegion
+        suffix: "-rotator"
+        spinSprite: true
+        rotateSpeed: 6
+    }
+    {
+        type: DrawRegion
+        suffix: "-top"
+    }
+    {
+        type: DrawLiquidTile
+        drawLiquid: methane
+    }
+    {
+        type: DrawDefault
+    }
+]

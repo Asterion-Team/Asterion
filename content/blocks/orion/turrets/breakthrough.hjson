@@ -22,6 +22,7 @@ consumes: {
 	}
     power: 1.5
 }
+research: faction-orion
 coolantMultiplier: 40
 recoil: 3
 range: 240

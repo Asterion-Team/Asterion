@@ -1,0 +1,6 @@
+type: Floor
+name: "Loose ash floor"
+attributes: {
+	ash: 1
+}
+variants: 5

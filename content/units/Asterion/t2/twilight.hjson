@@ -9,6 +9,8 @@ health: 780
 armor: 8
 speed: 0.37
 rotateSpeed: 1.1
+tankMoveSound: tankMove
+tankMoveVolume: 0.28
 itemCapacity: 0
 outlineColor: 141119
 outlineRadius: 4
@@ -55,7 +57,7 @@ weapons: [
      damage: 34
      speed: 2
      drag: -0.04
-     lifetime: 41
+     lifetime: 35
      width: 9
      height: 13
      backColor: bc5451 
@@ -63,8 +65,8 @@ weapons: [
      trailColor: e98878 
      trailWidth: 3
      trailLength: 8.5
-     homingPower: 0.3
-     homingDelay: 30
+     homingPower: 0.05
+     homingDelay: 15
      shootEffect: {
       type: ParticleEffect
       particles: 6

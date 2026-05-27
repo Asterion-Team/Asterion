@@ -1,0 +1,101 @@
+type: ItemTurret
+name: Ignition
+description: "Shoots a pack of fire projectiles"
+range: 180
+category: turret
+requirements: [
+    whitorite/ 120
+    pyrite/85
+    irmenite/90
+    zincum/80
+]
+size: 3
+reload: 120
+shake: 4
+recoil: 5
+cooldownTime: 120
+heatColor: ff4d17
+rotateSpeed: 3
+shootSound: shootDiffuse
+velocityRnd: 0.25
+inaccuracy: 12
+ammoPerShot: 5
+ammoCapacity: 15
+shoot: {
+    shots: 9
+}
+consumes: {
+    power: 1.5
+}
+ammoTypes: {
+    ashotite: {
+        type: BasicBulletType
+        damage: 18
+        splashDamage: 42
+        splashDamageRadius: 32
+        ammoMultiplier: 1
+        width: 7
+        height: 14
+        speed: 12
+        lifetime: 15
+        status: melting
+        statusDuration: 120
+        frontColor: f7844f
+        backColor: eb6344
+        trailColor: eb6344
+        trailLength: 2
+        trailWidth: 0.8
+        trailInterval: 1
+        trailRotation: true
+        smokeEffect: none
+        shootEffect: {
+            particles: 2
+            length: 45
+            cone: 12
+            sizeFrom: 2
+            sizeTo: 0
+            sizeInterp: linear
+            interp: circleOut
+            lifetime: 25
+            colorFrom: f7844f
+            colorTo: f7844f
+        }
+        trailEffect: {
+            particles: 3
+            sizeFrom: 3
+            sizeTo: 0
+            colorFrom: f7844f
+            colorTo: f7844f
+            length: 14
+            lifetime: 15
+        }
+        hitEffect: [
+            {
+                type: ParticleEffect
+                particles: 9
+                sizeFrom: 3
+                sizeTo: 0
+                colorFrom: ff9548
+                colorTo: ff9548
+                length: 25
+                lifetime: 25
+            }
+            {
+                type: WaveEffect
+                sizeFrom: 2
+                sizeTo: 12
+                strokeFrom: 2
+                strokeTo: 0
+                colorFrom: ff9548
+                colorTo: ff9548
+                lifetime: 25
+            }
+        ]
+        despawnEffect: none
+    }
+}
+drawer: {
+	type: DrawTurret
+	basePrefix: ast-
+}
+outlineColor: "1c1d1f"
