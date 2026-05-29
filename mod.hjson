@@ -23,7 +23,7 @@ subtitle: "Rework! Alpha 0.1.2"
 version: "Alpha 0.1.2"
 minGameVersion: 155
 
-hideBrowser: true
+// hideBrowser: true
 dependencies: [
 	hjsonpp
 ]
