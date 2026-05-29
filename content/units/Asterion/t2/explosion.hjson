@@ -13,6 +13,7 @@ targetGround: true
 legLength: 16
 legCount: 4
 lockLegBase: true
+legContinuousMove: true
 legExtension: -2.3
 stepShake: 1
 outlineRadius: 4
@@ -32,7 +33,7 @@ weapons: [
     recoil: 1
     reload: 40
     baseRotation: 0
-    shootSound: shootAlt
+    shootSound: shootFlame
     rotate: false
     shootCone: 10
     inaccuracy: 10
@@ -40,11 +41,12 @@ weapons: [
     shoot: {
     shots: 4
     }
+    velocityRnd: 0.15
     bullet: {
         type: BasicBulletType
         damage: 18
         drag: 0.002
-        lifetime: 17
+        lifetime: 20
         width: 8
         height: 9
         speed: 5
@@ -56,20 +58,17 @@ weapons: [
         trailColor: c75432 
         trailWidth: 2
         trailLength: 6
+        smokeEffect: none
         shootEffect: {
             type: ParticleEffect 
             colorFrom: ff9548
-            colorTo: c75432
+            colorTo: ff9548
             particles: 7
             cone: 20
-            length: 7
-            baseLength: 0
-            lightScl: 3
-            lightOpacity: 2
-            spin: 0
+            length: 12
             sizeFrom: 2
-            sizeTo: 0 
-            offset: 1
+            sizeTo: 0
+            lifetime: 20
         }
         despawnEffect:{
             type: ParticleEffect 

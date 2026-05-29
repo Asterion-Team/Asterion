@@ -6,11 +6,19 @@ name: Ashotite press
 description: "compresses ash in the atmosphere along with methane and quartz to produce ashotite"
 size: 3
 category: crafting
-research: faction-pyro
+research: {
+    parent: faction-pyro
+    objectives: [
+        {
+            type: SectorComplete
+            preset: gorge
+        }
+    ]
+}
 requirements: [
     whitorite/120
     pyrite/85
-    irmenite/75
+    zincum/75
 ]
 consumes: {
     liquids: [

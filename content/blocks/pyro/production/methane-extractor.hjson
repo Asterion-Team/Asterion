@@ -1,7 +1,15 @@
 type: AttributeCrafter
 size: 3
 category: production
-research: faction-pyro
+research: {
+    parent: faction-pyro
+    objectives: [
+        {
+            type: SectorComplete
+            preset: gorge
+        }
+    ]
+}
 requirements: [
     whitorite/65,
     pyrite/35,

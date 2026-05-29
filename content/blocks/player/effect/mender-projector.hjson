@@ -1,0 +1,29 @@
+type: MendProjector
+size: 2
+name: "Mender projector"
+description: "Heals blocks"
+category: effect
+requirements: [
+    whitorite/95
+    pyrite/45
+    blacktite/75
+]
+consumes: {
+    power: 1.5
+    liquid: {
+      liquid: oxylene
+      amount: 0.05
+      optional: true
+      booster: true
+      update: true
+    }
+}
+reload: 120
+range: 120
+healPercent: 8.5
+phaseBoost: 32
+phaseRangeBoost: 40
+scaledHealth: 42
+baseColor: c363ff
+phaseColor: ff9cfc
+useTime: 180

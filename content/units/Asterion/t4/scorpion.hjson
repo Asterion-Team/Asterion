@@ -45,7 +45,9 @@ weapons: [
         mirror: true
         rotate: true
         shake: 3
+        shootCone: 10
         rotationLimit: 28
+        rotateSpeed: 2.75
         recoil: 3
         reload: 30
         shootSound: shootAfflict
@@ -232,7 +234,7 @@ weapons: [
     {
         display: false
         x: 0
-        y: -5.5
+        y: -6
         mirror: false
         recoil: 0
         reload: 2000
@@ -259,6 +261,7 @@ weapons: [
             inaccuracy: 360
             lightningLengthRand: 0
             keepVelocity: false
+            smokeEffect: none
         }
     }
 ]

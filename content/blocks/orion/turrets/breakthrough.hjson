@@ -8,7 +8,7 @@ requirements: [
 ]
 category: turret
 reload: 300
-health: 980
+scaledHealth: 120
 speedUpPerShoot: 7
 cooldownInterval: 240
 cooldownSpeed: 0.35
@@ -129,6 +129,91 @@ ammoTypes: {
         ]
         weaveScl: 0.5
         weaveMag: 1.1
+    }
+    ashotite: {
+        inaccuracy: 2
+        reloadMultiplier: 0.45
+        knockback: 3.8
+        pierce: true
+        pierceCap: 2
+        width: 19
+        height: 23
+        damage: 25
+        splashDamage: 37
+        splashDamageRadius: 32
+        status: burning
+        statusDuration: 60
+        scaleLife: true
+        speed: 20
+        lifetime: 13
+        frontColor: f7844f
+        backColor: eb6344
+        trailColor: eb6344
+        trailLength: 6
+        trailWidth: 2.85
+        trailInterval: 0.5
+        trailRotation: true
+        trailEffect: {
+            particles: 2
+            sizeFrom: 3
+            sizeTo: 0
+            colorFrom: f7844f
+            colorTo: f7844f
+            length: 12
+            lifetime: 15
+            cone: 15
+        }
+        hitColor: f7844f
+        despawnShake: 2.85
+        hitShake: 3.1
+        shootEffect: shootBigColor
+        smokeEffect: {
+            particles: 6
+            sizeFrom: 3
+            sizeTo: 0
+            colorFrom: f7844f
+            colorTo: f7844f
+            cone: 15
+            length: 55
+            lifetime: 20
+        }
+        hitEffect: [
+            {
+                particles: 5
+                line: true
+                lenFrom: 8
+                lenTo: 0
+                strokeFrom: 2
+                strokeTo: 2
+                colorFrom: f7844f
+                colorTo: f7844f
+                cone: 15
+                length: 75
+                lifetime: 15
+            }
+            {
+                particles: 5
+                sizeFrom: 3
+                sizeTo: 0
+                colorFrom: f7844f
+                colorTo: f7844f
+                sizeInterp: circleOut
+                length: 35
+                lifetime: 25
+            }
+            {
+                type: WaveEffect
+                sizeFrom: 2
+                sizeTo: 5
+                strokeFrom: 3
+                strokeTo: 0
+                colorFrom: f7844f
+                colorTo: f7844f
+                lifetime: 18
+            }
+            blastExplosion
+        ]
+        despawnEffect: none
     }
 }
 category: turret 

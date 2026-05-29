@@ -2,7 +2,7 @@ name: Fault
 description: "Shoots homing napalm missiles. \n[]Faction: [#c75432]«Pyro»[]."
 type: legs
 outlineColor: "1c1a1b" //Old -> 2b2828
-speed: 0.55
+speed: 0.58
 flying: false
 research: explosion
 hovering: true
@@ -13,13 +13,14 @@ targetGround: true
 legLength: 25
 legCount: 4
 lockLegBase: true
+legContinuousMove: true
 legExtension: -4
 stepShake: 1
 outlineRadius: 4
 drownTimeMultiplier: 8
 rotateSpeed: 1.85
-health: 1950
-armor: 6
+health: 1250
+armor: 8
 immunities: [
     burning
 ]
@@ -29,46 +30,81 @@ weapons: [
     x: -9.5
     y: -1.25
     layerOffset: 0.001
-    velocityRnd: 0.1
     mirror: true
     recoil: 1
-    reload: 10
+    reload: 15
     baseRotation: 0
-    shootSound: flame
+    shootSound: shootFlame
     rotate: true
-    rotationLimit: 20
+    rotationLimit: 45
     rotateSpeed: 1
     shootCone: 30
-    inaccuracy: 12
-    ignoreRotation:true
-    shoot: {
-    shots: 3
-    }
     bullet: {
          type: BulletType
-         damage: 21
-         speed: 7
-         lifetime: 25
-         trailInterval: 1
+         hitSize: 12
+         damage: 37
+         speed: 10
+         lifetime: 10
          incendChance: 1
          incendSpread: 8
          incendAmount: 4
          hitEffect: none
          despawnEffect: none
-         drag: 0.1
          pierce: true
          pierceCap: 2
          pierceBuilding: true
-         trailEffect: {
-           length: 5
-           baseLength: 3
-           type: ParticleEffect
-           particles: 3
-           colorFrom: f58e40
-           colorTo: e6441200
-           lifetime: 25
-           sizeTo: 1
-         }
+         smokeEffect: none
+         shootEffect: [
+            {
+                particles: 11
+                colorFrom: ff6b46
+                colorTo: ff6b46
+                sizeInterp: pow3In
+                interp: pow5Out
+                sizeFrom: 2.5
+                sizeTo: 0
+                length: 140
+                lifetime: 40
+                cone: 8
+            }
+            {
+                particles: 11
+                colorFrom: f7782f
+                colorTo: f7782f
+                sizeInterp: pow3In
+                interp: pow5Out
+                sizeFrom: 2
+                sizeTo: 0
+                length: 140
+                lifetime: 40
+                cone: 10
+            }
+            {
+                particles: 7
+                colorFrom: f7782f
+                colorTo: ff6b46
+                sizeInterp: pow3In
+                interp: pow5Out
+                sizeFrom: 2.5
+                sizeTo: 0
+                length: 80
+                lifetime: 42
+                cone: 10
+            }
+            {
+                particles: 8
+                colorFrom: ff6b46
+                colorTo: dbdbdb3a
+                sizeInterp: pow3In
+                interp: pow5Out
+                sizeFrom: 2.85
+                sizeTo: 0.5
+                length: 100
+                lifetime: 45
+                cone: 12
+            }
+         ]
         }
     }
 ]
+

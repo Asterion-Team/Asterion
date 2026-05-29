@@ -1,15 +1,19 @@
 
 planet: asterion
 sector: 63
-difficulty: 3
+difficulty: 2
 alwaysUnlocked: false
 research: {
-parent: impact-point
+parent: quartz-valley
 requiresUnlock: false
 objectives: [
-{
-type: SectorComplete
-preset: impact-point
+  {
+    type: SectorComplete
+    preset: quartz-valley
+  }
+  {
+    type: Research
+    content: orion-factory
   }
  ]
 }

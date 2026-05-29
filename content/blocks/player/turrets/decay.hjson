@@ -24,6 +24,7 @@ consumes: {
 	}
     power: 0.25
 }
+scaledHealth: 150
 shootCone: 1
 range: 140
 reload: 180

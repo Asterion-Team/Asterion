@@ -15,9 +15,9 @@ This is collaboration mod.
 [#e2478f[]]Sundered [white[]]— [accent[]]some sprites.
 [#dbddca[]]Los Sasikos [white[]]— [accent[]]help with balance & sprites.
 '''
-subtitle: "Rework! Alpha 0.1.1"
+subtitle: "Rework! Alpha 0.1.2"
 
-version: "Alpha 0.1.1"
+version: "Alpha 0.1.2"
 minGameVersion: 155
 
 hideBrowser: true
@@ -33,6 +33,7 @@ contentOrder: [
 	zincum
 	blacktite
 	magnetite
+	americium
 	calcite
 	ghetron-flesh
 	// Items: Orion
@@ -70,6 +71,7 @@ contentOrder: [
 	splinter
 	decay
 	breakthrough
+	ignition
 	
 	// End turret
 	destroyer

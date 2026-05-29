@@ -85,4 +85,12 @@ shootEffect: {
 }
 ]
 
-research: faction-pyro
+research: {
+  parent: faction-pyro
+  objectives: [
+    {
+      type: Research
+      content: pyro-factory
+    }
+  ]
+}

@@ -4,12 +4,21 @@ description: "Shoots a pack of fire projectiles"
 range: 180
 category: turret
 requirements: [
-    whitorite/ 120
+    whitorite/120
     pyrite/85
-    irmenite/90
-    zincum/80
+    zincum/150
 ]
+research: {
+    parent: faction-pyro
+    objectives: [
+        {
+            type: SectorComplete
+            preset: gorge
+        }
+    ]
+}
 size: 3
+scaledHealth: 120
 reload: 120
 shake: 4
 recoil: 5

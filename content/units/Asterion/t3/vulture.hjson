@@ -211,7 +211,7 @@ weapons: [
     {
         display: false
         x: 0
-        y: -4
+        y: -6
         mirror: false
         recoil: 0
         reload: 1850
@@ -238,6 +238,7 @@ weapons: [
             inaccuracy: 360
             lightningLengthRand: 0
             keepVelocity: false
+            smokeEffect: none
         }
     }
 ]

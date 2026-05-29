@@ -12,8 +12,6 @@ targetGround: true
 mechLegColor: 1f1f26
 mechFrontSway: 0.8
 mechStepParticles: true
-//TODO need step shake?
-//stepShake: 1
 outlineRadius: 4
 drownTimeMultiplier: 8
 rotateSpeed: 2.6
@@ -113,4 +111,12 @@ weapons: [
   }
 ]
 
-research: faction-orion
+research: {
+  parent: faction-orion
+  objectives: [
+    {
+      type: Research
+      content: orion-factory
+    }
+  ]
+}

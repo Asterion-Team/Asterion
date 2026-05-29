@@ -17,7 +17,7 @@ stepShake: 1
 outlineRadius: 6
 drownTimeMultiplier: 8
 rotateSpeed: 1.2
-health: 70000
+health: 46000
 armor: 55
 range: 240
 parts: [
@@ -156,7 +156,7 @@ weapons: [
     shootY: 22.5
 	shake: 15
 	rotateSpeed: 0.6
-	cone: 10
+	shootCone: 15
     shootX: 0
     x: 35.25
     y: 4.5
@@ -211,11 +211,11 @@ weapons: [
     height: 60
     width: 35
     splashDamageRadius: 32
-    splashDamage: 235
-    lifetime: 22
+    splashDamage: 135
+    lifetime: 13
     pierceCap: 3
-    damage: 575
-    speed: 21
+    damage: 195
+    speed: 18
 	intervalBullets: 2
     intervalAngle: 0
     intervalRandomSpread: 0
@@ -347,10 +347,10 @@ weapons: [
                 frontColor: a1b1d0
                 trailColor: a1b1d0
                 trailLength: 10
-                trailWidth: 3
+                trailWidth: 2
                 trailInterval: 46
                 homigRadius: 120
-                damage: 85
+                damage: 45
                 width: 10
                 height: 10
                 despawnEffect: none
@@ -414,29 +414,28 @@ weapons: [
     bullet: {
         type: SapBulletType
         status: none
-        sapStrength: 1.6
-        length: 150
+        sapStrength: 1
+        length: 190
         width: 0.45
         lifetime: 10
-        damage: 100
+        damage: 90
         hitColor: a1b1d0 
         color: d0d8e8
-
-shootEffect: {
-type: ParticleEffect 
-colorFrom: d0d8e8
-colorTo: a1b1d0
-particles: 5
-cone: 4
-length: 8
-baseLength: 5
-lightScl: 3
-lightOpacity: 2
-spin: 0
-sizeFrom: 1.5
-sizeTo: 0 
-offset: 1
-}
+        shootEffect: {
+            type: ParticleEffect 
+            colorFrom: d0d8e8
+            colorTo: a1b1d0
+            particles: 5
+            cone: 4
+            length: 8
+            baseLength: 5
+            lightScl: 3
+            lightOpacity: 2
+            spin: 0
+            sizeFrom: 1.5
+            sizeTo: 0 
+            offset: 1
+        }
 }
 }
 ]

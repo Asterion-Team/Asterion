@@ -3,7 +3,15 @@ size: 3
 name: "Pyro's factory"
 description: "Creates «Spark» units"
 category: units
-research: faction-pyro
+research: {
+    parent: faction-pyro
+    objectives: [
+        {
+            type: SectorComplete
+            preset: gorge
+        }
+    ]
+}
 researchCost: [
     whitorite/300
     pyrite/250

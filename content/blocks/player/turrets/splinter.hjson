@@ -3,7 +3,7 @@ type: ItemTurret
 outlineColor: "1c1d1f"
 name: "Splinter"
 description: "Shoots piercing spears."
-health: 620
+scaledHealth: 100
 shootSound: shootSplinter
 moveWhileCharging: false
 rotateSpeed: 1.6

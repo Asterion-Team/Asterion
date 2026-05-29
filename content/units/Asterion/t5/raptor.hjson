@@ -84,7 +84,7 @@ parts: [
 weapons: [
 {
     name: raptor-weapon
-    cone: 45
+    shootCone: 15
     parts: [
         {
             type: RegionPart
@@ -109,6 +109,7 @@ weapons: [
     rotationLimit: 45
     cooldownTime: 75
 	parentizeEffects: true
+    rotateSpeed: 1.5
     recoil: 2
     reload: 65
     shootSound: shootEnergy
