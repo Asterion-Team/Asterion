@@ -56,6 +56,7 @@ weapons: [
          smokeEffect: none
          shootEffect: [
             {
+                followParent: false
                 particles: 11
                 colorFrom: ff6b46
                 colorTo: ff6b46
@@ -68,6 +69,7 @@ weapons: [
                 cone: 8
             }
             {
+                followParent: false
                 particles: 11
                 colorFrom: ff7452
                 colorTo: ff6b46
@@ -80,6 +82,7 @@ weapons: [
                 cone: 10
             }
             {
+                followParent: false
                 particles: 7
                 colorFrom: f7782f
                 colorTo: ff6b46
@@ -92,6 +95,7 @@ weapons: [
                 cone: 10
             }
             {
+                followParent: false
                 particles: 8
                 colorFrom: ff6b46
                 colorTo: dbdbdb3a
