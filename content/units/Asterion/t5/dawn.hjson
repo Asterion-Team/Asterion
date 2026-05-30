@@ -4,7 +4,7 @@ type: tank
 hitSize: 42
 flying: false
 omniMovement: false
-health: 34700
+health: 25700
 armor: 26
 speed: 0.25
 rotateSpeed: 0.5
@@ -57,7 +57,7 @@ weapons: [
         pierce: true
         pierceBuilding: true
         speed: 11
-        lifetime: 45
+        lifetime: 30
         drag: 0.01
         width: 19
         height: 20

@@ -45,7 +45,7 @@ weapons: [
 		width: 8.2
 		height: 8.5
 		collidesTeam: true
-		healPercent: 7.5
+		healPercent: 5.5
 		healColor: e39fe1
 		frontColor: e39fe1
 		backColor: d66bd3

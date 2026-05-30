@@ -56,6 +56,46 @@
         offset: 90
       }
     ]
+    trailRotation: true
+    trailInterval: 1
+    trailEffect: [
+      {
+        type: RadialEffect
+        rotationSpacing: 137
+        amount: 3
+        lengthOffset: 25
+        effect: {
+          particles: 2
+          cone: 1
+          length: 180
+          interp: pow5In
+          sizeInterp: linear
+          lenFrom: 2
+          lenTo: 17
+          strokeFrom: 3
+          strokeTo: 0
+          lifetime: 40
+        }
+      }
+      {
+        type: RadialEffect
+        rotationSpacing: 196
+        amount: 3
+        lengthOffset: 20
+        effect: {
+          particles: 2
+          cone: 1
+          length: 180
+          interp: pow5In
+          sizeInterp: linear
+          lenFrom: 1
+          lenTo: 17
+          strokeFrom: 3
+          strokeTo: 0
+          lifetime: 40
+        }
+      }
+    ]
   }
   firingMoveFract: 0
   shootSound: destructionBeamShoot

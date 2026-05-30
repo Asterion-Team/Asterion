@@ -36,159 +36,29 @@ weapons: [
     x: 0
     y: 0.5
     mirror: false
-    shootSound: mediumCannon
     reload: 120
-    recoil: 3
+    shootY: 0
     shake: 3
-    rotateSpeed: 4
+    continuous: true
+    alwaysContinuous: true
+    shootSound: shootSublimate
+    rotateSpeed: 2
     shootStatus: fading-t2
-    shootStatusDuration: 120
+    shootStatusDuration: 130
     bullet: {
-        type: BasicBulletType
-        damage: 185
-        splashDamage: 120
-        splashDamageRadius: 30
-        pierce: true
+        type: ContinuousFlameBulletType
+        damage: 20
+        length: 110
         pierceCap: 3
-        pierceBuilding: true
-        speed: 7
-        scaleLife: true
-        lifetime: 35
-        width: 17
-        height: 18
-        backColor: bc5451 
-        frontColor: e98878
-        trailColor: bc5451 
-        trailWidth: 2.55
-        trailLength: 12
-        trailRotation: true
-        trailInterval: 1
-        weaveScale: 6
-        weaveMag: 2
-        homingPower: 0.2
-        homingDelay: 10
-        despawnShake: 2
-        trailEffect: [
-        {
-         type: WaveEffect
-         colorFrom: FFADAB
-         colorTo: FFADAB00
-         sides: 3
-         sizeFrom: 4
-         sizeTo: 5
-         lifetime: 20
-         strokeFrom: 1
-         strokeTo: 0
-        }
-        {
-         type: ParticleEffect
-         region: as-star-bullet
-         particles: 2
-         sizeFrom: 4.5
-         sizeTo: 0
-         length: 15
-         baseLength: 3
-         lifetime: 35
-         colorFrom: e98878
-         colorTo: bc5451
-        }
-        ]
-        status: discharge
-        statusDuration: 155
-        shootEffect: none
-        smokeEffect: none
-        hitEffect: [
-        {
-         type: ParticleEffect
-         length: 14
-         particles: 9
-         sizeFrom: 3.5
-         sizeTo: 0
-         colorFrom: FFADAB
-         colorTo: FFADAB00
-         lifetime: 25
-        }
-        {
-         type: ParticleEffect
-         cone: 35
-         length: 41
-         particles: 12
-         sizeFrom: 2.5
-         sizeTo: 0
-         colorFrom: FFADAB
-         colorTo: FFADAB00
-         lifetime: 25
-        }
-        ]
-        despawnHit: true
-        parts: [
-           {
-            type: FlarePart
-            color2: e98878
-            color1: e3cacf
-            radius: 6
-            radiusTo: 25
-            layer: 110
-            followRotation: true
-            progress: life
-          }
-        ]
-        despawnEffect: [
-            {
-                type: ParticleEffect
-                colorFrom: e98878
-                colorTo: bc5451
-                particles: 8
-                length: 85
-                baseLength: 6
-                sizeFrom: 4.5
-                sizeTo: 0
-                lifetime: 25
-            }
-            {
-                type: ParticleEffect
-                colorFrom: e98878
-                colorTo: bc5451
-                particles: 14
-                length: 24
-                baseLength: 6
-                lightScl: 3
-                lightOpacity: 2
-                spin: 0
-                sizeFrom: 4
-                sizeTo: 0
-                offset: 0
-                lifetime: 35
-            }
-            {
-                type: ParticleEffect
-                colorFrom: bc5451
-                colorTo: bc5451
-                particles: 12
-                length: 30
-                lifetime: 20
-                lightScl: 3
-                lightOpacity: 2
-                spin: 0
-                sizeFrom: 3
-                sizeTo: 0
-                offset: 0
-            }
-            {
-                type: WaveEffect
-                colorFrom: e98878
-                colorTo: bc5451
-                sizeFrom: 0
-                sizeTo: 30
-                lightScl: 3
-                lightOpacity: 1
-                sides: 0
-                rotation: 0
-                strokeFrom: 5
-                strokeTo: 0
-                lifetime: 25
-            }
-        ]
+        width: 3
+        flareColor: ffa9a6
+        flareWidth: 0
+        flareLength: 0
+        hitColor: ffa9a6
+        lifetime: 60
+        status: fading-t2
+        statusDuration: 20
+        colors: [d96e6a92, eb8783db, ffa9a6, ffe4e3]
     }
 }
 {
@@ -197,15 +67,21 @@ weapons: [
     x: 13
     y: -8.5
     mirror: true
-    shootSound: laser
-    reload: 32
-    recoil: 1
+    shootSound: shootSap
+    rotateSpeed: 3
+    reload: 15
     bullet: {
-        type: LaserBulletType
-        length: 180
-        colors: ["bc5451", "e98878", "FFFFFF"]
-        damage: 80
-        lifetime: 10
+        type: SapBulletType
+        knockback: -3
+        status: none
+        sapStrength: 0.25
+        length: 100
+        width: 0.45
+        lifetime: 15
+        damage: 70
+        hitColor: ffa9a6 
+        color: ffa9a6
+        hitEffect: hitBulletColor
     }
 }
 ]

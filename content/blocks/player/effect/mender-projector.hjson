@@ -20,7 +20,7 @@ consumes: {
 }
 reload: 120
 range: 120
-healPercent: 8.5
+healPercent: 4
 phaseBoost: 32
 phaseRangeBoost: 40
 scaledHealth: 42

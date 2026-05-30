@@ -69,8 +69,8 @@ weapons: [
             }
             {
                 particles: 11
-                colorFrom: f7782f
-                colorTo: f7782f
+                colorFrom: ff7452
+                colorTo: ff6b46
                 sizeInterp: pow3In
                 interp: pow5Out
                 sizeFrom: 2

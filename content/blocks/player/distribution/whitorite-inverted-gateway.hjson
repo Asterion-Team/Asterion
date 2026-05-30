@@ -8,7 +8,7 @@ parent: whitorite-gateway
 planet: as-asterion
 }
 requirements: [
-	pyrite/2
+	whitorite/2
 	pyrite/3
 ]
 researchCostMultiplier: 0.5

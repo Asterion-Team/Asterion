@@ -64,6 +64,22 @@ weapons: [
         backColor: cc6556 
         frontColor: e98878
         trailColor: e98878 
+        trailRotation: true
+        trailInterval: 0.75
+        trailEffect: {
+			particles: 1
+			length: 0
+			baseLength: 0
+			randLength: false
+			lifetime: 12
+			cone: 0
+			region: as-eff-shape-triangle
+			sizeFrom: 4
+			sizeTo: 0
+			colorFrom: "e98878"
+			colorTo: "e98878"
+		}
+        hitShake: 3
         trailWidth: 3.4
         trailLength: 8
         status: fading-t2

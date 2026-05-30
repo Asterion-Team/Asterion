@@ -12,7 +12,6 @@ targetAir: true
 targetGround: true
 legLength: 38
 legCount: 6
-lockLegBase: true
 legExtension: -9
 stepShake: 1
 outlineRadius: 4
@@ -31,7 +30,8 @@ weapons: [
     mirror: true
     recoil: 1
     reload: 30
-    shootSound: piew
+    shootSound: shootMachineGun
+    shootSoundVolume: 0.6
     rotate: true
     rotationLimit: 75
     rotateSpeed: 1.5
@@ -47,15 +47,15 @@ weapons: [
 
     bullet: {
         type: BasicBulletType
-        damage: 71
-        lifetime: 35
-        width: 6
-        height: 15
-        speed: 7
+        damage: 29
+        lifetime: 24
+        width: 8
+        height: 21
+        speed: 10
         backColor: c75432 
         frontColor: ff9548
         trailColor: c75432 
-        trailWidth: 2
+        trailWidth: 1
         trailLength: 10
         hitEffect: [
          {
@@ -118,23 +118,23 @@ weapons: [
     }
     }
     {
-      name: rumble-main-weapon
+    name: rumble-main-weapon
     x: 0
     y: 8.5
     mirror: false
     rotate: false
     recoil: 1
-    reload: 100
-    shootSound: flame
+    reload: 300
+    shake: 2
+    shootSound: shootFlame
     rotate: false
     shootCone: 60
     inaccuracy: 0
 
     bullet: {
         type: BasicBulletType
-        damage: 150
-        colldes: false
-        splashDamage: 230
+        damage: 87
+        splashDamage: 130
         splashDamageRadius: 66
         shrinkY: -1
         shrinkX: -1
@@ -148,6 +148,9 @@ weapons: [
         frontColor: ff9548
         spin: 3
         trailChance: 0.5
+        hitSound: explosionDull
+        hitSoundVolume: 0.65
+        hitShake: 4
         trailEffect: [
             {
                 type: ParticleEffect 
@@ -167,64 +170,53 @@ weapons: [
                 layer: 99
             }
         ]
-        despawnEffect: {
-            type: MultiEffect
-            effects: [{
-                    type: ParticleEffect 
-                    colorFrom: ff9548
-                    colorTo: c75432
-                    particles: 20
-                    cone: 360
-                    length: 0
-                    baseLength: 66
-                    lightScl: 3
-                    lightOpacity: 2
-                    spin: 0
-                    sizeFrom: 3
-                    sizeTo: 0 
-                    offset: 1
-                }
-                {
-                    type: WaveEffect
-                    colorFrom: ff9548
-                    colorTo: c75432
-                    sizeFrom: 66
-                    sizeTo: 66
-                    lightScl: 3
-                    lightOpacity: 1
-                    sides: 0
-                    lifetime: 40
-                    rotation: 0
-                    strokeFrom: 5
-                    strokeTo: 0
-            }]
-        }
+        despawnEffect: none
         hitEffect: {
             type: MultiEffect
-            effects: [{
+            effects: [
+                {
                     type: ParticleEffect 
                     colorFrom: ff9548
-                    colorTo: c75432
+                    colorTo: ff9548
                     particles: 20
-                    cone: 360
-                    length: 0
-                    baseLength: 66
-                    lightScl: 3
-                    lightOpacity: 2
-                    spin: 0
-                    sizeFrom: 3
+                    length: 66
+                    sizeFrom: 2.5
                     sizeTo: 0 
-                    offset: 1
+                    lifetime: 40
+                    interp: pow5Out
+                    sizeInterp: pow2In
+                }
+                {
+                    type: ParticleEffect 
+                    colorFrom: f57138
+                    colorTo: f57138
+                    particles: 12
+                    length: 42
+                    sizeFrom: 4
+                    sizeTo: 0 
+                    lifetime: 40
+                    interp: pow5Out
+                    sizeInterp: pow2In
+                }
+                {
+                    type: ParticleEffect 
+                    colorFrom: a1a1a1
+                    colorTo: a1a1a100
+                    particles: 7
+                    length: 26
+                    baseLength: 10
+                    sizeFrom: 4.5
+                    sizeTo: 0 
+                    lifetime: 40
+                    interp: pow5Out
+                    sizeInterp: pow2In
                 }
                 {
                     type: WaveEffect
                     colorFrom: ff9548
                     colorTo: c75432
-                    sizeFrom: 66
+                    sizeFrom: 10
                     sizeTo: 66
-                    lightScl: 3
-                    lightOpacity: 1
-                    sides: 0
                     lifetime: 40
                     rotation: 0
                     strokeFrom: 5

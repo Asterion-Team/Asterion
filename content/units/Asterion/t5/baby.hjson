@@ -6,16 +6,20 @@ speed: 0.4
 flying: false
 research: rumble
 hovering: true
-hitSize: 30
+hitSize: 32
 itemCapacity: 0
-targetAir: true
-targetGround: true
+allowLegStep: true
+legSpeed: 0.09
+legPairOffset: 3
+legBaseOffset: 9
 legLength: 45
-legMoveSpace: 0.8
-rippleScale: 2.5
+legMoveSpace: 0.6
+rippleScale: 3
 legCount: 6
-lockLegBase: true
-legExtension: -9
+legExtension: -15
+legLengthScl: 0.93
+legTrns: 0.5
+maxStretch: 1.2
 stepShake: 1
 outlineRadius: 4
 drownTimeMultiplier: 8
@@ -33,8 +37,8 @@ weapons: [
     mirror: true
     recoil: 3
     shake: 6
-    reload: 45
-    shootSound: artillery
+    reload: 60
+    shootSound: shootRipple
     rotate: true
     rotateSpeed: 2
     shootCone: 80
@@ -45,7 +49,8 @@ weapons: [
     }
     bullet: {
         type: ArtilleryBulletType
-        splashDamage: 280
+        splashDamage: 98
+        damage: 100
         splashDamageRadius: 55
         speed: 10
         lifetime: 35
@@ -120,7 +125,7 @@ weapons: [
     reload: 40
     shake: 1.5
     baseRotation: -45
-    shootSound: missile
+    shootSound: shootMissile
     rotate: true
     rotationLimit: 40
     rotateSpeed: 0.7
@@ -133,27 +138,26 @@ weapons: [
     }
 
     bullet: {
-        type: BasicBulletType
-        homingRange: 70
-        homingPower: 0.25
-        homingDelay: 10
-        damage: 65
+        type: MissileBulletType
+        followAimSpeed: 1.5
+        damage: 35
+        splashDamage: 27
+        splashDamageRadius: 15
         pierceArmor: true
-        drag: -0.002
-        sprite: missile-large
-        lifetime: 90
+        lifetime: 50
         width: 8
         height: 12
-        speed: 3.5
+        speed: 4
         incendChance: 1
         incendSpread: 6
         incendAmount: 3
         backColor: c75432 
         frontColor: ff9548
+        hitColor: ff9548
         trailColor: c75432 
-        trailWidth: 2.5
+        trailWidth: 1
         trailLength: 6
-
+        hitShake: 1.75
         shootEffect: {
             type: ParticleEffect 
             colorFrom: ff9548
@@ -161,47 +165,47 @@ weapons: [
             particles: 7
             cone: 20
             length: 7
-            baseLength: 0
-            lightScl: 3
-            lightOpacity: 2
-            spin: 0
             sizeFrom: 2
             sizeTo: 0 
-            offset: 1
         }
-        despawnEffect:{
-            type: ParticleEffect 
-            colorFrom: ff9548
-            colorTo: c75432
-            particles: 15
-            cone: 360
-            length: 15
-            baseLength: 0
-            lightScl: 3
-            lightOpacity: 2
-            lifetime: 55
-            spin: 0
-            sizeFrom: 2.5
-            sizeTo: 0 
-            offset: 0
-        }
-        hitEffect:{
-            type: ParticleEffect 
-            colorFrom: ff9548
-            colorTo: c75432
-            particles: 15
-            cone: 360
-            length: 15
-            baseLength: 0
-            lightScl: 3
-            lightOpacity: 2
-            lifetime: 55
-            spin: 0
-            sizeFrom: 2.5
-            sizeTo: 0 
-            offset: 0
-        }
-    }}
+        despawnEffect: none
+        hitEffect: [
+            {
+                type: ParticleEffect 
+                colorFrom: ff9548
+                colorTo: ff9548
+                particles: 8
+                length: 32
+                lifetime: 20
+                sizeFrom: 2.5
+                sizeTo: 0 
+            }
+            {
+                type: ParticleEffect 
+                colorFrom: ff9548
+                colorTo: ff9548
+                particles: 5
+                line: true
+                length: 18
+                lifetime: 20
+                lenFrom: 5
+                lenTo: 0 
+                strokeFrom: 1
+                strokeTo: 1
+            }
+            {
+                type: WaveEffect
+                sizeFrom: 2
+                sizeTo: 8
+                strokeFrom: 2
+                strokeTo: 0
+                colorFrom: ff9548
+                colorTo: ff9548
+                lifetime: 20
+            }
+        ]
+    }
+    }
 { 
 name: baby-bomb
     

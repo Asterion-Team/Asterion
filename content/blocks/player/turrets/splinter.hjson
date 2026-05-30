@@ -27,6 +27,7 @@ targetGround: true
 ammoTypes: {
 
 	whitorite: {
+		buildingDamageMultiplier: 0.25
 		speed: 10
 		pierce: true
 		pierceCap: 3
@@ -214,6 +215,7 @@ ammoTypes: {
 	}
 	
 	irmenite: {
+		buildingDamageMultiplier: 0.25
 		type: BasicBulletType
 		pierce: true
 		pierceCap: 5
