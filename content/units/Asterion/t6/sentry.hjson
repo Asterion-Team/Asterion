@@ -15,7 +15,7 @@ targetAir: true
 targetGround: true
 outlineRadius: 6
 rotateSpeed: 0.6
-health: 68000
+health: 42000
 armor: 50
 faceTarget: true
 fallSpeed: 0.01
@@ -61,12 +61,12 @@ weapons: [
   mirror: true
   reload: 150
   shake: 11
-  shootSound: laser-large-shot-1
+  shootSound: shootBlast
   bullet: {
    type: BasicBulletType
-   damage: 1250
-   splashDamage: 175
-   splashDamageRadius: 36
+   damage: 350
+   splashDamage: 200
+   splashDamageRadius: 64
    speed: 10
    frontColor: 79eef2
    scaleLife: true
@@ -208,7 +208,7 @@ weapons: [
     drag: 0.06
     trailLength: 5
     trailWidth: 0.5
-    splashDamage: 175
+    splashDamage: 73
     splashDamageRadius: 32
     parts: [
     {
@@ -249,7 +249,7 @@ weapons: [
     type: BasicBulletType
     speed: 8
     lifetime: 20
-    damage: 65
+    damage: 22
     homingPower: 0.5
     homingRadius: 32
     width: 9
@@ -288,7 +288,7 @@ weapons: [
   name: sentry-weapon-bullet
   x: 32.5
   y: 9.5
-  shootCone: 45
+  shootCone: 180
   mirror: true
   rotate: true
   rotateSpeed: 0.7
@@ -296,7 +296,7 @@ weapons: [
   alternate: false
   layerOffset: -0.0001
   shake: 2
-  shootSound: machine-blaster
+  shootSound: shootPlasma2
   rotationLimit: 45
   reload: 15
   inaccuracy: 3
@@ -306,9 +306,8 @@ weapons: [
   }
   bullet: {
    type: BasicBulletType
-   homingPower: 0.3
-   homingRadius: 48
-   damage: 75
+   followAimSpeed: 6
+   damage: 55
    width: 10
    height: 12
    trailLength: 7
@@ -329,7 +328,7 @@ weapons: [
     }
    ]
    speed: 10
-   lifetime: 32
+   lifetime: 40
    shootEffect: {
    type: ParticleEffect
     cone: 5
@@ -381,7 +380,7 @@ weapons: [
  }
  {
   name: sentry-weapon-bullet
-  shootCone: 65
+  shootCone: 180
   x: 37.5
   y: -14.5
   mirror: true
@@ -391,7 +390,7 @@ weapons: [
   alternate: false
   layerOffset: -0.0001
   shake: 2
-  shootSound: machine-blaster
+  shootSound: shootPlasma2
   rotationLimit: 75
   reload: 15
   inaccuracy: 3
@@ -401,9 +400,8 @@ weapons: [
   }
   bullet: {
    type: BasicBulletType
-   homingPower: 0.35
-   homingRadius: 50
-   damage: 75
+   followAimSpeed: 6
+   damage: 55
    width: 10
    height: 12
    trailLength: 7
@@ -412,7 +410,7 @@ weapons: [
    backColor: 79eef2
    frontColor: 79eef2
    speed: 10
-   lifetime: 32
+   lifetime: 40
    parts: [
     {
      type: FlarePart
@@ -474,66 +472,12 @@ weapons: [
    ]
   }
  }
- {
-  type: PointDefenseWeapon
-  x: 0
-  y: -13.75
-  shake: 2
-  rotate: true
-  rotateSpeed: 999
-  targetSwitchInterval: 1
-  targetInterval: 1
-  reload: 7
-  shootSound: laserShoot
-  bullet: {
-    maxRange: 440
-    damage: 250
-    shootEffect: sparkShoot
-    hitEffect: pointHit
-  }
- }
- {
-  type: PointDefenseWeapon
-  x: -1
-  y: -13.75
-  shake: 2
-  rotate: true
-  rotateSpeed: 999
-  targetSwitchInterval: 1
-  targetInterval: 1
-  reload: 5
-  shootSound: laserShoot
-  bullet: {
-    maxRange: 440
-    damage: 100
-    shootEffect: sparkShoot
-    hitEffect: pointHit
-  }
- }
- {
-  type: PointDefenseWeapon
-  x: 1
-  y: -13.75
-  shake: 2
-  rotate: true
-  rotateSpeed: 999
-  targetSwitchInterval: 1
-  targetInterval: 1
-  reload: 5
-  shootSound: laserShoot
-  bullet: {
-    maxRange: 440
-    damage: 100
-    shootEffect: sparkShoot
-    hitEffect: pointHit
-  }
- }
 ]
 abilities: [
  {
       type: EnergyFieldAbility
       maxTargets: 12
-      damage: 95
+      damage: 215
       color: 79eef2
       status: as-underclock
       statusDuration: 150

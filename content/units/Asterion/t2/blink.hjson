@@ -8,7 +8,7 @@ hovering : true
 canDrown: false
 hitSize : 18
 health : 600
-speed : 1.6
+speed : 1.1
 accel : 0.3
 armor : 8
 name : Blink
@@ -47,15 +47,11 @@ abilities: [
         colorFrom: 79eef2
         colorTo: 42679d
         particles: 1
-        cone: 360
+        lifetime: 15
         length: 0
         baseLength: 0
-        lightScl: 2.5
-        lightOpacity: 2
-        spin: 0
-        sizeFrom: 2.5
+        sizeFrom: 2
         sizeTo: 0 
-        offset: 0
         }
         type : MoveEffectAbility
         minVelocity: 0
@@ -67,44 +63,50 @@ abilities: [
 
 research: instant
 
-weapons: [{
+weapons: [
+    {
     
     baseRotation: 0
     shootCone: 360
     mirror: false
-    reload: 90
+    reload: 240
     inaccuracy: 3
     xRand: 35
+    yRand: 15
     name: blink-weapon
-    shootSound: shockBlast
+    shootSound: shootCleroi
     top: true
     y: -2
     x: 0
+    shake: 2
+    shootStatus: fast
+    shootStatusDuration: 60
     shoot: {
-        shots: 3
+        shots: 5
+        shotDelay: 8
     }
     
     bullet : {
         hitEffect: {
-        type: ParticleEffect
-        cone: 35
-        particles: 7
-        sizeFrom: 3
-        sizeTo: 0
-        length: -15
-        lifetime: 20
-        colorFrom: 79eef2
-        colorTo: 74c1e8
+            type: ParticleEffect
+            cone: 35
+            particles: 7
+            sizeFrom: 3
+            sizeTo: 0
+            length: -15
+            lifetime: 20
+            colorFrom: 79eef2
+            colorTo: 74c1e8
         }
         despawnEffect: {
-        type: ParticleEffect
-        particles: 4
-        sizeFrom: 4
-        sizeTo: 0
-        length: 20
-        lifetime: 20
-        colorFrom: 79eef2
-        colorTo: 74c1e8
+            type: ParticleEffect
+            particles: 4
+            sizeFrom: 4
+            sizeTo: 0
+            length: 20
+            lifetime: 20
+            colorFrom: 79eef2
+            colorTo: 74c1e8
         }
         smokeEffect: none
         shootEffect: [
@@ -142,9 +144,7 @@ weapons: [{
         width: 15
         sprite: "mine-bullet"
         type: BasicBulletType
-        homingPower: 1
-        homingRadius: 45
-        homingDelay: 20
+        followAimSpeed: 2
         frontColor: 79eef2
         backColor: 74c1e8
         trailColor: 74c1e8

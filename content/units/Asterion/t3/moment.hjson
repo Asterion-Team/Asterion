@@ -7,8 +7,8 @@ engineSize : 0
 hovering : true
 canDrown: false
 hitSize : 28
-health : 2360
-speed : 1.6
+health : 1160
+speed : 2.2
 accel : 0.25
 armor : 11
 name : Moment
@@ -35,15 +35,11 @@ abilities: [
         colorFrom: 79eef2
         colorTo: 42679d
         particles: 1
-        cone: 360
+        lifetime: 15
         length: 0
         baseLength: 0
-        lightScl: 2.5
-        lightOpacity: 2
-        spin: 0
-        sizeFrom: 3
+        sizeFrom: 2
         sizeTo: 0 
-        offset: 0
         }
         type : MoveEffectAbility
         minVelocity: 0
@@ -51,22 +47,37 @@ abilities: [
         y : 0.5
         x : 0
     }
+    {
+        type: ShieldArcAbility
+        drawArc: true
+        max: 450
+        regen: 0.5
+        cooldown: 300
+        radius: 22
+        angle: 120
+        width: 3
+    }
 ]
 
 research: blink
 
-weapons: [{
+weapons: [
+    {
     shootY: 0
     baseRotation: 0
     shootCone: 90
     inaccuracy: 30
     mirror: true
     recoil: 0
-    reload: 15
+    reload: 20
     name: blink-weapon
-    shootSound: malignShoot
+    shootSound: shootMalign
+    shootSoundVolume: 0.45
     rotate: false
     top: true
+    shootStatus: slow
+    shootStatusDuration: 60
+    shake: 2.25
     y: -2
     x: 13
     parts: [
@@ -134,26 +145,43 @@ weapons: [{
         keepVelocity: false
         lifetime: 30
         damage: 14
+        splashDamage: 11
+        splashDamageRadius: 21
         height: 15
         speed: 6
         width: 13
         type: BasicBulletType
         shootEffect: {
-        type: WaveEffect
-        sides: 3
-        sizeTo: 10
-        sizeFrom: 3
-        strokeFrom: 2
-        strokeTo: 0
-        colorFrom: 74c1e8
-        colorTo: 74c1e8
+            type: WaveEffect
+            sides: 3
+            sizeTo: 10
+            sizeFrom: 3
+            strokeFrom: 2
+            strokeTo: 0
+            colorFrom: 74c1e8
+            colorTo: 74c1e8
         }
         homingPower: 0.8
         homingDelay: 8
         frontColor: 79eef2
         backColor: 74c1e8
         trailColor: 74c1e8
-        trailWidth: 2.8
+        trailWidth: 2
+        trailRotation: true
+        trailInterval: 1
+        trailEffect: {
+            particles: 3
+            line: true
+            length: -14
+            lenFrom: 4
+            lenTo: 0
+            strokeFrom: 1
+            strokeTo: 1
+            colorFrom: 74c1e8
+            colorTo: 74c1e8
+            lifetime: 15
+            cone: 45
+        }
         trailLength: 14
         fragMinLife: 1
         fragBullets: 3

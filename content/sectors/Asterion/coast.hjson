@@ -1,0 +1,16 @@
+captureWave: 15
+planet: asterion
+sector: 123
+difficulty: 2
+
+research: {
+parent: gorge
+requiresUnlock: false
+    objectives: [
+        {
+            type: SectorComplete
+            preset: gorge
+        }
+   ]
+}
+

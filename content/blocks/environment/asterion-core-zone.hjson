@@ -1,0 +1,4 @@
+type: Floor
+name: Asterion core zone
+variants: 3
+allowCorePlacement: true

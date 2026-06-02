@@ -35,20 +35,16 @@ abilities: [
         colorFrom: 79eef2
         colorTo: 42679d
         particles: 1
-        cone: 360
+        lifetime: 15
         length: 0
         baseLength: 0
-        lightScl: 2
-        lightOpacity: 2
-        spin: 0
         sizeFrom: 2
         sizeTo: 0 
-        offset: 0
         }
         type : MoveEffectAbility
         minVelocity: 0
         interval: 0.00000001
-        y : -3
+        y : -1
         x : 0
     }
 ]
@@ -59,10 +55,11 @@ weapons: [
     shootCone: 70
     mirror: true
     recoil: 0
-    reload: 5
+    reload: 10
     name: instant-weapon
-    shootSound: blaster
+    shootSound: shootElude
     top: true
+    shootY: 0
     y: -3
     x: 8
     parts: [
@@ -70,33 +67,30 @@ weapons: [
      type: ShapePart
      hollow: true
      layer: 110
-     sides: 3
+     sides: 5
      rotateSpeed: 0.9
      radiusTo: 3.5
      radius: 3.5
      stroke: 0
-     strokeTo: 0.5
+     strokeTo: 1.1
      color: 74c1e8
      colorTo: 74c1e8
      }
      {
      type: ShapePart
-     hollow: true
+     hollow: false
      layer: 110
      sides: 3
-     rotateSpeed: 0.9
-     radiusTo: 3.5
-     radius: 3.5
-     stroke: 0
-     strokeTo: 0.5
+     rotateSpeed: 2
+     radiusTo: 1.75
+     radius: 0
      color: 74c1e8
      colorTo: 74c1e8
-     rotation: 60
      }
     ]
     bullet : {
         lifetime: 20
-        damage: 9
+        damage: 13
         height: 10
         speed: 5
         width: 10
@@ -118,17 +112,31 @@ weapons: [
         strokeFrom: 2
         strokeTo: 0
         }
-        hitEffect: {
-        type: WaveEffect
-        sides: 4
-        sizeFrom: 0
-        sizeTo: 6
-        colorFrom: 79eef2
-        colorTo: 74c1e800
-        strokeFrom: 2
-        strokeTo: 0
-        lifetime: 15
-        }
+        hitEffect: [
+            {
+                type: WaveEffect
+                sides: 4
+                sizeFrom: 0
+                sizeTo: 6
+                colorFrom: 79eef2
+                colorTo: 79eef2
+                strokeFrom: 2
+                strokeTo: 0
+                lifetime: 15
+            }
+            {
+                particles: 3
+                line: true
+                length: 19
+                lenFrom: 5.75
+                lenTo: 0
+                strokeFrom: 0.9
+                strokeTo: 0.9
+                colorFrom: 79eef2
+                colorTo: 79eef2
+                lifetime: 15
+            }
+        ]
         despawnEffect: {
         type: WaveEffect
         sizeFrom: 2
