@@ -1,5 +1,5 @@
-type: DirectionLiquidBridge
 name: Irmenite bridge conduit
+description: "Allows liquids to cross impassable surfaces."
 category: liquid
 research: irmenite-router
 liquidCapacity: 60

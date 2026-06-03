@@ -1,0 +1,51 @@
+size: 4
+hasLiquids: true
+name: Magnetite deep drill
+description: "Drills magnetite from underground clusters. Methane and kryoline are needed to support the drilling process."
+requirements: [
+    whitorite/95
+    pyrite/145
+    irmenite/45
+    zincum/65
+]
+category: production
+attribute: "magnetite-tiles"
+baseEfficiency: 0.25
+consumes: {
+    power: 3
+    liquids: [
+        methane/0.1
+        kryoline/0.1
+    ]
+}
+craftTime: 30
+outputItem: "magnetite/1"
+boostScale: 0.0625
+drawer: [
+    {
+        type: DrawRegion
+        suffix: "-bottom"
+    }
+    {
+        type: DrawLiquidTile
+        drawLiquid: methane
+    }
+    {
+        type: DrawRegion
+        suffix: "-bottom-2"
+    }
+    {
+        type: DrawLiquidRegion
+        suffix: "-kryoline"
+        drawLiquid: kryoline
+    }
+    {
+        type: DrawRegion
+        suffix: "-rotator"
+        spinSprite: true
+        rotateSpeed: 2
+    }
+    {
+        type: DrawDefault
+    }
+]

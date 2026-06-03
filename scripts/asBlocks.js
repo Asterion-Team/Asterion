@@ -22,6 +22,21 @@ const magnetiteConveyor = extend(StackConveyor,"magnetite-conveyor", {});
 
 const whitoriteUnloader = extend(Unloader, "whitorite-unloader", {});
 
+// Liquid 
+
+const irmeniteConduit = extend(Conduit, "irmenite-conduit", {});
+
+const irmeniteBridge = extend(DirectionLiquidBridge, "irmenite-bridge", {});
+
+const irmeniteRouter = extend(LiquidRouter, "irmenite-router", {});
+
+const irmeniteJunction = extend(LiquidJunction, "irmenite-junction", {});
+
+const irmenitePump = extend(Pump, "irmenite-pump", {});
+
+const irmeniteTank = extend(LiquidRouter, "irmenite-tank", {});
+
+
 // Walls, Стены (НУ А ХУЛЕ)
 
 const whitoriteWall = extend(Wall, "whitorite-wall", {});
@@ -72,4 +87,12 @@ silicateWallLarge.buildType = () => extend(Wall.WallBuild, silicateWallLarge, {
         Fx.healBlockFull.at(this.x, this.y, this.block.size, Color.valueOf("ef9ef5"), this.block);
     }
   }
-})
+});
+
+//Production
+
+const impulseDrill = extend(BurstDrill, "impulse-drill", {});
+
+const methaneExtractor = extend(AttributeCrafter, "methane-extractor", {});
+
+const magnetiteDeepDrill = extend(AttributeCrafter, "magnetite-deep-drill", {});

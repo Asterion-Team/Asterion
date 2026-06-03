@@ -1,0 +1,7 @@
+name: Irmenite junction
+description: "Allows two perpendicular flows of liquids to cross, without mixing those."
+category: liquid
+research: irmenite-router
+requirements: [
+    irmenite/6
+]

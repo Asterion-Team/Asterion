@@ -4,7 +4,7 @@ description: "An aggressive cryolitic acid used in advanced cooling systems."
 color: "579adc"
 gas: false
 gasColor: "f39560"
-barColor: "f39560"
+barColor: "579adc"
 lightColor: "476fbfd3"
 coolant: true;
 

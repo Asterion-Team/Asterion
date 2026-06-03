@@ -1,5 +1,5 @@
-type: LiquidRouter
 name: Irmenite liquid router
+description: "Distributes fluid flows"
 category: liquid
 research: irmenite-conduit
 solid: false

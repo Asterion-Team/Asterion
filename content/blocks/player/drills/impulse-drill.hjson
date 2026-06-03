@@ -1,4 +1,3 @@
-type: BurstDrill
 name: "Impulse Drill"
 description: "Average drill, hits the ground to collect minerals."
 category: production

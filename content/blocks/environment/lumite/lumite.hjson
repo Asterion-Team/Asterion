@@ -4,3 +4,6 @@ wall: lumite-wall
 //decoration: 
 lightRadius: 16
 lightColor: "6a7b8f48"
+attributes: {
+    magnetite-tiles: 0.75
+}

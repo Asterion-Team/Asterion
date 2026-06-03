@@ -3,6 +3,7 @@ name: "Quartz Sand"
 variants: 5
 attributes: {
 	water: 0.50
+	magnetite-tiles: 0.25
 }
 itemDrop: quartz
 wall: quartz-sand-wall

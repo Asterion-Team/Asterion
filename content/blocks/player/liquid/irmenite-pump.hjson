@@ -1,0 +1,22 @@
+size: 2
+name: Irmenite pump
+description: "Simple pump, just pumps liquid"
+requirements: [
+    pyrite/35
+    irmenite/60
+]
+category: liquid
+consumes: {
+    power: 0.5
+}
+pumpAmount: 0.0625
+liquidCapacity: 60
+research: {
+    parent: irmenite-conduit
+    objectives: [
+        {
+            type: OnSector
+            preset: coast
+        }
+    ]
+}

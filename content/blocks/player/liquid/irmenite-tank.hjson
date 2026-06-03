@@ -1,0 +1,11 @@
+name: Irmenite tank
+requirements: [
+    whitorite/20
+    irmenite/40
+]
+size: 2
+category: liquid
+description: "Stores liquids"
+solid: true
+liquidCapacity: 1200
+health: 625

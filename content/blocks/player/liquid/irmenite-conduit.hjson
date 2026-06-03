@@ -1,5 +1,5 @@
-type: Conduit
 name: Irmenite conduit
+description: "Moves liquid forward"
 category: liquid
 research: faction-orion
 researchCostMultiplier: 1

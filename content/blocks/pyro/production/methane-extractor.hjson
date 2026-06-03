@@ -1,4 +1,3 @@
-type: AttributeCrafter
 size: 3
 category: production
 research: {
@@ -47,6 +46,15 @@ drawer: [
     {
         type: DrawLiquidTile
         drawLiquid: methane
+    }
+    {
+        type: DrawParticles
+        color: 828282
+        alpha: 0.5
+        particleSize: 2
+        particles: 15
+        particleRad: 10
+        particleLife: 100
     }
     {
         type: DrawDefault

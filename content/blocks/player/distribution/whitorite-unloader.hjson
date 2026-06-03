@@ -13,5 +13,5 @@ speed: 4
 solid: true
 
 allowCoreUnload: true
-research: irmenite-container
+research: whitorite-container
 researchCostMultiplier: 0.05
