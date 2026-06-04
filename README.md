@@ -6,7 +6,7 @@ Main developers:
 - Sputnuc — Main developer and head of the team; 
 - Bloody_Ocean — mainle spriter, but also alot helped with code;
 - Router Of Time (R.O.T) — mainly coder;
-- 𝐀𝐧𝐃𝐚𝐬̌𝐲𝐤 (AnDashik) — Second main developer, coder & sprites;
+- 𝐀𝐧𝐃𝐚𝐬̌𝐲𝐤 (AnDashik) — Second main developer, coder & sprites.
 Special thanks to:
 - 𝒜𝒸𝑒 (Ace) — Music and some help with sprites;
 - Cirrus (CY4NIDE) — some help with sprites;
