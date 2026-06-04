@@ -1,15 +1,17 @@
-# Welcome to planet Asterion
-Hello! Welcome to Asterion!
-This is collaboration mod.
+# Welcome to the Asterion!
+Asterion is collaboration mod made by team of pretty random dudes, who like Mindustry modding, though you may know someone like ItzCraft or Sputnuc.
 
-Authors:
-- Sputnuc - Main Creator 
-- Bloody_Ocean - Units spriter
-- Router Of Time (R.O.T) - Coder
-- AnDashik - Second main creator
-- Reactor - Coder
-- ACE - Composer
-- CY4NIDE - Coder, spriter
+# Developers / member of the team.
+Main developers:
+- Sputnuc — Main developer and head of the team; 
+- Bloody_Ocean — mainle spriter, but also alot helped with code;
+- Router Of Time (R.O.T) — mainly coder;
+- 𝐀𝐧𝐃𝐚𝐬̌𝐲𝐤 (AnDashik) — Second main developer, coder & sprites;
+Special thanks to:
+𝒜𝒸𝑒 (Ace) — Music and some help with sprites;
+Cirrus (CY4NIDE) — some help with sprites;
+Sundered — help with some sprites;
+Los Sasikos — some help with balancing and coding;
 
 # Links
-[![Discord](https://img.shields.io/discord/1278276676811358238?style=for-the-badge&color=ff9199&logo=discord&label=Asterion%20Server)](https://discord.gg/PcTnJ96mwf)
+[![Discord](https://img.shields.io/discord/1278276676811358238?style=for-the-badge&color=ff9199&logo=discord&label=Asterion%20Server)](https://discord.gg/mu3rYKHFBM)
