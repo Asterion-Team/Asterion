@@ -8,10 +8,10 @@ Main developers:
 - Router Of Time (R.O.T) — mainly coder;
 - 𝐀𝐧𝐃𝐚𝐬̌𝐲𝐤 (AnDashik) — Second main developer, coder & sprites;
 Special thanks to:
-𝒜𝒸𝑒 (Ace) — Music and some help with sprites;
-Cirrus (CY4NIDE) — some help with sprites;
-Sundered — help with some sprites;
-Los Sasikos — some help with balancing and coding;
+- 𝒜𝒸𝑒 (Ace) — Music and some help with sprites;
+- Cirrus (CY4NIDE) — some help with sprites;
+- Sundered — help with some sprites;
+- Los Sasikos — some help with balancing and coding;
 
 # Links
 [![Discord](https://img.shields.io/discord/1278276676811358238?style=for-the-badge&color=ff9199&logo=discord&label=Asterion%20Server)](https://discord.gg/mu3rYKHFBM)
