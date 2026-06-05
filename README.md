@@ -9,6 +9,7 @@ Main developers:
 - 𝐀𝐧𝐃𝐚𝐬̌𝐲𝐤 (AnDashik) — Second main developer, coder & sprites.
 
 Special thanks to:
+- *ItzCraf — (AnDashik's) therapist and moral support;
 - 𝒜𝒸𝑒 (Ace) — Music and some help with sprites;
 - Cirrus (CY4NIDE) — some help with sprites;
 - Sundered — help with some sprites;
