@@ -38,8 +38,7 @@ weapons: [
     y: -0.5
     layerOffset: -0.01
     mirror: true
-    rotate: true
-    rotationLimit: 22
+    rotate: false
     recoil: 1.5
     reload: 25
     shootSound: shootAvert

@@ -1,0 +1,238 @@
+type: PowerTurret
+outlineColor: 22262b
+name: Spark
+description: Releases ball lightning that strikes everything in a small radius.
+size: 4
+shootSound: shootArc
+range: 180
+moveWhileCharging: false
+scaledHealth: 125
+consumes: {
+ power: 5
+ coolant: {
+    amount: 0.25
+  }
+}
+reload: 180
+hasPower: true
+shoot: {
+    firstShotDelay: 60
+  }
+shake: 2
+shootType: {
+  followAimSpeed: 0.8
+  type: BasicBulletType
+  sprite: circle-bullet
+  chargeEffect: [
+    {
+     type: ParticleEffect
+     particles: 1
+     length: 0
+     baseLength: 0
+     cone: 0
+     lifetime: 60
+     sizeFrom: 0
+     sizeTo: 4
+     colorFrom: aaf3e7
+     colorTo: aaf3e7
+	}
+	//Particles
+	{
+	type: ParticleEffect
+	particles: 11
+	offset: 60
+	sizeFrom: 0
+	sizeTo: 4
+	length: 45
+	baseLength: -45
+	interp: pow3In
+	sizeInterp: pow5In
+	lifetime: 60
+	colorFrom: aaf3e700
+	colorTo: aaf3e7
+	}
+	//Wawe
+	{
+	type: WaveEffect
+	sizeFrom: 50
+	sizeTo: 0
+	strokeFrom: 1
+	strokeTo: 5
+	colorFrom: aaf3e700
+	colorTo: aaf3e7
+	interp: pow3In
+	}
+  ]
+  shootEffect: [
+	{
+		particles: 7
+		line: true
+		lenFrom: 10
+		lenTo: 0
+		strokeFrom: 1
+		strokeTo: 1
+		colorFrom: 94d1c7
+		colorTo: 94d1c7
+		lifetime: 60
+		length: -35
+		cone: 60
+		interp: pow5Out
+		sizeInterp: linear
+	}
+	{
+		particles: 5
+		sizeFrom: 2
+		sizeTo: 0
+		colorFrom: 94d1c7
+		colorTo: 94d1c7
+		lifetime: 60
+		length: -55
+		cone: 45
+		interp: pow5Out
+		sizeInterp: linear
+
+	}
+  ]
+ backSprite: circle-bullet-back
+ damage: 0
+ collides: false
+ collidesAir: false
+ collidesGround: false
+ splashDamage: 15
+ splashDamageRadius: 32
+ width: 16
+ height: 16
+ speed: 4
+ drag: 0.02
+ lifetime: 90
+ shrinkY: 0
+ frontColor: 94d1c7
+ backColor: 94d1c7
+ trailLength: 8
+ trailWidth: 4
+ trailColor: 94d1c7
+ lightningDamage: 35
+ lightningLength: 12
+ lightningColor: 94d1c7
+ buildingDamageMultiplier: 0.1
+ lightning: 16
+ lightningCone: 360
+ bulletInterval: 5
+ intervalBullets: 7
+ intervalAngle: 180
+ hitSound: explosionNavanax
+ hitSoundVolume: 1
+ hitShake: 3
+ intervalBullet: {
+	type: LightningBulletType
+	buildingDamageMultiplier: 0.1
+	lightningLength: 9
+	damage: 17
+	lightningColor: 94d1c7
+  }
+  despawnEffect: none
+  hitEffect: [
+	{
+		type: ParticleEffect
+		particles: 9
+		sizeFrom: 3
+		sizeTo: 0
+		length: 52
+		interp: pow3Out
+		sizeInterp: pow4In
+		lifetime: 35
+		colorFrom: 94d1c7
+		colorTo: aaf3e7
+	}
+	{
+		type: ParticleEffect
+		particles: 17
+		sizeFrom: 1
+		sizeTo: 0
+		length: 62
+		interp: pow3Out
+		sizeInterp: pow4In
+		lifetime: 35
+		colorFrom: 94d1c7
+		colorTo: aaf3e7
+	}
+	{
+		type: ParticleEffect
+		particles: 6
+		line: true
+		lenFrom: 9.5
+		sizeTo: 0
+		strokeFrom: 1
+		strokeTo: 1
+		length: 52
+		interp: pow3Out
+		sizeInterp: pow4In
+		lifetime: 35
+		colorFrom: 94d1c7
+		colorTo: 94d1c7
+	}
+	{
+		type: WaveEffect
+		sizeFrom: 4
+		sizeTo: 32
+		strokeFrom: 3
+		strokeTo: 0
+		lifetime: 35
+		colorFrom: 94d1c7
+		colorTo: 94d1c7
+	}
+  ]
+ }
+category: turret
+requirements: [
+ whitorite/145
+ pyrite/35
+ irmenite/65
+ blacktite/50
+]
+research: {
+ parent: splinter
+ planet: as-asterion
+}
+ drawer: {
+  type: DrawTurret
+  basePrefix: ast-
+  parts: [
+    {
+	type: RegionPart
+	suffix: -glow
+	progress: warmup
+	blending: additive
+	color: "5cc47a00"
+	colorTo: 96ffd3a1
+	top: true
+	outline: false
+	}
+	{
+	type: RegionPart
+	suffix: -sidesbottom
+	under: true
+	layer: -2
+	}
+	{
+	type: RegionPart
+	suffix: -side
+	under: true
+	layer: -1
+	mirror: true
+	progress: warmup
+	heatProgress: recoil
+	heatColor: 96ffd3a1
+	moveX: 1.5
+	moves: [
+		{
+		type: PartMove
+		progress: recoil
+		X: 2.2
+		Y: -0.25
+		rot: -10
+		}
+	]
+	}
+  ]
+}

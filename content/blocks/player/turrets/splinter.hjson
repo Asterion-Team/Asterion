@@ -1,5 +1,4 @@
 type: ItemTurret
-//outlineColor: "22262b"
 outlineColor: "1c1d1f"
 name: "Splinter"
 description: "Shoots piercing spears."

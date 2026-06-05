@@ -1,0 +1,33 @@
+size: 3
+category: production
+requirements: [
+    whitorite/85
+    pyrite/75
+    irmenite/45
+    blacktite/30
+]
+liquidBoostIntensity: 1
+name: "Rotary drill"
+consumes: {
+    power: 1
+    liquids: [
+        methane/0.05
+    ]
+}
+
+tier: 4
+drillTime: 135
+rotateSpeed: 5
+drillEffectChance: 0.04
+
+research: {
+    parent: impulse-drill
+/*
+    objectives: [
+        {
+            type: SectorComplete
+            preset: coast
+        }
+    ]
+*/
+}

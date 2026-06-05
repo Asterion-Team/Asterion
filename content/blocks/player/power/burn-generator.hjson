@@ -1,0 +1,41 @@
+type: ConsumeGenerator
+size: 2
+name: Burn generator
+category: power
+requirements: [
+    whitorite/35
+    pyrite/80
+    irmenite/30
+]
+consumes: {
+    item: ashotite
+}
+itemCapacity: 10
+itemDuration: 240
+powerProduction: 1
+research: {
+    parent: vent-burner
+    objectives: [
+        {
+            type: SectorComplete
+            preset: gorge
+        }
+        {
+            type: Research
+            content: ashotite
+        }
+    ]
+}
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+	{
+	    type: DrawDefault
+	}
+	{
+        type: DrawGlowRegion
+        color: e6a1ffb4
+	}
+  ]
+}

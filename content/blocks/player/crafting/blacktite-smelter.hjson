@@ -1,0 +1,50 @@
+type: GenericCrafter
+size: 3
+category: crafting
+requirements: [
+    whitorite/60
+    pyrite/75
+    irmenite/50
+    zincum/35
+]
+consumes: {
+    power: 2.5
+    items: [
+        whitorite/4
+        zincum/2
+    ]
+    liquids: [
+        methane/0.25
+    ]
+}
+
+outputItem: blacktite/2
+craftTime: 60
+research: {
+    parent: core-force
+    objectives: [
+        {
+            type: SectorComplete
+            preset: coast
+        }
+    ]
+}
+drawer: [
+    {
+        type: DrawRegion
+        suffix: -bottom
+    }
+    {
+        type: DrawLiquidTile
+        drawLiquid: methane
+        padding: 1
+    }
+    {
+        type: DrawArcSmelt
+        circleStroke: 0.8
+        particleLen: 1.3
+    }
+    {
+        type: DrawDefault
+    }
+]

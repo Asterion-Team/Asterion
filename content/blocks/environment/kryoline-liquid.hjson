@@ -18,5 +18,5 @@ supportsOverlay: true
 placeableOn: true
 
 emitLight: true
-lightRadius: 37
+lightRadius: 26
 lightColor: "6BA2FFFF" //c5cf577a

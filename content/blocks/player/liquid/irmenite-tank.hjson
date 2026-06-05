@@ -9,3 +9,4 @@ description: "Stores liquids"
 solid: true
 liquidCapacity: 1200
 health: 625
+research: irmenite-pump

@@ -93,6 +93,8 @@ silicateWallLarge.buildType = () => extend(Wall.WallBuild, silicateWallLarge, {
 
 const impulseDrill = extend(BurstDrill, "impulse-drill", {});
 
+const rotaryDrill = extend(Drill, "rotary-drill", {});
+
 const methaneExtractor = extend(AttributeCrafter, "methane-extractor", {});
 
 const magnetiteDeepDrill = extend(AttributeCrafter, "magnetite-deep-drill", {});

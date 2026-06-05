@@ -22,6 +22,32 @@ health: 1280
 armor: 12
 range: 190
 
+abilities: [
+    {
+        type: OverloadAbility
+        x: 0
+        y: -6
+        reload: 600
+        duration: 300
+        shootInterval: 11
+        lightningLength: 17
+        applyStatus: high_energy_output
+        damage: 12
+        onShoot: true
+        activeEffect: {
+            followParent: true
+            type: WaveEffect
+            sizeFrom: 3
+            sizeTo: 30
+            strokeFrom: 2
+            strokeTo: 0
+            colorFrom: a1b1d0
+            colorTo: a1b1d0
+            lifetime: 45
+        }
+    }
+]
+
 weapons: [
     {
         name: vulture-weapon
@@ -70,7 +96,9 @@ weapons: [
         layerOffset: -0.01
         mirror: true
         rotate: true
-        rotationLimit: 18
+        rotationLimit: 34
+        rotateSpeed: 2.75
+        shootCone: 25
         recoil: 3
         reload: 75
         shootSound: shootDisperse
@@ -208,37 +236,5 @@ weapons: [
             ]
         }
     }
-    {
-        display: false
-        x: 0
-        y: -6
-        mirror: false
-        recoil: 0
-        reload: 1850
-        shootSound: shootPulsar
-        shootStatus: high_energy_output
-        shootStatusDuration: 450
-        alwaysShooting: true
-        inaccuracy: 360
-        shoot: {
-            shots: 15
-            shotDelay: 10
-        }
-
-        bullet: {
-            type: LightningBulletType
-            damage: 10
-            lifetime: 1
-            hitEffect: hitLancer
-            despawnEffect: none
-            hitEffect: none
-            shootEffect: none
-            lightningColor: ffffff
-            lightningLength: 15
-            inaccuracy: 360
-            lightningLengthRand: 0
-            keepVelocity: false
-            smokeEffect: none
-        }
-    }
+    
 ]
