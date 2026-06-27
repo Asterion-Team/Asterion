@@ -64,17 +64,17 @@ shootEffect: {
         sizeFrom: 2.5
         sizeTo: 0 
         offset: 1
+        lifetime: 25
         }
         {
         type: WaveEffect
         colorFrom: ff9548
         colorTo: c75432
-        sizeFrom: 28
+        sizeFrom: 0
         sizeTo: 28
         lightScl: 3
         lightOpacity: 1
-        sides: 0
-        lifetime: 40
+        lifetime: 25
         rotation: 0
         strokeFrom: 5
         strokeTo: 0

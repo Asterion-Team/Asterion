@@ -1,0 +1,59 @@
+name: Zion synthesizer
+description: Electrolysis separates zione from kryolin, zinc is used as a reaction catalyst.
+size: 3
+category: production
+requirements: [
+    whitorite/85
+    pyrite/50
+    blacktite/35
+]
+consumes: {
+    power: 1
+    liquids: [
+        kryoline/0.25
+    ]
+    items: [
+        zincum/1
+    ]
+}
+outputLiquid: zion/0.25
+craftTime: 120
+research: faction-extinguished
+researchCostMultiplier: 0.8
+drawer: [
+    {
+        type: DrawRegion
+        suffix: -bottom
+    }
+    {
+        type: DrawLiquidTile
+        drawLiquid: kryoline
+    }
+    {
+        type: DrawBlurSpin
+        suffix: "-rotator2"
+        rotateSpeed: -6
+    }
+    {
+        type: DrawRegion
+        suffix: "-rotator1"
+        spinSprite: true
+        rotateSpeed: 3
+    }
+    {
+        type: DrawLiquidTile
+        drawLiquid: zion
+    }
+    {
+        type: DrawParticles
+        color: fc9a9ace
+        alpha: 0.35
+        particleSize: 1
+        particles: 24
+        particleRad: 10
+        particleLife: 80
+    }
+    {
+        type: DrawDefault
+    }
+]

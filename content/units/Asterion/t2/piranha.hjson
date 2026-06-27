@@ -18,7 +18,7 @@ mechStepParticles: true
 outlineRadius: 4
 canBoost: false
 boostMultiplayer: 1.3
-drownTimeMultiplier: 8
+drownTimeMultiplier: 2.25
 rotateSpeed: 2.6
 health: 650
 armor: 9

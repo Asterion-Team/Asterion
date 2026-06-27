@@ -16,7 +16,7 @@ mechFrontSway: 0.8
 mechStepParticles: true
 stepShake: 1
 outlineRadius: 4
-drownTimeMultiplier: 8
+drownTimeMultiplier: 3
 rotateSpeed: 2.6
 health: 1280
 armor: 12

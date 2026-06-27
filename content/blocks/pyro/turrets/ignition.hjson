@@ -17,6 +17,7 @@ research: {
         }
     ]
 }
+researchCostMultiplier: 0.85
 size: 3
 scaledHealth: 120
 reload: 120
@@ -38,6 +39,7 @@ consumes: {
 }
 ammoTypes: {
     ashotite: {
+        buildingDamageMultiplier: 0.1
         type: BasicBulletType
         damage: 18
         splashDamage: 42

@@ -13,7 +13,7 @@ mechLegColor: 1f1f26
 mechFrontSway: 0.8
 mechStepParticles: true
 outlineRadius: 4
-drownTimeMultiplier: 8
+drownTimeMultiplier: 2
 rotateSpeed: 2.6
 health: 185
 armor: 7
@@ -117,5 +117,9 @@ research: {
       type: Research
       content: orion-factory
     }
+  ]
+  requirements: [
+    whitorite/450
+    irmenite/300
   ]
 }

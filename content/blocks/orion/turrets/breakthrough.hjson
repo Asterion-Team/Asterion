@@ -13,7 +13,8 @@ speedUpPerShoot: 7
 cooldownInterval: 240
 cooldownSpeed: 0.35
 maxAccel: 49
-shootSound: shootMachineGun
+shootSound: shootHeavy4
+shootSoundVolume: 0.2
 shake: 2.25
 shootY: 1
 consumes: { 
@@ -30,6 +31,8 @@ rotateSpeed: 1.45
 inaccuracy: 5
 ammoTypes: {
     irmenite: {
+        buildingDamageMultiplier: 0.15
+        armorMultiplier: 0.8
         knockback: 3.8
         pierce: true
         pierceCap: 2
@@ -41,8 +44,20 @@ ammoTypes: {
         frontColor: abe0e5
         backColor: 8FAFC0
         trailColor: 8FAFC0
-        trailLength: 8
+        trailLength: 5
         trailWidth: 2.85
+        trailInterval: 0.1
+        trailRotation: true
+        trailEffect: {
+            particles: 2
+            sizeFrom: 1.75
+            sizeTo: 0
+            colorFrom: abe0e5
+            colorTo: abe0e5
+            length: -12
+            lifetime: 13
+            cone: 25
+        }
         hitColor: abe0e5
         despawnShake: 1
         hitShake: 2.1
@@ -104,6 +119,15 @@ ammoTypes: {
                 lifetime: 20
             }
             {
+                particles: 12
+                sizeFrom: 1
+                sizeTo: 0
+                colorFrom: abe0e5
+                colorTo: abe0e5
+                length: 48
+                lifetime: 20
+            }
+            {
                 particles: 4
                 line: true
                 lenFrom: 6
@@ -131,6 +155,7 @@ ammoTypes: {
         weaveMag: 1.1
     }
     ashotite: {
+        buildingDamageMultiplier: 0.1
         inaccuracy: 2
         reloadMultiplier: 0.45
         knockback: 3.8
@@ -149,19 +174,19 @@ ammoTypes: {
         frontColor: f7844f
         backColor: eb6344
         trailColor: eb6344
-        trailLength: 6
+        trailLength: 3
         trailWidth: 2.85
-        trailInterval: 0.5
+        trailInterval: 0.1
         trailRotation: true
         trailEffect: {
             particles: 2
-            sizeFrom: 3
+            sizeFrom: 2.25
             sizeTo: 0
             colorFrom: f7844f
-            colorTo: f7844f
-            length: 12
-            lifetime: 15
-            cone: 15
+            colorTo: eb6344
+            length: 16
+            lifetime: 12
+            cone: 45
         }
         hitColor: f7844f
         despawnShake: 2.85

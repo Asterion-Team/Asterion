@@ -1,0 +1,24 @@
+type: Reconstructor
+name: Orion reconstructor
+size: 5
+constructTime: 600
+upgrades: [
+    [varan, piranha]
+]
+consumes: {
+    power: 4.5
+    liquid: kryoline/0.5
+    items: [
+        irmenite/50 
+        blacktite/50
+    ]
+}
+requirements: [
+    whitorite/375
+    pyrite/125
+    irmenite/200
+    blacktite/170
+]
+category: units
+research: orion-factory
+ 

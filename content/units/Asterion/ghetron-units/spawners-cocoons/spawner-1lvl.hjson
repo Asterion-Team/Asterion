@@ -1,6 +1,7 @@
 name: spawner-1lvl
 type: mech
 speed: 0
+drag: 444
 flying: false
 hitSize: 14
 drawCell: false
@@ -15,7 +16,6 @@ mechStepParticles: false
 stepShake: 0
 drownTimeMultiplier: 0
 rotateSpeed: 0
-physics: false
 health: 600
 armor: 7
 range: 152
@@ -27,290 +27,244 @@ weapons: [
     display: false
     reload: 1000
     recoil: 0
-x: 0
-y: 0
-mirror: true
+    shootSound: none
+    x: 0
+    y: 0
+    mirror: true
 
-shoot: {
-type: ShootPattern
-shots: 1
-firstShotDelay: 600
-}
+    shoot: {
+    type: ShootPattern
+    shots: 1
+    firstShotDelay: 600
+    }
 
-bullet: {
-damage: 0
-lifetime: 50
-colidesAir: false
-colidesGround: true
-width: 0
-shootEffect: none
-inaccuracy: 360
-height: 0
-speed: 1
-backColor: ff6e6e 
-frontColor: ff6e6e 
-fragBullets: 1
-
-despawnEffect: {
-type: MultiEffect 
-effects: [
+    bullet: {
+        damage: 0
+        lifetime: 40
+        colidesAir: false
+        colidesGround: true
+        width: 0
+        shootEffect: none
+        smokeEffect: none
+        inaccuracy: 360
+        height: 0
+        speed: 1
+        backColor: ff6e6e 
+        frontColor: ff6e6e 
+        fragBullets: 1
+        collideTerrain: true
+        despawnEffect: [
+            {
+            type: ParticleEffect 
+            colorFrom: 8a73c6
+            colorTo: 665c9f
+            particles: 20
+            cone: 360
+            length: 20
+            baseLength: 1
+            lightScl: 3
+            lightOpacity: 2
+            spin: 0
+            sizeFrom: 6
+            sizeTo: 0 
+            offset: 1
+            }
+            {
+            type: ParticleEffect 
+            colorFrom: 8a73c6
+            colorTo: 665c9f
+            particles: 20
+            cone: 360
+            length: 20
+            baseLength: 1
+            lightScl: 3
+            lightOpacity: 2
+            spin: 0
+            sizeFrom: 6
+            sizeTo: 0 
+            offset: 1
+            }
+            {
+            type: ParticleEffect 
+            colorFrom: 665c9f
+            colorTo: 665c9f
+            particles: 20
+            cone: 360
+            length: 20
+            baseLength: 1
+            lightScl: 3
+            lightOpacity: 2
+            spin: 0
+            sizeFrom: 6
+            sizeTo: 0 
+            offset: 1
+            }
+        ]
+        despawnUnit: cocoon-1lvl-1
+        }
+    }
 {
-type: ParticleEffect 
-colorFrom: 8a73c6
-colorTo: 665c9f
-particles: 20
-cone: 360
-length: 20
-baseLength: 1
-lightScl: 3
-lightOpacity: 2
-spin: 0
-sizeFrom: 6
-sizeTo: 0 
-offset: 1
-}
-{
-type: ParticleEffect 
-colorFrom: 8a73c6
-colorTo: 665c9f
-particles: 20
-cone: 360
-length: 20
-baseLength: 1
-lightScl: 3
-lightOpacity: 2
-spin: 0
-sizeFrom: 6
-sizeTo: 0 
-offset: 1
-}
-{
-type: ParticleEffect 
-colorFrom: 665c9f
-colorTo: 665c9f
-particles: 20
-cone: 360
-length: 20
-baseLength: 1
-lightScl: 3
-lightOpacity: 2
-spin: 0
-sizeFrom: 6
-sizeTo: 0 
-offset: 1
-}
-]
-}
-fragBullet: {
-damage: 0
-lifetime: 1
-colidesAir: false
-colidesGround: true
-despawnEffect: none
-hitEffect: none
-width: 0
-height: 0
-speed: 2
-backColor: ff6e6e 
-frontColor: ff6e6e
-spawnUnit: cocoon-1lvl-1
-}
-}
-}
-    {
     alwaysShooting: true
     ignoreRotation: true
     display: false
     reload: 1000
     recoil: 0
-x: 0
-y: 0
-mirror: true
-
-shoot: {
-type: ShootSpread
-spread: 0
-shots: 1
-firstShotDelay: 750
+    x: 0
+    y: 0
+    mirror: false
+    inaccuracy: 360
+    shootSound: none
+    shoot: {
+        type: ShootSpread
+        spread: 0
+        shots: 1
+        firstShotDelay: 750
+    }
+    bullet: {
+        damage: 0
+        lifetime: 40
+        colidesAir: false
+        colidesGround: true
+        width: 0
+        shootEffect: none
+        smokeEffect: none
+        inaccuracy: 360
+        height: 0
+        speed: 1
+        backColor: ff6e6e 
+        frontColor: ff6e6e 
+        fragBullets: 1
+        collideTerrain: true
+        despawnEffect: [
+            {
+            type: ParticleEffect 
+            colorFrom: 8a73c6
+            colorTo: 665c9f
+            particles: 20
+            cone: 360
+            length: 20
+            baseLength: 1
+            lightScl: 3
+            lightOpacity: 2
+            spin: 0
+            sizeFrom: 6
+            sizeTo: 0 
+            offset: 1
+            }
+            {
+            type: ParticleEffect 
+            colorFrom: 8a73c6
+            colorTo: 665c9f
+            particles: 20
+            cone: 360
+            length: 20
+            baseLength: 1
+            lightScl: 3
+            lightOpacity: 2
+            spin: 0
+            sizeFrom: 6
+            sizeTo: 0 
+            offset: 1
+            }
+            {
+            type: ParticleEffect 
+            colorFrom: 665c9f
+            colorTo: 665c9f
+            particles: 20
+            cone: 360
+            length: 20
+            baseLength: 1
+            lightScl: 3
+            lightOpacity: 2
+            spin: 0
+            sizeFrom: 6
+            sizeTo: 0 
+            offset: 1
+            }
+        ]
+        despawnUnit: cocoon-1lvl-2
 }
-
-bullet: {
-type: BasicBulletType
-damage: 0
-lifetime: 40
-inaccuracy: 360
-colidesAir: false
-colidesGround: true
-width: 0
-height: 0
-shootEffect: none
-speed: 1
-backColor: ff6e6e 
-frontColor: ff6e6e
-fragBullets: 1
-
-despawnEffect: {
-type: MultiEffect 
-effects: [
+}
 {
-type: ParticleEffect 
-colorFrom: 8a73c6
-colorTo: 665c9f
-particles: 20
-cone: 360
-length: 20
-baseLength: 1
-lightScl: 3
-lightOpacity: 2
-spin: 0
-sizeFrom: 6
-sizeTo: 0 
-offset: 1
-}
-{
-type: ParticleEffect 
-colorFrom: 8a73c6
-colorTo: 665c9f
-particles: 20
-cone: 360
-length: 20
-baseLength: 1
-lightScl: 3
-lightOpacity: 2
-spin: 0
-sizeFrom: 6
-sizeTo: 0 
-offset: 1
-}
-{
-type: ParticleEffect 
-colorFrom: 665c9f
-colorTo: 665c9f
-particles: 20
-cone: 360
-length: 20
-baseLength: 1
-lightScl: 3
-lightOpacity: 2
-spin: 0
-sizeFrom: 6
-sizeTo: 0 
-offset: 1
-}
-]
-}
-
-fragBullet: {
-damage: 0
-lifetime: 1
-colidesAir: false
-colidesGround: true
-despawnEffect: none
-hitEffect: none
-width: 10
-height: 10
-speed: 2
-backColor: ff6e6e 
-frontColor: ff6e6e
-spawnUnit: cocoon-1lvl-2
-}
-}
-}
-    {
     alwaysShooting: true
     ignoreRotation: true
     display: false
-    reload: 1000
+    reload: 1500
     recoil: 0
-x: 0
-y: 0
-mirror: true
-
-shoot: {
-type: ShootPattern
-shots: 1
-firstShotDelay: 900
-}
-
-bullet: {
-damage: 0
-lifetime: 60
-inaccuracy: 360
-shootEffect: none
-colidesAir: false
-colidesGround: true
-width: 0
-height: 0
-speed: 1
-backColor: ff6e6e 
-frontColor: ff6e6e 
-fragBullets: 1
-
-despawnEffect: {
-type: MultiEffect 
-effects: [
-{
-type: ParticleEffect 
-colorFrom: 8a73c6
-colorTo: 665c9f
-particles: 20
-cone: 360
-length: 20
-baseLength: 1
-lightScl: 3
-lightOpacity: 2
-spin: 0
-sizeFrom: 6
-sizeTo: 0 
-offset: 1
-}
-{
-type: ParticleEffect 
-colorFrom: 8a73c6
-colorTo: 665c9f
-particles: 20
-cone: 360
-length: 20
-baseLength: 1
-lightScl: 3
-lightOpacity: 2
-spin: 0
-sizeFrom: 6
-sizeTo: 0 
-offset: 1
-}
-{
-type: ParticleEffect 
-colorFrom: 665c9f
-colorTo: 665c9f
-particles: 20
-cone: 360
-length: 20
-baseLength: 1
-lightScl: 3
-lightOpacity: 2
-spin: 0
-sizeFrom: 6
-sizeTo: 0 
-offset: 1
-}
-]
-}
-fragBullet: {
-damage: 0
-lifetime: 1
-inaccuracy: 360
-colidesAir: false
-colidesGround: true
-despawnEffect: none
-hitEffect: none
-width: 10
-height: 10
-speed: 2
-backColor: ff6e6e 
-frontColor: ff6e6e
-spawnUnit: cocoon-1lvl-3
-}
+    x: 0
+    y: 0
+    mirror: false
+    inaccuracy: 360
+    shootSound: none
+    shoot: {
+        type: ShootSpread
+        spread: 0
+        shots: 1
+        firstShotDelay: 1000
+    }
+    bullet: {
+        damage: 0
+        lifetime: 40
+        colidesAir: false
+        colidesGround: true
+        width: 0
+        shootEffect: none
+        smokeEffect: none
+        inaccuracy: 360
+        height: 0
+        speed: 1
+        backColor: ff6e6e 
+        frontColor: ff6e6e 
+        fragBullets: 1
+        collideTerrain: true
+        despawnEffect: [
+            {
+            type: ParticleEffect 
+            colorFrom: 8a73c6
+            colorTo: 665c9f
+            particles: 20
+            cone: 360
+            length: 20
+            baseLength: 1
+            lightScl: 3
+            lightOpacity: 2
+            spin: 0
+            sizeFrom: 6
+            sizeTo: 0 
+            offset: 1
+            }
+            {
+            type: ParticleEffect 
+            colorFrom: 8a73c6
+            colorTo: 665c9f
+            particles: 20
+            cone: 360
+            length: 20
+            baseLength: 1
+            lightScl: 3
+            lightOpacity: 2
+            spin: 0
+            sizeFrom: 6
+            sizeTo: 0 
+            offset: 1
+            }
+            {
+            type: ParticleEffect 
+            colorFrom: 665c9f
+            colorTo: 665c9f
+            particles: 20
+            cone: 360
+            length: 20
+            baseLength: 1
+            lightScl: 3
+            lightOpacity: 2
+            spin: 0
+            sizeFrom: 6
+            sizeTo: 0 
+            offset: 1
+            }
+        ]
+        despawnUnit: cocoon-1lvl-3
 }
 }
 ]

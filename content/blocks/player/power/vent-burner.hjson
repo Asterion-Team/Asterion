@@ -1,4 +1,3 @@
-type: ThermalGenerator
 name: Vent burner
 research: {
     parent: core-force

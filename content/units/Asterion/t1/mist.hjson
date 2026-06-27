@@ -9,8 +9,8 @@ tankMoveVolume: 0.15
 tankMoveSound: tankMoveSmall
 health: 450
 armor: 6
-speed: 0.42
-rotateSpeed: 1.45
+speed: 0.6
+rotateSpeed: 1
 outlineColor: 141119
 outlineRadius: 4
 treadRects: [

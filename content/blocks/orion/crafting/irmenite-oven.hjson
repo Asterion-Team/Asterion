@@ -1,4 +1,3 @@
-type: GenericCrafter
 name: Irmenite oven
 description: "Producing irmenite from quartz and whitorite"
 size: 2
@@ -15,6 +14,10 @@ research: {
             preset: quartz-valley
         }
     ]
+    requirements: [
+		whitorite/400
+		pyrite/500
+	]
 }
 craftTime: 120
 consumes: {

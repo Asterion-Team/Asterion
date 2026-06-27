@@ -1,0 +1,308 @@
+outlineColor: 1c1d1f
+type: ContinuousLiquidTurret
+cooldownTime: 120
+name: Glare
+hasLiquids: true
+size: 3
+health: 1550
+range: 160
+liquidConsumed: 1
+liquidCapacity: 180
+targetAir: true
+targetGround: true
+consumes: {
+    power: 0.25
+}
+shootCone: 3
+shootSound: none
+loopSound: shootSublimate
+loopSoundVolume: 1.2
+rotateSpeed: 3
+//reload: "180" //3 * 60
+alwaysContinuous:/true
+continuous: true 
+ammoTypes: {
+  methane: {
+  type: ContinuousFlameBulletType,
+  colors: [
+  ff963396, ff974d, ffa875, ffb9a3, ffffff
+  ]
+  ammoMultiplier: 0.75
+  damage: 16
+  knockback: 1.2
+  status: burning
+  statusDuration: 300
+  length: 140
+  rangeChange: -20
+  width: 7
+  pierce: true
+  pierceBuilding: false
+  pierceArmor: false
+  flareWidth: 4.6
+  flareLength: 45 
+  flareColor: ff974d
+  lifetime: 60
+  hitColor: d14bc4d4
+  hitEffect: {
+   type: ParticleEffect
+   particles: 2
+   lifetime: 45
+   length: 32
+   cone: 90
+   sizeFrom: 2.45
+   sizeTo: 0
+   colorFrom: ff974d
+   colorTo: ff974d
+   }
+  }
+
+  zion: {
+  type: ContinuousFlameBulletType,
+  colors: [
+  a03ab0c3, d14bc4d4, e55ebfed, ff7ac1, ffffff
+  ]
+  damage: 12
+  knockback: 1.2
+  status: fading-t1
+  statusDuration: 300
+  length: 160
+  width: 4.5
+  pierce: true
+  pierceBuilding: false
+  flareWidth: 4.6
+  flareLength: 45 
+  flareColor: ff7ac1
+  lifetime: 60
+  hitColor: d14bc4d4
+  hitEffect: {
+   type: ParticleEffect
+   line: true
+   particles: 2
+   lifetime: 20
+   length: 32
+   cone: 360
+   strokeFrom: 1
+   strokeTo: 1
+   lenFrom: 8
+   lenTo: 0
+   colorFrom: e55ebfed
+   colorTo: a03ab0c3
+   }
+  }
+  verdyne: {
+  type: ContinuousFlameBulletType,
+  colors: [
+  485bbdcd, 5c93d1db, 84cff0ef, abf9fffe, ffffff
+  ]
+  damage: 32
+  knockback: 1.7
+  status: underclock
+  statusDuration: 90
+  rangeChange: 57
+  length: 217
+  width: 5.1
+  pierce: true
+  pierceBuilding: false
+  flareWidth: 5.5
+  flareLength: 63 
+  flareColor: abf9fffe
+  lifetime: 60
+  hitColor: 5c93d1db
+  hitEffect: {
+   type: ParticleEffect
+   line: true
+   particles: 2
+   lifetime: 20
+   length: 32
+   cone: 360
+   strokeFrom: 1
+   strokeTo: 1
+   lenFrom: 8
+   lenTo: 0
+   colorFrom: 5c93d1db
+   colorTo: 5c93d1db
+   }
+  }
+ }
+requirements: [
+  whitorite/100
+  pyrite/75
+  zionitium/50
+  blacktite/35
+]
+category: turret
+research: splinter
+drawer: {
+  type: DrawTurret
+  basePrefix: ast-
+  parts: [
+    {
+        type: RegionPart
+        under: true
+        suffix: -side
+        mirror: true
+        progress: recoil
+        moveX: 1.75
+        moveY: -1.75
+    }
+  ]
+  ammoParts: {
+    methane: [
+        {
+        type: RegionPart
+        under: true
+        suffix: -side-glow
+        mirror: true
+        heatProgress: recoil
+        heatColor: "ff9633"
+        progress: recoil
+        drawPart: false
+        moveX: 1.75
+        moveY: -1.75
+        }
+        {
+        type: RegionPart
+        under: true
+        suffix: -glow
+        mirror: false
+        heatProgress: heat
+        heatColor: "ff9633"
+        progress: heat
+        }
+        {
+            type: EffectSpawnerPart
+            mirror: true
+            progress: recoil
+            effectChance: 0.5
+            rotation: 180
+            effectRot: 45
+            effecrRandRot: 15
+            effect: [
+                {
+                type: ParticleEffect
+                particles: 1
+                sizeFrom: 2
+                sizeTo: 4.5
+                layer: 70
+                length: 24
+                lifetime: 65
+                interp: pow5Out
+                sizeInterp: circleOut
+                colorFrom: 615a56f2
+                colorTo: 1c1c1c00
+                cone: 10
+                }
+            ]
+            x: 5.75
+            y: -6
+            width: 2
+            height: 2
+        }
+    ]
+    zion: [
+        {
+        type: RegionPart
+        under: true
+        suffix: -side-glow
+        mirror: true
+        heatProgress: recoil
+        heatColor: "de2a3f"
+        progress: recoil
+        drawPart: false
+        moveX: 1.75
+        moveY: -1.75
+        }
+        {
+        type: RegionPart
+        under: true
+        suffix: -glow
+        mirror: false
+        heatProgress: heat
+        heatColor: "de2a3f"
+        progress: heat
+        }
+        {
+            type: EffectSpawnerPart
+            mirror: true
+            progress: recoil
+            effectChance: 0.5
+            rotation: 180
+            effectRot: 45
+            effecrRandRot: 15
+            effect: [
+                {
+                type: ParticleEffect
+                particles: 1
+                sizeFrom: 2
+                sizeTo: 4.5
+                layer: 70
+                length: 24
+                lifetime: 65
+                interp: pow5Out
+                sizeInterp: circleOut
+                colorFrom: ba667df8
+                colorTo: 42333600
+                cone: 10
+                }
+            ]
+            x: 5.75
+            y: -6
+            width: 2
+            height: 2
+        }
+    ]
+    verdyne: [
+        {
+        type: RegionPart
+        under: true
+        suffix: -side-glow
+        mirror: true
+        heatProgress: recoil
+        heatColor: "344a7f"
+        progress: recoil
+        drawPart: false
+        moveX: 1.75
+        moveY: -1.75
+        }
+        {
+        type: RegionPart
+        under: true
+        suffix: -glow
+        mirror: false
+        heatProgress: heat
+        heatColor: "344a7f"
+        progress: heat
+        }
+        {
+        type: EffectSpawnerPart
+        mirror: true
+        progress: recoil
+        effectChance: 0.5
+        rotation: 180
+        effectRot: 45
+        effecrRandRot: 15
+        effect: [
+            {
+            type: ParticleEffect
+            particles: 1
+            sizeFrom: 2
+            sizeTo: 4.5
+            layer: 70
+            length: 24
+            lifetime: 65
+            interp: pow5Out
+            sizeInterp: circleOut
+            colorFrom: 475d94bb
+            colorTo: 02060f00
+            cone: 10
+            }
+        ]
+        //Color: d9a0ab
+        x: 5.75
+        y: -6
+        width: 2
+        height: 2
+        }
+    ]
+  }
+}

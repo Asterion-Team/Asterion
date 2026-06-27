@@ -17,11 +17,37 @@ mechFrontSway: 0.8
 mechStepParticles: true
 stepShake: 1
 outlineRadius: 5
-drownTimeMultiplier: 8
+drownTimeMultiplier: 4
 rotateSpeed: 2.6
 health: 23000
 armor: 21
 range: 240
+abilities: [
+    {
+        type: OverloadAbility
+        x: 0
+        y: -12
+        reload: 1200
+        duration: 600
+        shootInterval: 9
+        lightningLength: 19
+        applyStatus: high_energy_output
+        damage: 35
+        onShoot: true
+        activeEffect: {
+            followParent: true
+            type: WaveEffect
+            sizeFrom: 4
+            sizeTo: 60
+            strokeFrom: 5
+            strokeTo: 0
+            colorFrom: a1b1d0
+            colorTo: a1b1d0
+            lifetime: 60
+        }
+    }
+]
+
 parts: [
 {
       type: HaloPart
@@ -115,7 +141,9 @@ weapons: [
     shootSound: shootEnergy
     shootSoundVolume: 3
     bullet: {
-     damage: 115
+     damage: 78
+     splashDamage: 72
+     splashDamageRadius: 48
      pierce: true
      pierceCap: 2
      pierceBuilding: true
@@ -172,7 +200,7 @@ weapons: [
       sizeFrom: 1.5
       sizeTo: 0
       colorFrom: 9DBDFA
-      colorTo: 4165AB
+      colorTo: 9DBDFA
       length: 4.5
       baseLength: 4.8
       lifetime: 25
@@ -184,10 +212,103 @@ weapons: [
      intervalBullets: 2
      bulletInterval: 2
      intervalRandomSpread: 360
-     despawnEffect: none
-     hitEffect: none
-     despawnSound: shootPulsar
-     hitSound: shootPulsar
+     hitEffect: [
+        {
+            particles: 6
+            line: true
+            length: 30
+            lenFrom: 7
+            lenTo: 0
+            strokeFrom: 1
+            strokeTo: 1
+            colorFrom: 9DBDFA
+            colorTo: 9DBDFA
+            lifetime: 23
+        }
+        {
+            particles: 9
+            line: true
+            length: 35
+            lenFrom: 4
+            lenTo: 0
+            strokeFrom: 0.7
+            strokeTo: 0.7
+            colorFrom: 9DBDFA
+            colorTo: 9DBDFA
+            lifetime: 30
+        }
+    ]
+     despawnSound: explosionNavanax
+     hitSound: shootArc
+     despawnShake: 5
+     despawnEffect: [
+        {
+            particles: 6
+            line: true
+            length: 48
+            lenFrom: 12
+            lenTo: 0
+            baseLength: 10
+            strokeFrom: 1
+            strokeTo: 1
+            colorFrom: 9DBDFA
+            colorTo: 9DBDFA
+            lifetime: 30
+        }
+        {
+            particles: 9
+            line: true
+            length: 48
+            lenFrom: 7
+            lenTo: 0
+            baseLength: 10
+            strokeFrom: 0.7
+            strokeTo: 0.7
+            colorFrom: 9DBDFA
+            colorTo: 9DBDFA
+            lifetime: 30
+        }
+        {
+            particles: 18
+            length: 62
+            sizeFrom: 2
+            sizeTo: 0
+            colorFrom: 9DBDFA
+            colorTo: 9DBDFA
+            lifetime: 30
+            sizeInterp: pow2In
+        }
+        {
+            particles: 7
+            length: 45
+            sizeFrom: 4.5
+            sizeTo: 0
+            colorFrom: 9DBDFA
+            colorTo: 9DBDFA
+            lifetime: 30
+            sizeInterp: pow3In
+        }
+        {
+            particles: 7
+            length: 32
+            sizeFrom: 5
+            sizeTo: 5
+            colorFrom: 9e9e9ee8
+            colorTo: 4d4d4d00
+            lifetime: 30
+            sizeInterp: pow2In
+        }
+        {
+            type: WaveEffect
+            sizeFrom: 2
+            sizeTo: 50
+            strokeFrom: 6
+            strokeTo: 0
+            colorFrom: 9DBDFA
+            colorTo: 9DBDFA
+            lifetime: 30
+        }
+     ]
      intervalBullet: {
         type: LightningBulletType
         damage: 25
@@ -204,112 +325,4 @@ weapons: [
     }
     }
    }
-    {
-        display: false
-        x: 0
-        y: -11.75
-        mirror: false
-        recoil: 0
-        reload: 3000
-        shootSound: shootPulsar
-        shootStatus: high_energy_output
-        shootStatusDuration: 330
-        alwaysShooting: true
-        inaccuracy: 360
-        shoot: {
-            type: ShootSpread
-            shots: 33
-            shotDelay: 10
-        }
-
-        bullet: {
-            type: LightningBulletType
-            damage: 30
-            lifetime: 1
-            hitEffect: hitLancer
-            despawnEffect: none
-            hitEffect: none
-            shootEffect: none
-            lightningColor: ffffff
-            lightningLength: 20
-            inaccuracy: 360
-            lightningLengthRand: 0
-            keepVelocity: false
-            chargeEffect: {
-                        type: WaveEffect
-                        colorFrom: d0d8e8
-                        colorTo: a1b1d0
-                        sizeFrom: 45
-                        sizeTo: 0
-                        lightScl: 4
-                        lightOpacity: 1
-                        rotation: 0
-                        strokeFrom: 0
-                        strokeTo: 3
-                        lifetime: 90
-                    }
-            shootEffect: {
-                type: MultiEffect
-                effects: [
-                {
-                    type: ParticleEffect
-                    colorFrom: ffffff
-                    colorTo: a1b1d0
-                    particles: 9
-                    cone: 360
-                    length: 25
-                    baseLength: 5
-                    lightScl: 3
-                    lightOpacity: 2
-                    spin: 0
-                    sizeFrom: 3
-                    sizeTo: 0
-                    offset: 1
-                }
-                    {
-                        type: ParticleEffect
-                        colorFrom: a1b1d0
-                        colorTo: 8798b9
-                        particles: 12
-                        cone: 360
-                        length: 30
-                        baseLength: 5
-                        lightScl: 3
-                        lightOpacity: 2
-                        spin: 0
-                        sizeFrom: 3
-                        sizeTo: 0
-                        offset: 1
-                    }
-                    {
-                        type: ParticleEffect
-                        colorFrom: 8798b9
-                        colorTo: 8798b9
-                        particles: 9
-                        cone: 360
-                        length: 35
-                        baseLength: 5
-                        lightScl: 3
-                        lightOpacity: 2
-                        spin: 0
-                        sizeFrom: 3
-                        sizeTo: 0
-                        offset: 1
-                    }
-                    {
-                        type: WaveEffect
-                        colorFrom: d0d8e8
-                        colorTo: a1b1d0
-                        sizeFrom: 0
-                        sizeTo: 12
-                        lightScl: 4
-                        lightOpacity: 1
-                        rotation: 0
-                        strokeFrom: 4
-                        strokeTo: 0
-                    }
-                    ]
-                    }
-                    }
-                    }
-                    ]
+]

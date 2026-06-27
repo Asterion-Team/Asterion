@@ -18,6 +18,7 @@ hasPower: true
 shoot: {
     firstShotDelay: 60
   }
+chargeSound: chargeEMP
 shake: 2
 shootType: {
   followAimSpeed: 0.8
@@ -187,8 +188,7 @@ category: turret
 requirements: [
  whitorite/145
  pyrite/35
- irmenite/65
- blacktite/50
+ blacktite/110
 ]
 research: {
  parent: splinter

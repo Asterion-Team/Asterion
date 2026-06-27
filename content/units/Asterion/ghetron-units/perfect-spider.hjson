@@ -28,7 +28,7 @@ rippleScale: 0.24
 allowLegStep: true
 groundLayer: 75
 shadowElevation: 0.5
-health: 150
+health: 450
 armor: 0
 range: 250
 
