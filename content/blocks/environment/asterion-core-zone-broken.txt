@@ -1,0 +1,10 @@
+type: Floor
+name: "Asterion core zone (Damaged)"
+variants: 4
+
+allowCorePlacement: true
+
+lightRadius: 10
+lightColor: "755bb382"
+
+blendGroup: asterion-core-zone

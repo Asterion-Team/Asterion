@@ -1,8 +1,0 @@
-type: Floor
-name: Asterion core zone
-variants: 4
-
-allowCorePlacement: true
-
-lightRadius: 10
-lightColor: "755bb382"
