@@ -4,5 +4,5 @@ variants: 4
 
 allowCorePlacement: true
 
-lightRadius: 16
-lightColor: "8d73c9a9"
+lightRadius: 10
+lightColor: "755bb382"

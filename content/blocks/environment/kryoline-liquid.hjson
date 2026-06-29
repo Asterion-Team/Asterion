@@ -1,22 +1,21 @@
-//Removed from mod
-
 type: Floor
 name: "Kryoline"
-
-  //status: melting
-  //statusDuration: 75
-speedMultiplier: 0.90
 variants: 0
+
+//status: melting
+//statusDuration: 75
+
+speedMultiplier: 0.75
 cacheLayer: "water" //tar, mud, water, arkycite
 drownTime: 300
 isLiquid: true
 liquidDrop: kryoline
 liquidMultiplier: 1
 albedo: 0.5
-shallow: true
+shallow: false
 supportsOverlay: true
 placeableOn: true
 
 emitLight: true
-lightRadius: 26
+lightRadius: 28
 lightColor: "6BA2FFFF" //c5cf577a

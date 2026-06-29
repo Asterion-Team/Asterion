@@ -1,0 +1,25 @@
+type: Floor
+name: "Shallow Lumite (Kryoline)"
+variants: 4
+
+//status: melting
+//statusDuration: 75
+
+speedMultiplier: 0.9
+cacheLayer: "water" //tar, mud, water, arkycite
+drownTime: 850
+isLiquid: true
+liquidDrop: kryoline
+liquidMultiplier: 0.75
+albedo: 0.35
+shallow: true
+supportsOverlay: true
+placeableOn: true
+
+emitLight: true
+lightRadius: 22
+lightColor: "72a7cc" //c5cf577a
+
+attributes: {
+    magnetite-tiles: 0.5
+}
