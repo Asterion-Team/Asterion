@@ -7,7 +7,7 @@ faceTarget: false
 rotateMoveFirst: true
 health: 780
 armor: 8
-speed: 0.37
+speed: 0.4
 rotateSpeed: 1.1
 tankMoveSound: tankMove
 tankMoveVolume: 0.28

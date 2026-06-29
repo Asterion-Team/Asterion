@@ -14,6 +14,7 @@ requirements: [
     pyrite/35,
     irmenite/45
 ]
+researchCostMultiplier: 0.25
 name: "Methane extractor"
 description: "Extracts methane from vents"
 attribute: "methane"

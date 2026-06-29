@@ -106,7 +106,7 @@ abilities: [
   {
     type: MoveEffectAbility
     minVelocity: 0
-    interval: 5.9
+    interval: 4
     rotateEffect: true
     parentizeEffects: true
     effect: {
@@ -117,7 +117,7 @@ abilities: [
           layer: 115.1
           rotWithParent: true
           effects: [
-             {
+            {
                type: ParticleEffect
                casingFlip: true
                lifetime: 3
@@ -126,10 +126,11 @@ abilities: [
                cone: 0
                length: 0
                interp: sine
-               sizeFrom: 3
-               sizeTo: 3
-               offset: 16
-               region: ecu-unit-swarm-fly
+               sizeFrom: 6
+               sizeTo: 5
+               offset: 90
+               offsetY: 3
+               region: as-unit-swarm-fly
                spin: 10
             }
             {
@@ -141,10 +142,11 @@ abilities: [
                cone: 0
                length: 0
                interp: sine
-               sizeFrom: 3
-               sizeTo: 3
-               offset: -16
-               region: ecu-unit-swarm-fly
+               sizeFrom: 6
+               sizeTo: 5
+               offset: -90
+               offsetY: -3
+               region: as-unit-swarm-fly
                spin: -10
             }
           ]

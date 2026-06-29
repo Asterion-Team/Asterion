@@ -1,0 +1,46 @@
+name: Zionitium press
+description: Compresses pyrite under the influence of zion, thereby obtaining zionitium in the process.
+size: 3
+requirements: [
+    whitorite/95
+    pyrite/40
+    blacktite/60
+]
+category: crafting
+research: faction-extinguished
+researchCostMultiplier: 0.8
+consumes: {
+    power: 3
+    liquid: zion/0.25
+    items: [
+        pyrite/5
+    ]
+}
+craftTime: 240
+outputItem: zionitium/4
+craftEffect: [
+    {
+        particles: 7
+        sizeFrom: 2
+        sizeTo: 0
+        length: 32
+        colorFrom: ff7878
+        colorTo: ff7878
+        lifetime: 60
+        interp: pow5Out
+        sizeInterp: pow2In
+    }
+    {
+        type: WaveEffect
+        strokeFrom: 1
+        strokeTo: 0
+        sizeFrom: 4
+        sizeTo: 32
+        colorFrom: ff7878
+        colorTo: ff7878
+        lifetime: 60
+        interp: pow5Out
+        sizeInterp: pow5In
+    }
+]
+

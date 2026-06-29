@@ -1,0 +1,168 @@
+type: ModeTurret
+name: Typhoon
+outlineColor: 22262b
+description: "turret with two firing modes: \nSniper mode - fires alternately from two guns. (default mode)\nArtillery mode - fires two guns simultaneously over long distances (Reduced rate of fire, increased radius)"
+reload: 60
+range: 240
+size: 5
+targetAir: false
+rotateSpeed: 1
+ammoPerShot: 10
+maxAmmo: 60
+inaccuracy: 1.5
+targetBlocks: false
+coolantMultiplier: 0.5
+requirements: [
+    whitorite/240
+    pyrite/95
+    zincum/110
+    blacktite/145
+    magnetite/90
+]
+category: turret
+heatColor: ff8a66
+shootSound: shootHeavy
+shootSoundVolume: 0.65
+shake: 7
+recoils: 2
+shootY: 13.5
+consumes: {
+    coolant: {
+        amount: 1
+    }
+}
+shoot: {
+    type: ShootAlternate
+    shots: 1
+    spread: 18
+    barrels: 2
+}
+ammoTypes: {
+    ashotite: {
+        buildingDamageMultiplier: 0.15
+        type: ArtilleryBulletType
+        armorMultiplier: 1.25
+        ammoMultiplier: 1
+        trailInterval: 1.5
+        damage: 175
+        splashDamage: 275
+        splashDamageRadius: 42
+        status: burning
+        statusDuration: 600
+        speed: 12
+        lifetime: 20
+        height: 34
+        width: 22
+        trailLength: 10
+        trailWidth: 3
+        frontColor: ffbb8a
+        backColor: db7f58
+        trailColor: db7f58
+        hitColor: ffbb8a
+        hitShake: 5
+        hitEffect: [
+            {
+                particles: 9
+                line: true
+                length: 58
+                colorFrom: ffbb8a
+                colorTo: ffbb8a
+                lenFrom: 13
+                lenTo: 0
+                strokeFrom: 2
+                strokeTo: 1
+                lifetime: 45
+                interp: circleOut
+                sizeInterp: pow2In
+            }
+            {
+                type: WaveEffect
+                sizeFrom: 4
+                sizeTo: 50
+                strokeFrom: 3
+                strokeTo: 0
+                colorFrom: ffbb8a
+                colorTo: ffbb8a
+                interp: circleOut
+                lifetime: 45
+            }
+            {
+                particles: 13
+                length: 48
+                colorFrom: ffbb8a
+                colorTo: ffbb8a
+                sizeFrom: 3
+                sizeTo: 0
+                interp: circleOut
+                sizeInterp: pow5In
+                lifetime: 45
+            }
+            {
+                particles: 5
+                length: 42
+                colorFrom: "bfb3aaf7"
+                colorTo: "2e2d2d03"
+                sizeFrom: 6
+                sizeTo: 4
+                interp: circleOut
+                sizeInterp: pow2In
+                lifetime: 60
+            }
+        ]
+        shootEffect: shootTitan
+        smokeEffect: shootSmokeTitan
+        hitSound: explosionDull
+        collidesGround: true
+        collides: true
+    }
+}
+
+drawer: {
+   type: DrawTurret
+   basePrefix: ast-
+   parts: [
+      {
+      type: RegionPart
+      suffix: -barrel-r
+      progress: recoil
+      recoilIndex: 1
+      moveY: -7
+      heatProgress: recoil
+      under: true
+      }
+	  {
+      type: RegionPart
+      suffix: -barrel-l
+      progress: recoil
+      recoilIndex: 0
+      moveY: -7
+      heatProgress: recoil
+      under: true
+      }
+	 ]
+}
+turretModes: [
+    {
+        name: "basic"
+        path: "as"
+        barColor: "c3ffc2"
+    }
+    {
+        name: "artillery"
+        path: "as"
+        rangeChange: 300
+        barColor: ff9494
+        reloadMultiplier: 0.35
+        rotateSpeedMultiplier: 0.35
+        ammoUseMultiplier: 2
+        targetIntervalMultiplier: 3
+        accuracyMultiplier: 0.15
+        modeSound: shootHeavy3
+        modePattern: {
+            type: ShootAlternate
+            shots: 2
+            spread: 18
+            barrels: 2
+        }
+    }
+]

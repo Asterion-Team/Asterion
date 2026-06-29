@@ -1,4 +1,3 @@
-type: GenericCrafter
 size: 3
 category: crafting
 requirements: [
@@ -20,6 +19,7 @@ consumes: {
 
 outputItem: blacktite/2
 craftTime: 60
+/*
 research: {
     parent: core-force
     objectives: [
@@ -29,6 +29,7 @@ research: {
         }
     ]
 }
+*/
 drawer: [
     {
         type: DrawRegion

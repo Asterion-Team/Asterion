@@ -1,0 +1,28 @@
+type: unitFactory
+name: Extinguished factory
+description: Create units of the Extinguished's tree
+size: 3
+configurable: false
+consumes: {
+  power: 2.5
+}
+plans: [
+  {
+    unit: mist
+    requirements: [
+      whitorite/60
+      zionitium/45
+    ]
+    time: 2100
+  }
+]
+requirements: [
+  whitorite/90
+  pyrite/120
+  zionitium/95
+]
+category: units
+research: {
+  parent: faction-extinguished
+}
+researchCostMultiplier: 0.75

@@ -16,7 +16,6 @@ trailLength: 2
 trailWidth: 0.9
 speed: 6.5
 rotateSpeed: 13
-
 weapons: [
 	{
 	name: attraction-weapon
@@ -26,7 +25,6 @@ weapons: [
 	shootY: 0.75
 	recoil: 1
 	top: false
-	//layerOffset: -0.001
 	inaccuracy: 1
 	reload: 19
 	mirror: true
@@ -45,7 +43,7 @@ weapons: [
 		width: 8.2
 		height: 8.5
 		collidesTeam: true
-		healPercent: 5.5
+		healPercent: 7
 		healColor: e39fe1
 		frontColor: e39fe1
 		backColor: d66bd3

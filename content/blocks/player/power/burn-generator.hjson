@@ -1,28 +1,30 @@
-type: ConsumeGenerator
 size: 2
 name: Burn generator
 category: power
 requirements: [
     whitorite/35
     pyrite/80
-    irmenite/30
+    zincum/25
 ]
 consumes: {
-    item: ashotite
+    liquids: [
+        methane/0.125
+        kryoline/0.05
+    ]
+
 }
+ambientSound: loopSmelter
+ambientSoundVolume: 0.05
+generateEffect: generatespark
 itemCapacity: 10
 itemDuration: 240
-powerProduction: 1
+powerProduction: 3
 research: {
     parent: vent-burner
     objectives: [
         {
             type: SectorComplete
             preset: gorge
-        }
-        {
-            type: Research
-            content: ashotite
         }
     ]
 }

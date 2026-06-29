@@ -3,7 +3,14 @@ size: 3
 name: "Orion's factory"
 description: "Creates «Varan» units"
 category: units
-research: faction-orion
+research: {
+    parent: faction-orion
+    requirements: [
+        whitorite/600
+        pyrite/400
+        irmenite/500
+    ]
+}
 researchCost: [
     whitorite/200
     pyrite/150

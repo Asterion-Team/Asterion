@@ -1,0 +1,574 @@
+name: Supernova
+type: PowerTurret
+category: turret
+requirements: [
+    whitorite/185
+    pyrite/225
+    blacktite/125
+    magnetite/150
+]
+consumes: {
+    power: 15
+    liquids: [
+        kryoline/0.75
+    ]
+}
+size: 4
+shootY: 10
+reload: 720
+shake: 17
+moveWhileCharging: false
+shoot: {
+    firstShotDelay: 180
+    shots: 3
+    type: ShootSpread
+    spread: 12
+}
+inaccuracy: 9
+shootSound: shootMassive
+chargeSound: chargeMassive
+drawer: {
+   type: DrawTurret
+   basePrefix: ast-
+   heatProgress: recoil
+   parts: [
+    {
+      type: RegionPart
+      suffix: -side
+      mirror: true
+      heatProgress: recoil
+      progress: warmup
+	  moveX: 6.5
+	  moves: [
+		{
+			type: PartMove
+			progress: recoil
+			Y: -0.3
+			rot: -3.5
+		}
+	  ]
+    }
+    {
+      type: RegionPart
+      suffix: -joint
+	  under: true
+      mirror: true
+      heatProgress: recoil
+      progress: warmup
+	  moveX: 6.5
+      children: [
+        {
+            type: RegionPart
+            color: 5cc47aa0
+            blending: additive
+            suffix: -joint-glow
+            colorTo: 96ffd3a1
+            progress: warmup
+            outline: false
+            under: true
+        }
+	  ]
+	  moves: [
+		{
+            type: PartMove
+            progress: recoil
+            Y: -0.1
+            rot: -2
+		}
+	  ]
+    }
+    {
+        type: RegionPart
+        suffix: -middle
+        progress: recoil
+        moveY: -0.5
+        heatProgress: recoil
+        heatColor: 96ffd3a1
+    }
+    //halo
+    {
+        type: ShapePart
+        y: -10.5
+        hollow: true
+        circle: true
+        layer: 110
+        color: aaf3e7
+        stroke: 0
+        strokeTo: 1
+        radius: 2
+        radiusTo: 4.5
+    }
+    {
+        type: ShapePart
+        y: -10.5
+        hollow: true
+        circle: true
+        layer: 110
+        color: aaf3e7
+        stroke: 0
+        strokeTo: 0.65
+        radius: 0
+        radiusTo: 2.25
+    }
+    {
+        type: ShapePart
+        y: -10.5
+        hollow: false
+        circle: true
+        layer: 110
+        color: aaf3e7
+        radius: 0
+        radiusTo: 0.6
+    }
+    {
+        type: HaloPart
+        progress: warmup
+        y: -10.5
+        radius: 0
+        radiusTo: 3
+        tri: true
+        color: aaf3e7
+        layer: 110
+        haloRadius: 4
+        haloRadiusTo: 6.5
+        shapes: 3
+        triLengthTo: 8
+        triLength: 0
+        haloRotateSpeed: 1.2
+    }
+    {
+        type: HaloPart
+        progress: warmup
+        y: -10.5
+        radius: 0
+        radiusTo: 3
+        tri: true
+        color: aaf3e7
+        layer: 110
+        haloRadius: 4
+        haloRadiusTo: 6.5
+        shapes: 3
+        triLengthTo: 1
+        triLength: 0
+        shapeRotation: 180
+        haloRotateSpeed: 1.2
+    }
+    //60 degrees halo
+    {
+        type: HaloPart
+        progress: warmup
+        y: -10.5
+        radius: 0
+        radiusTo: 2.5
+        tri: true
+        color: aaf3e7
+        layer: 110
+        haloRadius: 5
+        haloRadiusTo: 7
+        shapes: 3
+        triLengthTo: 4
+        triLength: 0
+        haloRotateSpeed: 1.2
+        haloRotation: 60
+    }
+    {
+        type: HaloPart
+        progress: warmup
+        y: -10.5
+        radius: 0
+        radiusTo: 2.5
+        tri: true
+        color: aaf3e7
+        layer: 110
+        haloRadius: 6
+        haloRadiusTo: 7
+        shapes: 3
+        triLengthTo: 1
+        triLength: 0
+        shapeRotation: 180
+        haloRotateSpeed: 1.2
+        haloRotation: 60
+    }
+   ]
+}
+velocityRnd: 0.09
+shootType: {
+    parts: [
+        {
+            type: FlarePart
+            sides: 5
+            radius: 85
+            stroke: 5
+            spinSpeed: 3
+            color1: aaf3e7
+        }
+    ]
+    chargeEffect: [
+        {
+            particles: 1
+            cone: 0
+            length: 0
+            sizeFrom: 0
+            sizeTo: 7
+            lifetime: 180
+            colorFrom: aaf3e7
+            colorTo: aaf3e7
+        }
+        {
+            particles: 2
+            cone: 45
+            length: -129
+            baseLength: 129
+            sizeFrom: 0
+            sizeTo: 2.25
+            colorFrom: aaf3e7
+            colorTo: aaf3e7
+            lifetime: 25
+            sizeInterp: pow5Out
+            interp: pow2In
+            startDelay: 0
+        }
+        {
+            particles: 2
+            cone: 45
+            length: -129
+            baseLength: 129
+            sizeFrom: 0
+            sizeTo: 2.25
+            colorFrom: aaf3e7
+            colorTo: aaf3e7
+            lifetime: 25
+            sizeInterp: pow5Out
+            interp: pow2In
+            startDelay: 15
+        }
+        {
+            particles: 2
+            cone: 45
+            length: -129
+            baseLength: 129
+            sizeFrom: 0
+            sizeTo: 2.25
+            colorFrom: aaf3e7
+            colorTo: aaf3e7
+            lifetime: 25
+            sizeInterp: pow5Out
+            interp: pow2In
+            startDelay: 30
+        }
+        {
+            particles: 2
+            cone: 45
+            length: -131
+            baseLength: 131
+            sizeFrom: 0
+            sizeTo: 2.25
+            colorFrom: aaf3e7
+            colorTo: aaf3e7
+            lifetime: 25
+            sizeInterp: pow5Out
+            interp: pow2In
+            startDelay: 45
+        }
+        {
+            particles: 2
+            cone: 45
+            length: -133
+            baseLength: 133
+            sizeFrom: 0
+            sizeTo: 2.25
+            colorFrom: aaf3e7
+            colorTo: aaf3e7
+            lifetime: 25
+            sizeInterp: pow5Out
+            interp: pow2In
+            startDelay: 60
+        }
+        {
+            particles: 2
+            cone: 45
+            length: -135
+            baseLength: 135
+            sizeFrom: 0
+            sizeTo: 2.25
+            colorFrom: aaf3e7
+            colorTo: aaf3e7
+            lifetime: 25
+            sizeInterp: pow5Out
+            interp: pow2In
+            startDelay: 75
+        }
+        {
+            particles: 2
+            cone: 45
+            length: -137
+            baseLength: 137
+            sizeFrom: 0
+            sizeTo: 2.25
+            colorFrom: aaf3e7
+            colorTo: aaf3e7
+            lifetime: 25
+            sizeInterp: pow5Out
+            interp: pow2In
+            startDelay: 90
+        }
+        {
+            particles: 2
+            cone: 45
+            length: -139
+            baseLength: 139
+            sizeFrom: 0
+            sizeTo: 2.25
+            colorFrom: aaf3e7
+            colorTo: aaf3e7
+            lifetime: 25
+            sizeInterp: pow5Out
+            interp: pow2In
+            startDelay: 105
+        }
+        {
+            particles: 2
+            cone: 45
+            length: -141
+            baseLength: 141
+            sizeFrom: 0
+            sizeTo: 2.25
+            colorFrom: aaf3e7
+            colorTo: aaf3e7
+            lifetime: 25
+            sizeInterp: pow5Out
+            interp: pow2In
+            startDelay: 120
+        }
+        {
+            particles: 2
+            cone: 45
+            length: -143
+            baseLength: 143
+            sizeFrom: 0
+            sizeTo: 2.25
+            colorFrom: aaf3e7
+            colorTo: aaf3e7
+            lifetime: 25
+            sizeInterp: pow5Out
+            interp: pow2In
+            startDelay: 135
+        }
+        {
+            particles: 2
+            cone: 45
+            length: -145
+            baseLength: 145
+            sizeFrom: 0
+            sizeTo: 2.25
+            colorFrom: aaf3e7
+            colorTo: aaf3e7
+            lifetime: 25
+            sizeInterp: pow5Out
+            interp: pow2In
+            startDelay: 150
+        }
+        {
+            particles: 2
+            cone: 45
+            length: -147
+            baseLength: 147
+            sizeFrom: 0
+            sizeTo: 2.25
+            colorFrom: aaf3e7
+            colorTo: aaf3e7
+            lifetime: 15
+            sizeInterp: pow5Out
+            interp: pow2In
+            startDelay: 165
+        }
+        {
+            type: WaveEffect
+            sizeFrom: 64
+            sizeTo: 0
+            strokeFrom: 0
+            strokeTo: 4
+            colorFrom: aaf3e7
+            colorTo: aaf3e7
+            lifetime: 40
+            startDelay: 100
+        }
+        {
+            type: WaveEffect
+            sizeFrom: 69
+            sizeTo: 0
+            strokeFrom: 0
+            strokeTo: 4
+            colorFrom: aaf3e7
+            colorTo: aaf3e7
+            lifetime: 40
+            startDelay: 120
+        }
+        {
+            type: WaveEffect
+            sizeFrom: 74
+            sizeTo: 0
+            strokeFrom: 0
+            strokeTo: 4
+            colorFrom: aaf3e7
+            colorTo: aaf3e7
+            lifetime: 40
+            startDelay: 140
+        }
+        {
+            type: WaveEffect
+            sizeFrom: 24
+            sizeTo: 21
+            strokeFrom: 0
+            strokeTo: 4
+            colorFrom: aaf3e7
+            colorTo: aaf3e7
+            lifetime: 60
+            startDelay: 120
+        }
+    ]
+    shootEffect: [
+        {
+            particles: 6
+            line: true
+            cone: 32
+            length: 95
+            lenFrom: 8
+            lenTo: 0
+            strokeFrom: 1
+            strokeTo: 1
+            colorFrom: aaf3e7
+            colorTo: aaf3e7
+            lifetime: 60
+            sizeInterp: pow2In
+            interp: pow5Out
+        }
+        {
+            particles: 12
+            cone: 52
+            length: 55
+            sizeFrom: 1.75
+            sizeTo: 0
+            colorFrom: aaf3e7
+            colorTo: aaf3e7
+            lifetime: 60
+            sizeInterp: pow5In
+            interp: pow5Out
+        }
+    ]
+    type: BulletType
+    speed: 10.24
+    damage: 120
+    splashDamage: 680
+    splashDamageRadius: 64
+    scaleLife: true
+    pierce: true
+    pierceBuilding: true
+    absorbable: false
+    hittable: false
+    reflectable: false
+    lifetime: 38
+    trailLength: 48
+    trailWidth: 2
+    trailColor: aaf3e7
+    trailRotation: true
+    trailInterval: 0.5
+    hitShake: 14
+    hitSound: explosionNavanax
+    hitSoundVolume: 2.25
+    despawnEffect: [
+        {
+            type: WaveEffect
+            sizeFrom: 1
+            sizeTo: 62
+            strokeFrom: 7
+            strokeTo: 0
+            colorFrom: aaf3e7
+            colorTo: aaf3e7
+            lifetime: 90
+            interp: pow2Out
+            sizeInterp: pow2In
+        }
+        {
+            particles: 14
+            length: 72
+            sizeFrom: 3.25
+            sizeTo: 0
+            colorFrom: aaf3e7
+            colorTo: aaf3e7
+            lifetime: 90
+            interp: pow5Out
+            sizeInterp: pow5In
+        }
+    ]
+    trailEffect: {
+        cone: 25
+        particles: 4
+        length: -52
+        sizeFrom: 2
+        sizeTo: 0
+        colorFrom: aaf3e7
+        colorTo: aaf3e7
+        lifetime: 25
+    }
+    fragBullets: 3
+    fragVelocityMin: 0.75
+    fragBullet: {
+        pierce: true
+        damage: 175
+        splashDamage: 98
+        splashDamageRadius: 32
+        speed: 6
+        lifetime: 180
+        drag: 0.03
+        homingPower: 0.5
+        homingRadius: 32
+        trailLength: 8
+        trailWidth: 1
+        trailColor: aaf3e7
+        parts: [
+        {
+            type: FlarePart
+            sides: 2
+            radius: 32
+            radiusTo: 6
+            stroke: 3
+            strokeTo: 0
+            color1: aaf3e7
+        }
+        ]
+        despawnEffect: [
+            {
+                type: WaveEffect
+                sizeFrom: 2
+                sizeTo: 27
+                strokeFrom: 4
+                strokeTo: 0
+                colorFrom: aaf3e7
+                colorTo: aaf3e7
+                lifetime: 25
+            }
+            {
+                particles: 12
+                length: 39
+                sizeFrom: 3.95
+                sizeTo: 0
+                colorFrom: aaf3e7
+                colorTo: aaf3e7
+                lifetime: 25
+                sizeInterp: pow2In
+            }
+            {
+                particles: 3
+                length: 9
+                sizeFrom: 6
+                sizeTo: 0
+                colorFrom: aaf3e7
+                colorTo: aaf3e7
+                lifetime: 25
+                sizeInterp: pow2In
+            }
+        ]
+    }
+}
+range: 384

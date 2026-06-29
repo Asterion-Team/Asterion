@@ -1,5 +1,9 @@
 type: Floor
 name: "Kryoline"
+
+status: corroded
+statusDuration: 60
+speedMultiplier: 0.2
 variants: 0
 
 //status: melting
@@ -7,7 +11,7 @@ variants: 0
 
 speedMultiplier: 0.75
 cacheLayer: "water" //tar, mud, water, arkycite
-drownTime: 300
+drownTime: 60
 isLiquid: true
 liquidDrop: kryoline
 liquidMultiplier: 1

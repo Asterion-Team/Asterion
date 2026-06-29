@@ -1,4 +1,3 @@
-type: BeamNode
 research: vent-burner
 requirements: [
     pyrite/10
