@@ -26,7 +26,6 @@ immunities: [
 ]
 weapons: [
     {
-    name: explosion-weapon-360
     x: 0
     y: 3
     mirror: false
@@ -103,5 +102,132 @@ weapons: [
             offset: 0
         }
     }
+    }
+    { 
+        shootY: 0
+        shootX: 0
+        x: 0
+        y: 0
+        layerOffset: -0.01
+        mirror: false
+        rotate: false
+        shootCone: 180
+        rotationLimit: 0
+        recoil: 0
+        reload: 60
+        shootSound: explosion
+        layerOffset: -0.01
+        mirror: false
+        rotate: false
+        shootCone: 360
+        rotationLimit: 0
+        controllable: false
+        alwaysShooting: false
+        recoil: 0
+        reload: 60
+        shootSound: explosion
+        shootOnDeath: true
+        noAttack: true
+        bullet: {
+            type: ExplosionBulletType
+            splashDamage: 195
+            splashDamageRadius: 45
+            spawnBullets: [
+                {
+                    type: BasicBulletType
+                    shootEffect: none
+                    smokeEffect: none
+                    hitEffect: none
+                    despawnEffect: none
+                    lifetime: 0
+                    speed: 0
+                    damage: 0
+                    width: 0
+                    height: 0
+                    fragBullets: 4
+                    fragSpread: 90
+                    fragRandomSpread: 0
+                    fragLifeMin: 1
+                    fragVelocityMin: 1
+                    fragBullet: {
+                    type: BasicBulletType
+                    damage: 0
+                    speed: 3
+                    lifetime: 15
+                    frontColor: ff9548
+                    backColor: c75432
+                    width: 5
+                    height: 8
+                    collides: false
+                    shootEffect: none
+                    smokeEffect: none
+                    hitEffect: none
+                    despawnEffect: none
+                    bulletInterval: 0
+                    intervalBullets: 1
+                    intervalSpread: 0
+                    intervalRandomSpread: 0
+                    intervalBullet: {
+                    type: ExplosionBulletType
+                    splashDamage: 10
+                    splashDamageRadius: 20
+                    incendChance: 1
+                    incendSpread: 7
+                    incendAmount: 4
+                    }
+                    }
+                }
+            ]
+            shootEffect: {
+                type: MultiEffect
+                effects: [
+                    {
+                    type: ParticleEffect 
+                    colorFrom: ff9548
+                    colorTo: c75432
+                    particles: 9
+                    cone: 360
+                    length: 0
+                    baseLength: 36
+                    lightScl: 3
+                    lightOpacity: 2
+                    spin: 0
+                    sizeFrom: 2.5
+                    sizeTo: 0 
+                    offset: 1
+                    }
+                    {
+                    type: ParticleEffect 
+                    colorFrom: ff9548
+                    colorTo: c75432
+                    particles: 12
+                    cone: 360
+                    length: 40
+                    baseLength: 0
+                    lightScl: 3
+                    lightOpacity: 2
+                    lifetime: 55
+                    spin: 0
+                    sizeFrom: 3
+                    sizeTo: 0 
+                    offset: 0
+                    }
+                    {
+                    type: WaveEffect
+                    colorFrom: ff9548
+                    colorTo: c75432
+                    sizeFrom: 45
+                    sizeTo: 45
+                    lightScl: 3
+                    lightOpacity: 1
+                    sides: 0
+                    lifetime: 65
+                    rotation: 0
+                    strokeFrom: 5
+                    strokeTo: 0
+                    }
+                ]
+            }
+        }
     }
 ]

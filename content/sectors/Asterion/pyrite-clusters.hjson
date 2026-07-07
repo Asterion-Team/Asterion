@@ -1,0 +1,15 @@
+captureWave: 2
+planet: asterion
+sector: 93
+difficulty: 3
+
+research: {
+parent: coast
+requiresUnlock: false
+    objectives: [
+        {
+            type: SectorComplete
+            preset: coast
+        }
+   ]
+}

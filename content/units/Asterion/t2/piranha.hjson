@@ -3,7 +3,7 @@ description: "Slows down enemies with a laser. Capable of taking off. \n[]Factio
 type: mech
 outlineColor: 22262b
 research: orion-reconstructor
-speed: 0.50
+speed: 0.6
 flying: false
 hitSize: 12
 itemCapacity: 50
@@ -20,9 +20,12 @@ canBoost: false
 boostMultiplayer: 1.3
 drownTimeMultiplier: 2.25
 rotateSpeed: 2.6
-health: 650
+health: 550
 armor: 9
 range: 80
+
+
+
 weapons: [
   {
   parts: [
@@ -51,11 +54,11 @@ weapons: [
   }
   bullet: {
     type: SapBulletType
-    sapStrength: 0.25
+    sapStrength: 0.1875
     length: 75
     width: 0.45
     lifetime: 15
-    damage: 30
+    damage: 40
     hitColor: d0d8e8 
     color: a1b1d0
     status: slow

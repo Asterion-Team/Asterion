@@ -1,0 +1,27 @@
+type: Reconstructor
+name: Pyro recursive reconstructor
+size: 5
+constructTime: 2700
+upgrades: [
+    ["explosion", "fault"]
+    ]
+consumes: {
+power: 8
+items: [
+  whitorite/250
+  blacktite/330
+  magnetite/100
+ ]
+ liquids: [
+    zion/0.25
+    oxylene/0.1
+ ]
+}
+requirements: [
+    whitorite/480
+    pyrite/530
+    zincum/220
+    magnetite/50
+]
+category: units
+research: pyro-reconstructor

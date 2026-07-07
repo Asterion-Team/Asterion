@@ -19,17 +19,15 @@ consumes: {
 
 outputItem: blacktite/2
 craftTime: 60
-/*
 research: {
     parent: core-force
     objectives: [
         {
-            type: SectorComplete
-            preset: coast
+            type: OnSector
+            preset: pyrite-clusters
         }
     ]
 }
-*/
 drawer: [
     {
         type: DrawRegion

@@ -1,0 +1,22 @@
+type: Reconstructor
+name: Extinguished reconstructor
+size: 3
+constructTime: 1800
+upgrades: [
+    ["mist", "twilight"]
+    ]
+consumes: {
+power: 2
+items: [
+  pyrite/50
+  zionitium/30
+  blacktite/20
+ ]
+}
+requirements: [
+    whitorite/200
+    zionitium/120
+    blacktite/50
+]
+category: units
+research: extinguished-factory

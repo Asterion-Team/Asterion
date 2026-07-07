@@ -1,0 +1,21 @@
+type: Reconstructor
+name: Pyro reconstructor
+size: 3
+constructTime: 1200
+upgrades: [
+    ["spark-u", "explosion"]
+    ]
+consumes: {
+power: 2
+items: [
+  zincum/50
+  blacktite/30
+ ]
+}
+requirements: [
+pyrite/230
+zincum/120
+blacktite/50
+]
+category: units
+research: pyro-factory

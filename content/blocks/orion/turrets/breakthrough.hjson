@@ -15,7 +15,7 @@ cooldownSpeed: 0.35
 maxAccel: 49
 shootSound: shootHeavy4
 shootSoundVolume: 0.2
-shake: 2.25
+shake: 4.2
 shootY: 1
 consumes: { 
 	coolant: {
@@ -104,7 +104,7 @@ ammoTypes: {
                 strokeTo: 0
                 colorFrom: abe0e5
                 colorTo: abe0e5
-                lifetime: 12
+                lifetime: 10
             }
         ]
         despawnEffect: [
@@ -148,7 +148,7 @@ ammoTypes: {
                 strokeTo: 0
                 colorFrom: abe0e5
                 colorTo: abe0e5
-                lifetime: 15
+                lifetime: 13
             }
         ]
         weaveScl: 0.5
@@ -234,7 +234,7 @@ ammoTypes: {
                 strokeTo: 0
                 colorFrom: f7844f
                 colorTo: f7844f
-                lifetime: 18
+                lifetime: 10
             }
             blastExplosion
         ]

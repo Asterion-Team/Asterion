@@ -3,6 +3,6 @@ name: Asterion core zone
 variants: 4
 
 allowCorePlacement: true
-
+emitLight: true
 lightRadius: 16
 lightColor: "8d73c9a9"

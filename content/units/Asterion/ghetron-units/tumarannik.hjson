@@ -2,21 +2,21 @@ name: tumarannik
 type: mech
 speed: 1.5
 flying: false
-hitSize: 13
+hitSize: 7
 itemCapacity: 25
 outlineColor: 24232e
 mechLegColor: 24232e 
 outlineRadius: 0
-mechFrontSway: 0.9
+mechSideSway: 0.26
 mechStepParticles: true
-stepShake: 0.1
+stepShake: 0.7
 drawCell: false
 drownTimeMultiplier: 8
 rotateSpeed: 3
 health: 110
 armor: 1
 range: 40
-
+deathSound: smoke-tumarannik
 deathExplosionEffect:{
 type: MultiEffect
 effects: [
@@ -84,7 +84,7 @@ weapons: [
     x: 0
     y: 0
     mirror: false
-    shootSound: smoke-tumarannik
+    shootSound: none
     shootOnDeath: true
     shootCone: 360
     bullet: {

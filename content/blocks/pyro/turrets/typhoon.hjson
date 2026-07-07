@@ -1,8 +1,8 @@
 type: ModeTurret
 name: Typhoon
 outlineColor: 22262b
-description: "turret with two firing modes: \nSniper mode - fires alternately from two guns. (default mode)\nArtillery mode - fires two guns simultaneously over long distances (Reduced rate of fire, increased radius)"
-reload: 60
+description: "Large twin turret. Fires massive high-explosive shells. Can switch firing modes."
+reload: 45
 range: 240
 size: 5
 targetAir: false
@@ -19,6 +19,7 @@ requirements: [
     blacktite/145
     magnetite/90
 ]
+scaledHealth: 170
 category: turret
 heatColor: ff8a66
 shootSound: shootHeavy
@@ -27,6 +28,7 @@ shake: 7
 recoils: 2
 shootY: 13.5
 consumes: {
+    power: 8.5
     coolant: {
         amount: 1
     }
@@ -45,7 +47,7 @@ ammoTypes: {
         ammoMultiplier: 1
         trailInterval: 1.5
         damage: 175
-        splashDamage: 275
+        splashDamage: 450
         splashDamageRadius: 42
         status: burning
         statusDuration: 600
@@ -112,8 +114,6 @@ ammoTypes: {
         shootEffect: shootTitan
         smokeEffect: shootSmokeTitan
         hitSound: explosionDull
-        collidesGround: true
-        collides: true
     }
 }
 
@@ -146,13 +146,104 @@ turretModes: [
         name: "basic"
         path: "as"
         barColor: "c3ffc2"
+        basicStats: true
+        modeAmmoTypes: {
+            ashotite: {
+                buildingDamageMultiplier: 0.15
+                type: BasicBulletType
+                armorMultiplier: 1.25
+                ammoMultiplier: 1
+                trailInterval: 1.5
+                damage: 175
+                splashDamage: 275
+                splashDamageRadius: 42
+                status: burning
+                statusDuration: 600
+                speed: 16
+                lifetime: 15
+                height: 34
+                width: 22
+                trailLength: 10
+                trailWidth: 3
+                frontColor: ffbb8a
+                backColor: db7f58
+                trailColor: db7f58
+                hitColor: ffbb8a
+                hitShake: 5
+                hitEffect: [
+                    {
+                        particles: 6
+                        line: true
+                        length: 120
+                        colorFrom: ffbb8a
+                        colorTo: ffbb8a
+                        cone: 75
+                        lenFrom: 13
+                        lenTo: 0
+                        strokeFrom: 2
+                        strokeTo: 1
+                        lifetime: 45
+                        interp: circleOut
+                        sizeInterp: pow2In
+                    }
+                    {
+                        type: WaveEffect
+                        sizeFrom: 4
+                        sizeTo: 50
+                        strokeFrom: 3
+                        strokeTo: 0
+                        colorFrom: ffbb8a
+                        colorTo: ffbb8a
+                        interp: circleOut
+                        lifetime: 20
+                    }
+                    {
+                        particles: 5
+                        length: 48
+                        colorFrom: ffbb8a
+                        colorTo: ffbb8a
+                        sizeFrom: 3
+                        sizeTo: 0
+                        interp: circleOut
+                        sizeInterp: pow5In
+                        lifetime: 45
+                    }
+                    {
+                        particles: 8
+                        length: 97
+                        colorFrom: ffbb8a
+                        colorTo: ffbb8a
+                        sizeFrom: 3
+                        sizeTo: 0
+                        cone: 35
+                        interp: circleOut
+                        sizeInterp: pow5In
+                        lifetime: 30
+                    }
+                    {
+                        particles: 5
+                        length: 42
+                        colorFrom: "bfb3aaf7"
+                        colorTo: "2e2d2d03"
+                        sizeFrom: 6
+                        sizeTo: 4
+                        interp: circleOut
+                        sizeInterp: pow2In
+                        lifetime: 60
+                    }
+                ]
+                shootEffect: shootTitan
+                smokeEffect: shootSmokeTitan
+                hitSound: explosionDull
+            }
+        }
     }
     {
         name: "artillery"
         path: "as"
         rangeChange: 300
         barColor: ff9494
-        reloadMultiplier: 0.35
+        reloadMultiplier: 0.3
         rotateSpeedMultiplier: 0.35
         ammoUseMultiplier: 2
         targetIntervalMultiplier: 3

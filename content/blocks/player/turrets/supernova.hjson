@@ -1,11 +1,14 @@
 name: Supernova
 type: PowerTurret
 category: turret
+rotateSpeed: 0.6
+scaledHealth: 185
 requirements: [
     whitorite/185
     pyrite/225
     blacktite/125
     magnetite/150
+    americium/600
 ]
 consumes: {
     power: 15
@@ -456,10 +459,13 @@ shootType: {
             interp: pow5Out
         }
     ]
+    homingPower: 0.85
+    homingDelay: 7
+    homingRange: 128
     type: BulletType
     speed: 10.24
     damage: 120
-    splashDamage: 680
+    splashDamage: 410
     splashDamageRadius: 64
     scaleLife: true
     pierce: true
@@ -476,6 +482,9 @@ shootType: {
     hitShake: 14
     hitSound: explosionNavanax
     hitSoundVolume: 2.25
+    status: underclock
+    statusDuration: 300
+    buildingDamageMultiplier: 0.05
     despawnEffect: [
         {
             type: WaveEffect
@@ -514,15 +523,16 @@ shootType: {
     fragBullets: 3
     fragVelocityMin: 0.75
     fragBullet: {
+        buildingDamageMultiplier: 0.05
         pierce: true
         damage: 175
         splashDamage: 98
         splashDamageRadius: 32
-        speed: 6
+        speed: 5
         lifetime: 180
         drag: 0.03
-        homingPower: 0.5
-        homingRadius: 32
+        homingPower: 0.9
+        homingRange: 64
         trailLength: 8
         trailWidth: 1
         trailColor: aaf3e7
