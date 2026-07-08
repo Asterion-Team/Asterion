@@ -13,8 +13,7 @@ items: [
   magnetite/100
  ]
  liquids: [
-    zion/0.25
-    oxylene/0.1
+    oxylene/0.3
  ]
 }
 requirements: [

@@ -1,0 +1,28 @@
+type: Reconstructor
+name: Orion reconstructor
+size: 7
+constructTime: 2400
+upgrades: [
+    [piranha, vulture]
+]
+consumes: {
+    power: 10
+    liquids: [
+    oxylene/0.1
+    ]
+    items: [
+        irmenite/150 
+        blacktite/250
+        magnetite/180
+    ]
+}
+requirements: [
+    whitorite/475
+    pyrite/725
+    irmenite/300
+    blacktite/470
+    magnetite/500
+]
+category: units
+research: orion-reconstructor
+ 

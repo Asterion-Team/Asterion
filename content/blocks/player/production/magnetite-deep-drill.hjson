@@ -5,9 +5,7 @@ description: "Drills magnetite from underground clusters. Methane and kryoline a
 requirements: [
     whitorite/95
     pyrite/145
-    irmenite/45
-    zincum/65
-    zionitium/40
+    blacktite/200
 ]
 category: production
 attribute: "magnetite-tiles"

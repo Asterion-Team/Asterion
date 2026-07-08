@@ -12,7 +12,7 @@ research: {
 requirements: [
     whitorite/65,
     pyrite/35,
-    irmenite/45
+    zincum/45
 ]
 researchCostMultiplier: 0.25
 name: "Methane extractor"

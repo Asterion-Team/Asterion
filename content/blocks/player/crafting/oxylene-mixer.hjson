@@ -1,0 +1,44 @@
+type: GenericCrafter
+size: 3
+name: Oxylene mixer
+
+requirements: [
+    whitorite/75
+    pyrite/185
+    blacktite/120
+]
+category: crafting
+craftTime: 20
+consumes: {
+    power: 3
+    liquid: kryoline/0.25
+    items: [
+        pyrite/1
+    ]
+}
+outputLiquid: oxylene/0.1
+drawer: [
+    {
+        type: DrawRegion
+        suffix: -bottom
+    }
+    {
+        type: DrawLiquidTile
+        drawLiquid: kryoline
+        padding: 1
+    }
+    {
+        type: DrawRegion
+        suffix: "-rotator"
+        spinSprite: true
+        rotateSpeed: -4
+    }
+    {
+        type: DrawLiquidTile
+        drawLiquid: oxylene
+        padding: 1
+    }
+    {
+        type: DrawDefault
+    }
+]

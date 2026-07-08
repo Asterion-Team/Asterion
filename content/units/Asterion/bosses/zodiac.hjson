@@ -18,7 +18,7 @@ targetAir: true
 targetGround: true
 
 canDrown: false
-
+layer: 74
 mechLegColor: 1f1f26
 mechFrontSway: 0.8
 mechStepParticles: true

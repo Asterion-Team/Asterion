@@ -1,0 +1,37 @@
+type: ConsumeGenerator
+size: 4
+name: Ashotite generator
+category: power
+requirements: [
+    whitorite/350
+    pyrite/180
+    zincum/225
+    blacktite/150
+]
+consumes: {
+    items: [
+        pyrite/1
+        ashotite/2
+    ]
+}
+ambientSound: loopDifferential
+ambientSoundVolume: 0.15
+generateEffect: generatespark
+itemCapacity: 40
+itemDuration: 60
+powerProduction: 10
+drawer: {
+  type: DrawMulti
+  drawers: [
+	{
+	    type: DrawDefault
+	}
+	{
+        type: DrawGlowRegion
+        color: ffe7b8
+	}
+    {
+        type: DrawWarmupRegion
+    }
+  ]
+}

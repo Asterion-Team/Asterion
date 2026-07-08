@@ -89,6 +89,17 @@ silicateWallLarge.buildType = () => extend(Wall.WallBuild, silicateWallLarge, {
   }
 });
 
+
+//Crafting
+const irmeniteOven = extend(GenericCrafter, "irmenite-oven", {});
+
+const ashotitePress = extend(AttributeCrafter, "ashotite-press", {});
+
+const blacktiteSmelter = extend(GenericCrafter, "blacktite-smelter", {});
+
+const zionitiumPress = extend(GenericCrafter, "zionitium-press", {});
+
+
 //Production
 
 const impulseDrill = extend(BurstDrill, "impulse-drill", {});
@@ -97,4 +108,15 @@ const rotaryDrill = extend(Drill, "rotary-drill", {});
 
 const methaneExtractor = extend(AttributeCrafter, "methane-extractor", {});
 
+const zionMixer = extend(GenericCrafter, "zion-synthesizer", {});
+
 const magnetiteDeepDrill = extend(AttributeCrafter, "magnetite-deep-drill", {});
+
+
+//Energetic
+
+const whitoriteBeamNode = extend(BeamNode, "whitorite-beam-node", {});
+
+const ventBurner = extend(ThermalGenerator, "vent-burner", {});
+
+const burnGenerator = extend(ConsumeGenerator, "burn-generator", {});
