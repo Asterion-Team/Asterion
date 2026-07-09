@@ -199,7 +199,7 @@ weapons: [
           lifetime: 60
           cone: 0
           offset: 90
-          region: as-inclined-wave
+          region: as-inclined-wave-big
           sizeFrom: 10
           sizeTo: 25
           colorFrom: a1b1d0
@@ -212,7 +212,7 @@ weapons: [
     width: 35
     splashDamageRadius: 32
     splashDamage: 135
-    lifetime: 13
+    lifetime: 18
     pierceCap: 3
     damage: 195
     speed: 18
@@ -366,39 +366,6 @@ weapons: [
       }
 	 }
     }
-    {
-        display: false
-        x: 0
-        y: -15
-        mirror: false
-        recoil: 0
-        reload: 5000
-        shootSound: shootPulsar
-        shootStatus: high_energy_output
-        shootStatusDuration: 200
-        alwaysShooting: true
-        inaccuracy: 360
-        shoot: {
-            shots: 39
-            shotDelay: 3
-        }
-
-        bullet: {
-            type: LightningBulletType
-            knockback: 5
-            damage: 80
-            lifetime: 4
-            hitEffect: hitLancer
-            despawnEffect: none
-            hitEffect: none
-            shootEffect: none
-            lightningColor: ffffff
-            lightningLength: 22
-            inaccuracy: 360
-            lightningLengthRand: 0
-            keepVelocity: false
-        }
-    }
 {
     name: glava-weapon-sap
     x: -20
@@ -446,9 +413,9 @@ abilities: [
       radius: 45
       angle: 120
 	  angleOffset: 345
-      regen: 2.4
-      cooldown: 190
-	  max: 4700
+      regen: 6
+      cooldown: 600
+	  max: 5700
 	  y: -15
 	  width: 8
 	  whenShooting: true
@@ -459,11 +426,34 @@ abilities: [
       radius: 45
       angle: 120
 	  angleOffset: 15
-      regen: 2.4
-      cooldown: 190
-	  max: 4700
+      regen: 6
+      cooldown: 600
+	  max: 5700
 	  y: -15
 	  width: 8
 	  whenShooting: true
+    }
+    {
+        type: OverloadAbility
+        x: 0
+        y: -15
+        reload: 2400
+        duration: 1200
+        shootInterval: 1
+        lightningLength: 26
+        applyStatus: overload
+        damage: 85
+        onShoot: true
+        activeEffect: {
+            followParent: true
+            type: WaveEffect
+            sizeFrom: 4
+            sizeTo: 60
+            strokeFrom: 5
+            strokeTo: 0
+            colorFrom: a1b1d0
+            colorTo: a1b1d0
+            lifetime: 60
+        }
     }
 ]

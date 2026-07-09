@@ -1,0 +1,17 @@
+speedMultiplier : 0.75
+reloadMultiplier : 1.6
+healthMultiplier: 0.7
+
+effect: {
+    particles: 3
+    length: 180
+    lifetime: 20
+    cone: 360
+    line: true
+    lenFrom: 9
+    lenTo: 2
+    strokeFrom: 1.45
+    strokeTo: 1.45
+    colorFrom: 8fffff
+    colorTo: 8fffff
+}
