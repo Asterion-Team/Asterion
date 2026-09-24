@@ -1,10 +1,9 @@
 name: Zodiac
-description: "Orion's monstrous weapon, capable of crippling the entire sector. It releases a small star, which, as a result of the rupture, forms a small black hole. A black hole in this case is a wormhole that moves sucked materials straight for processing into the core of the Zodiac, thereby restoring its combat effectiveness. \n[white]Faction: [#d0d8e8]Orion[]."
+description: "A titanic combat unit. Fires a supernova that, upon impact, instantly forms a [#ff8f8f]black hole.[]"
 type: mech
 health: 295000
 armor: 115
 range: 240
-
 speed: 0.29
 rotateSpeed: 0.8
 flying: false
@@ -230,7 +229,7 @@ weapons: [
 				outline: false
 			}
 		]
-		shake: 15
+		shake: 30
 		rotateSpeed: 1.1
 		shootCone: 45
 		shootX: 0
@@ -245,15 +244,80 @@ weapons: [
 		recoil: 8
 		reload: 300
 		shootSound: shootMassive
-		shootSoundVolume: 1.95
-		
+		shootSoundVolume: 4.95
 		bullet: {
+			hitSound: explosionAfflict
+			hitSoundVolume: 7
+			shootEffect: [
+			shootBigColor,
+			{
+				followParent: false
+				particles: 1
+				length: -5
+				baseLength: 15
+				randLength: false
+				lifetime: 60
+				cone: 0
+				offset: 90
+				region: as-inclined-wave-big
+				sizeFrom: 30
+				sizeTo: 45
+				colorFrom: f5f4da
+				colorTo: f5f4da00
+        	}
+			{
+				cone: 25
+				interp: pow2Out
+				sizeInterp: pow2In
+				particles: 16
+				line: true
+				length: 128
+				colorFrom: f5f4da
+				colorTo: f5f4da
+				lenFrom: 16
+				lenTo: 0
+				strokeFrom: 3
+				strokeTo: 1.5
+				lifetime: 70
+			}
+			{
+				cone: 5
+				interp: pow2Out
+				sizeInterp: pow2In
+				particles: 8
+				line: true
+				length: 180
+				colorFrom: f5f4da
+				colorTo: f5f4da
+				lenFrom: 38
+				lenTo: 0
+				strokeFrom: 4
+				strokeTo: 2
+				lifetime: 80
+			}
+			{
+				followParent: false
+				particles: 1
+				length: 12
+				baseLength: 50
+				randLength: false
+				lifetime: 60
+				cone: 0
+				offset: 90
+				region: as-inclined-wave-big
+				sizeFrom: 20
+				sizeTo: 20
+				colorFrom: f5f4da
+				colorTo: f5f4da00
+        	}
+		]
 			type: BulletType
 			trailLength: 24
 			pierceArmor: true
 			trailWidth: 8
 			scaleLife: true
 			trailColor: f5f4da
+			hitColor: f5f4da
 			collidesTiles: false
 			despawnShake: 40
 			parts: [
@@ -281,16 +345,63 @@ weapons: [
 			fragLifeMax: 1
 			fragRandomSpread: 0
 			fragBullet: {
-				shrinkTime: 80
+
+				parts: [
+					{
+					type: HaloPart
+					radius: 30
+					radiusTo: 10
+					tri: true
+					layer: 110
+					color: fffffe
+					haloRotateSpeed: 0.01
+					haloRadius: 0
+					haloRadiusTo: 0
+					stroke: 20
+					strokeTo: 20
+					shapes: 2
+					triLengthTo: 0
+					triLength: 100
+					progress: {
+						type: life
+						op: curve
+						interp: exp10In
+					}
+					}
+					{
+					type: HaloPart
+					radius: 60
+					radiusTo: 5
+					tri: true
+					layer: 110
+					color: fffffe
+					haloRotateSpeed: 0.01
+					haloRadius: 13.5
+					haloRadiusTo: 0
+					stroke: 20
+					strokeTo: 20
+					shapes: 2
+					triLengthTo: 0
+					triLength: 50
+					progress: {
+						type: life
+						op: curve
+						interp: exp10In
+					}
+					}
+				]
+
+				shrinkTime: 120
 				eventHorizonRadius: 30
-				accretionDiskWidth: 9
+				accretionDiskWidth: 11
 				factorRadius: 300
-				pullStrength: 900
+				pullStrength: 100
 				buildingDamageMultiplier: 0.1
 				shake: 3
 				speed: 0
 				type: BlackHoleBulletType
-				damage: 30
+				damage: 80
+				damageInterval: 2
 				armorMultiplier: 1.95
 				updateEffectChance: 0.1
 				lifetime: 300
@@ -382,6 +493,23 @@ weapons: [
 			scaleLife: true
 			trailColor: edeadf
 			frontColor: edeadf
+			hitColor: edeadf
+			shootEffect: shootBigColor
+			smokeEffect: {
+				followParent: false
+				particles: 1
+				length: 4
+				baseLength: 1
+				randLength: false
+				lifetime: 30
+				cone: 0
+				offset: 90
+				region: as-inclined-wave-big
+				sizeFrom: 4
+				sizeTo: 3.25
+				colorFrom: f5f4da
+				colorTo: f5f4da00
+        	}
 			despawnShake: 2
 			hitShake: 5
 			height: 12
@@ -449,6 +577,23 @@ weapons: [
 			scaleLife: true
 			trailColor: edeadf
 			frontColor: edeadf
+			hitColor: edeadf
+			shootEffect: shootBigColor
+			smokeEffect: {
+				followParent: false
+				particles: 1
+				length: 4
+				baseLength: 1
+				randLength: false
+				lifetime: 30
+				cone: 0
+				offset: 90
+				region: as-inclined-wave-big
+				sizeFrom: 4
+				sizeTo: 3.25
+				colorFrom: f5f4da
+				colorTo: f5f4da00
+        	}
 			despawnShake: 2
 			hitShake: 5
 			height: 12
@@ -510,7 +655,7 @@ weapons: [
 			backColor: c7baa1
 			frontColor: f7f4e4
 			speed: 20
-			lifetime: 33
+			lifetime: 20
 			trailLength: 14
 			trailWidth: 3
 			trailColor: f7f4e4
@@ -549,39 +694,6 @@ weapons: [
 			}
 		}
 	}
-	{
-		//core attack
-		display: false
-		x: 0
-		y: -20.5
-		mirror: false
-		recoil: 0
-		reload: 9650
-		shootSound: shootPulsar
-		shootStatus: high_energy_output
-		shootStatusDuration: 670
-		alwaysShooting: true
-		shoot: {
-			type: ShootSpread
-			shots: 125
-			shotDelay: 1.5
-			spread: 360
-		}
-		bullet: {
-			type: LightningBulletType
-			knockback: 7
-			damage: 295
-			lifetime: 2.7
-			hitEffect: hitLancer
-			despawnEffect: none
-			hitEffect: none
-			shootEffect: none
-			lightningColor: ffffff
-			lightningLength: 27
-			inaccuracy: 360
-			lightningLengthRand: 0
-		}
-	}
 ]
 
 immunities: [
@@ -609,6 +721,7 @@ abilities: [
 		maxSpeed: 0
 		damage: 0
 		chance: 1
+		display: false
 		length: 1
 		color: 00000000
 		shootSound: none
@@ -627,4 +740,28 @@ abilities: [
 			layer: 105
 		}
 	}
+	{
+        type: OverloadAbility
+        x: 0
+        y: -16.5
+        reload: 6000
+        duration: 1200
+        shootInterval: 0.5
+        lightningLength: 45
+        applyStatus: hyper-overload
+        damage: 85
+        onShoot: false
+		parentizeEffects: true
+        activeEffect: {
+            followParent: true
+            type: WaveEffect
+            sizeFrom: 4
+            sizeTo: 60
+            strokeFrom: 5
+            strokeTo: 0
+            colorFrom: edeadf
+            colorTo: edeadf
+            lifetime: 300
+        }
+    }
 ]

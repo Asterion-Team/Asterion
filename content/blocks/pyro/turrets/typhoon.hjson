@@ -43,20 +43,21 @@ shoot: {
 ammoTypes: {
     ashotite: {
         buildingDamageMultiplier: 0.15
-        type: ArtilleryBulletType
+        type: AdvancedArtilleryBulletType
+        trajectoryZ: 30
+        angleFactor: 0.4
         armorMultiplier: 1.25
         ammoMultiplier: 1
-        trailInterval: 1.5
-        damage: 175
-        splashDamage: 450
+        damage: 50
+        splashDamage: 400
         splashDamageRadius: 42
         status: burning
         statusDuration: 600
-        speed: 12
-        lifetime: 20
+        speed: 2
+        lifetime: 120
         height: 34
         width: 22
-        trailLength: 10
+        trailLength: 30
         trailWidth: 3
         frontColor: ffbb8a
         backColor: db7f58
@@ -113,7 +114,22 @@ ammoTypes: {
             }
         ]
         shootEffect: shootTitan
-        smokeEffect: shootSmokeTitan
+        smokeEffect: [
+            shootSmokeTitan,
+            {
+                particles: 9
+                line: true
+                cone: 15
+                length: 80
+                lenFrom: 9
+                lenTo: 0
+                strokeFrom: 2
+                strokeTo: 2
+                colorFrom: ffbb8a
+                colorTo: ffbb8a
+                lifetime: 23
+            }
+        ]
         hitSound: explosionDull
     }
 }
@@ -234,7 +250,22 @@ turretModes: [
                     }
                 ]
                 shootEffect: shootTitan
-                smokeEffect: shootSmokeTitan
+                smokeEffect: [
+                    shootSmokeTitan,
+                    {
+                        particles: 9
+                        line: true
+                        cone: 15
+                        length: 80
+                        lenFrom: 9
+                        lenTo: 0
+                        strokeFrom: 2
+                        strokeTo: 2
+                        colorFrom: ffbb8a
+                        colorTo: ffbb8a
+                        lifetime: 23
+                    }
+                ]
                 hitSound: explosionDull
             }
         }
@@ -248,7 +279,7 @@ turretModes: [
         rotateSpeedMultiplier: 0.35
         ammoUseMultiplier: 2
         targetIntervalMultiplier: 3
-        accuracyMultiplier: 0.15
+        accuracyMultiplier: 0.25
         modeSound: shootHeavy3
         modePattern: {
             type: ShootAlternate

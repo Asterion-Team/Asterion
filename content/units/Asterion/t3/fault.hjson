@@ -19,7 +19,7 @@ stepShake: 1
 outlineRadius: 4
 drownTimeMultiplier: 8
 rotateSpeed: 1.85
-health: 1250
+health: 1350
 armor: 8
 immunities: [
     burning
@@ -32,7 +32,7 @@ weapons: [
     layerOffset: 0.001
     mirror: true
     recoil: 1
-    reload: 15
+    reload: 13
     baseRotation: 0
     shootSound: shootFlame
     rotate: true
@@ -42,9 +42,9 @@ weapons: [
     bullet: {
          type: BulletType
          hitSize: 12
-         damage: 37
+         damage: 98
          speed: 10
-         lifetime: 10
+         lifetime: 11
          incendChance: 1
          incendSpread: 8
          incendAmount: 4

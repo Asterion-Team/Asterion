@@ -3,8 +3,7 @@ category: production
 requirements: [
     whitorite/85
     pyrite/75
-    irmenite/45
-    blacktite/30
+    blacktite/25
 ]
 liquidBoostIntensity: 1
 name: "Rotary drill"

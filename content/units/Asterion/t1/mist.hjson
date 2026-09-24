@@ -30,16 +30,16 @@ weapons: [
     mirror: false
     rotateSpeed: 3
     shootSound: shootPlasma2
-    reload: 120
+    reload: 90
     recoil: 1.5
     shootStatus: fading-t1
     shootStatusDuration: 120
     bullet: {
       type: BasicBulletType
       sprite: missile-large
-      damage: 45
+      damage: 40
       speed: 12
-      lifetime: 14
+      lifetime: 17
       width: 12
       height: 16
       backColor: bc5451 

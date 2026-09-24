@@ -6,11 +6,11 @@ gas: false
 gasColor: "f39560"
 barColor: "579adc"
 lightColor: "476fbfd3"
-coolant: true;
+coolant: true
 
 explosiveness: 0
 flammability: 0
-heatCapacity: 0.75
+heatCapacity: 0.1
 viscosity: 0.3
 temperature: 0.4
 

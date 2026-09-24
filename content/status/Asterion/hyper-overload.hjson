@@ -1,0 +1,19 @@
+speedMultiplier : 0.25
+reloadMultiplier : 1.1
+healthMultiplier: 0.85
+damage: 10
+
+effectChance: 0.75
+effect: {
+    particles: 1
+    length: 180
+    lifetime: 20
+    cone: 360
+    line: true
+    lenFrom: 19
+    lenTo: 2
+    strokeFrom: 2
+    strokeTo: 1
+    colorFrom: edeadf
+    colorTo: edeadf
+}

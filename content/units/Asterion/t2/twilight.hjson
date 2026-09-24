@@ -57,7 +57,7 @@ weapons: [
      damage: 34
      speed: 2
      drag: -0.04
-     lifetime: 35
+     lifetime: 43
      width: 9
      height: 13
      backColor: bc5451 

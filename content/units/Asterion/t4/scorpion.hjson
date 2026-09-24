@@ -27,8 +27,8 @@ abilities: [
         type: OverloadAbility
         x: 0
         y: -6
-        reload: 900
-        duration: 300
+        reload: 1800
+        duration: 600
         shootInterval: 13
         lightningLength: 21
         applyStatus: high_energy_output

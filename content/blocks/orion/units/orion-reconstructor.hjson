@@ -7,7 +7,6 @@ upgrades: [
 ]
 consumes: {
     power: 4.5
-    liquid: kryoline/0.5
     items: [
         irmenite/50 
         blacktite/50

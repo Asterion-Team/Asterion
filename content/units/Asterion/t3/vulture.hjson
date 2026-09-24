@@ -2,8 +2,8 @@ name: Vulture
 description: "Vulture or Voltrum discharges hypersonic projectiles at enemies. From time to time, the Vulture needs to release excess energy, emits weak impulses. \n[]Faction: [#d0d8e8]«Orion»[]."
 type: mech
 outlineColor: 22262b
-research: orion-processor-reconstructor
-speed: 0.4
+research: piranha
+speed: 0.435
 flying: false
 hitSize: 15
 itemCapacity: 190
@@ -18,7 +18,7 @@ stepShake: 1
 outlineRadius: 4
 drownTimeMultiplier: 3
 rotateSpeed: 2.6
-health: 1280
+health: 1600
 armor: 12
 range: 190
 
@@ -27,7 +27,7 @@ abilities: [
         type: OverloadAbility
         x: 0
         y: -6
-        reload: 600
+        reload: 1200
         duration: 300
         shootInterval: 11
         lightningLength: 17
@@ -100,17 +100,20 @@ weapons: [
         rotateSpeed: 2.75
         shootCone: 25
         recoil: 3
-        reload: 75
+        reload: 50
         shootSound: shootDisperse
         shoot: {
             shots: 3
-            shotDelay: 6
+            shotDelay: 9
         }
+        shake: 2
         bullet: {
             type: BulletType
-            damage: 32
-            lifetime: 27
-            speed: 8
+            damage: 53
+            lifetime: 18
+            speed: 12
+            hitShake: 2.5
+            despawnShake: 1.75
             trailColor: a1b1d0 
             trailWidth: 2
             trailLength: 6
@@ -127,7 +130,8 @@ weapons: [
                 sizeInterp: circleOut
                 lifetime: 20
             }
-            homingPower: 0.2
+            homingPower: 0.01
+            homingDelay: 3
             weaveMag: 2
             weaveScale: 2
             pierce: true
@@ -184,7 +188,20 @@ weapons: [
                     strokeTo: 0.8
                     colorFrom: a1b1d0
                     colorTo: a1b1d0
-                    lifetime: 28
+                    lifetime: 18
+                }
+                {
+                    particles: 6
+                    line: true
+                    lenFrom: 4
+                    lenTo: 0
+                    length: -25
+                    cone: 90
+                    strokeFrom: 1
+                    strokeTo: 0.8
+                    colorFrom: a1b1d0
+                    colorTo: a1b1d0
+                    lifetime: 16
                 }
                 {
                     particles: 9
@@ -194,7 +211,7 @@ weapons: [
                     cone: 15
                     colorFrom: a1b1d0
                     colorTo: a1b1d0
-                    lifetime: 35
+                    lifetime: 18
                 }
             ]
             despawnEffect: [
@@ -231,7 +248,7 @@ weapons: [
                     sizeTo: 16
                     strokeFrom: 2
                     strokeTo: 0
-                    lifetime: 15
+                    lifetime: 10
                 }
             ]
         }

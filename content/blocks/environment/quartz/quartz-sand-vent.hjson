@@ -20,6 +20,6 @@ effect: {
 
 effectColor: 7a7266c6
 attributes: {
-	steam: 1
-	heat: 0.2434
+	methane: 1
+	heat: 0.3534
 }

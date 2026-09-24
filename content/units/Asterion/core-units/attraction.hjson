@@ -5,7 +5,7 @@ description: Guard of the core «Force». Attraction shoots fast healing bullets
 flying: true
 health: 140
 hitSize: 12.5
-buildSpeed: 1.05
+buildSpeed: 0.85
 mineTier: 1
 mineSpeed: 8.0
 buildRange: 150

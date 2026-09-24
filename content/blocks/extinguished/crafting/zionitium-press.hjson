@@ -4,7 +4,6 @@ size: 3
 requirements: [
     whitorite/95
     pyrite/40
-    blacktite/60
 ]
 category: crafting
 research: faction-extinguished

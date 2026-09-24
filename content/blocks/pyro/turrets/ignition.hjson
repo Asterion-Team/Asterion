@@ -39,7 +39,7 @@ consumes: {
 }
 ammoTypes: {
     ashotite: {
-        buildingDamageMultiplier: 0.1
+        buildingDamageMultiplier: 0.4
         type: BasicBulletType
         damage: 18
         splashDamage: 42

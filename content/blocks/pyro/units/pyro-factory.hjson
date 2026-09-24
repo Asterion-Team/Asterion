@@ -23,17 +23,14 @@ requirements: [
     zincum/50
 ]
 consumes: {
-    power: 1
-    liquids: [
-        methane/0.125
-    ]
+    power: 2
 }
 configurable: false
 plans: [
     {
         unit: spark-u
         requirements: [
-            zincum/10
+            whitorite/10
             ashotite/15
         ]
         time: 600

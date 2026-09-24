@@ -19,7 +19,7 @@ ambientSoundVolume: 0.15
 generateEffect: generatespark
 itemCapacity: 40
 itemDuration: 60
-powerProduction: 10
+powerProduction: 15
 drawer: {
   type: DrawMulti
   drawers: [

@@ -4,8 +4,7 @@ size: 3
 category: production
 requirements: [
     whitorite/85
-    pyrite/50
-    blacktite/35
+    pyrite/80
 ]
 consumes: {
     power: 1

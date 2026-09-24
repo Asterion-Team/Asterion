@@ -1,5 +1,6 @@
 name: Supernova
 type: PowerTurret
+outlineColor: 22262b
 category: turret
 rotateSpeed: 0.6
 scaledHealth: 185

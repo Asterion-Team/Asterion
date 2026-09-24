@@ -31,7 +31,7 @@ rotateSpeed: 1.45
 inaccuracy: 5
 ammoTypes: {
     irmenite: {
-        buildingDamageMultiplier: 0.15
+        buildingDamageMultiplier: 0.25
         armorMultiplier: 0.8
         knockback: 3.8
         pierce: true
@@ -155,7 +155,7 @@ ammoTypes: {
         weaveMag: 1.1
     }
     ashotite: {
-        buildingDamageMultiplier: 0.1
+        buildingDamageMultiplier: 0.25
         inaccuracy: 2
         reloadMultiplier: 0.45
         knockback: 3.8

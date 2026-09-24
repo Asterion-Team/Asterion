@@ -2,7 +2,7 @@ name: piranha
 description: "Slows down enemies with a laser. Capable of taking off. \n[]Faction: [#d0d8e8]«Orion»[]."
 type: mech
 outlineColor: 22262b
-research: orion-reconstructor
+research: varan
 speed: 0.6
 flying: false
 hitSize: 12
@@ -20,7 +20,7 @@ canBoost: false
 boostMultiplayer: 1.3
 drownTimeMultiplier: 2.25
 rotateSpeed: 2.6
-health: 550
+health: 600
 armor: 9
 range: 80
 
@@ -42,7 +42,7 @@ weapons: [
   name: piranha-weapon
   x: -8.5
   y: 0
-  reload: 45
+  reload: 40
   mirror: true
   recoil: 2
   layerOffset: -0.01
@@ -54,15 +54,15 @@ weapons: [
   }
   bullet: {
     type: SapBulletType
-    sapStrength: 0.1875
-    length: 75
+    sapStrength: 0.1
+    length: 60
     width: 0.45
     lifetime: 15
-    damage: 40
+    damage: 50
     hitColor: d0d8e8 
     color: a1b1d0
     status: slow
-    statusDuration: 20
+    statusDuration: 25
     shootEffect: {
       type: ParticleEffect 
       colorFrom: d0d8e8

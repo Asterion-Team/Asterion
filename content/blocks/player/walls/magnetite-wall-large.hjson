@@ -1,8 +1,8 @@
 name: "Large Magnetite Wall"
-health: 6980
+health: 4000
 absorbLasers: false
-lightningChance: 0.1
-lightningDamage: 15
+lightningChance: 0.05
+lightningDamage: 10
 lightningColor: "e9ecf0"
 size: 2
 requirements: [

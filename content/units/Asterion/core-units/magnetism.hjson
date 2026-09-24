@@ -5,9 +5,9 @@ description: "Guard of the core: Impact. Shoots energy spears"
 flying: true
 health: 220
 hitSize: 12
-buildSpeed: 2.5
+buildSpeed: 1.25
 engineSize: 1.5
-mineSpeed: 19
+mineSpeed: 9.6
 mineTier: 2
 speed: 8
 trailLength: 2
@@ -36,20 +36,25 @@ weapons: [
 	shootSound: shootAvert
 	continuous: false
 	bullet: {
+		shootEffect: shootSmallColor
 		type: BasicBulletType
 		scaleKeepVelocity: true
-		damage: 24
+		damage: 12
 		pierce: true
-		pierceCap: 3
+		pierceCap: 2
 		armorMultiplier: 1.15
 		homingPower: 0.2
 		homingDelay: 5
 		homingRange: 32
 		lifetime: 30
-		frontColor: fff2b3
-		backColor: deb65f
+		collidesTeam: true
+		healPercent: 1.25
+		healColor: e39fe1
+		hitColor: e39fe1
+		frontColor: e39fe1
+		backColor: d66bd3
 		trailLength: 5
-		trailColor: deb65f
+		trailColor: e39fe1
 		trailWidth: 1
 		shrinkY: 0
 		speed: 8
@@ -65,8 +70,8 @@ weapons: [
 				lenTo: 0
 				strokeFrom: 1.1
 				strokeTo: 1
-				colorFrom: deb65f
-				colorTo: deb65f
+				colorFrom: e39fe1
+				colorTo: e39fe1
 				length: 45
 				lifetime: 15
 				cone: 25
@@ -76,8 +81,8 @@ weapons: [
 				type: WaveEffect
 				sizeFrom: 2
 				sizeTo: 5
-				colorFrom: deb65f
-				colorTo: deb65f
+				colorFrom: e39fe1
+				colorTo: e39fe1
 				strokeFrom: 2
 				strokeTo: 0
 				lifetime: 15
@@ -87,8 +92,8 @@ weapons: [
 			type: WaveEffect
 			sizeFrom: 0
 			sizeTo: 12
-			colorFrom: deb65f
-			colorTo: deb65f
+			colorFrom: e39fe1
+			colorTo: e39fe1
 			strokeFrom: 3
 			strokeTo: 0
 			lifetime: 15

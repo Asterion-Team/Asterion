@@ -5,8 +5,8 @@ hitSize: 22
 flying: false
 omniMovement: false
 targetAir: false
-health: 1600
-armor: 10
+health: 1500
+armor: 15
 speed: 0.35
 rotateSpeed: 0.85
 itemCapacity: 0
@@ -56,9 +56,9 @@ weapons: [
         sprite: missile-large
         damage: 145
         splashDamage: 86
-        splashDamageRadius: 26
+        splashDamageRadius: 32
         speed: 16
-        lifetime: 16
+        lifetime: 18
         width: 16
         height: 23
         backColor: cc6556 

@@ -18,10 +18,10 @@ hasPower: true
 shoot: {
     firstShotDelay: 60
   }
+targetBlocks: false
 chargeSound: chargeEMP
 shake: 2
 shootType: {
-  followAimSpeed: 0.8
   type: BasicBulletType
   sprite: circle-bullet
   chargeEffect: [
@@ -97,8 +97,7 @@ shootType: {
  backSprite: circle-bullet-back
  damage: 0
  collides: false
- collidesAir: false
- collidesGround: false
+ collidesTiles: true
  splashDamage: 15
  splashDamageRadius: 32
  width: 16
@@ -112,10 +111,9 @@ shootType: {
  trailLength: 8
  trailWidth: 4
  trailColor: 94d1c7
- lightningDamage: 35
  lightningLength: 12
  lightningColor: 94d1c7
- buildingDamageMultiplier: 0.1
+ buildingDamageMultiplier: 0.01
  lightning: 16
  lightningCone: 360
  bulletInterval: 5
@@ -126,10 +124,22 @@ shootType: {
  hitShake: 3
  intervalBullet: {
 	type: LightningBulletType
-	buildingDamageMultiplier: 0.1
+	buildingDamageMultiplier: 0.01
 	lightningLength: 9
-	damage: 17
+	damage: 14
 	lightningColor: 94d1c7
+	lightningType: {
+		buildingDamageMultiplier: 0.01
+		type: BulletType
+		speed: 0.0001
+		damage: 14
+		lifetime: 10
+		despawnEffect: none
+		status: shocked
+		statusDuration: 60
+		hittable: false
+		lightColor: ffffff
+ 	}
   }
   despawnEffect: none
   hitEffect: [
@@ -183,12 +193,26 @@ shootType: {
 		colorTo: 94d1c7
 	}
   ]
+  lightningType: {
+	buildingDamageMultiplier: 0.01
+	type: BulletType
+	speed: 0.0001
+	damage: 35
+	lifetime: 10
+	despawnEffect: none
+	status: shocked
+	statusDuration: 60
+	hittable: false
+	lightColor: ffffff
+ }
+ lightningDamage: 35
  }
 category: turret
 requirements: [
  whitorite/145
  pyrite/35
  blacktite/110
+ magnetite/40
 ]
 research: {
  parent: splinter

@@ -1,5 +1,5 @@
 name: "Magnetite Wall"
-health: 1745
+health: 1000
 absorbLasers: false
 lightningChance: 0.05
 lightningDamage: 10

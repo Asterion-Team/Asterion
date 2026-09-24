@@ -55,6 +55,44 @@
         region: as-inclined-wave-big
         offset: 90
       }
+      {
+        type: ParticleEffect
+        rotWithParent: true
+        followParent: true
+        cone: 0
+        length: -5
+        baseLength: 60
+        randLength: false
+        colorFrom: ffffff
+        colorTo: ffffff00
+        particles: 1
+        lifetime: 530
+        interp: linear
+        sizeFrom: 55
+        sizeTo: 80
+        sizeInterp: linear
+        region: as-inclined-wave-big
+        offset: 90
+      }
+      {
+        type: ParticleEffect
+        rotWithParent: true
+        followParent: true
+        cone: 0
+        length: -5
+        baseLength: 110
+        randLength: false
+        colorFrom: ffffff
+        colorTo: ffffff00
+        particles: 1
+        lifetime: 530
+        interp: linear
+        sizeFrom: 50
+        sizeTo: 75
+        sizeInterp: linear
+        region: as-inclined-wave-big
+        offset: 90
+      }
     ]
     trailRotation: true
     trailInterval: 1
@@ -99,7 +137,11 @@
   }
   firingMoveFract: 0
   shootSound: destructionBeamShoot
-  shootSoundVolume: 5
+  loopSound: beamPlasma
+  shootSoundVolume: 9
+  loopSoundVolume: 3
+  soundPitchMax: 0.75
+  soundPitchMin: 0.7
 
   consumes: {
     power: 566.666666666666666

@@ -144,15 +144,12 @@ weapons: [
      damage: 78
      splashDamage: 72
      splashDamageRadius: 48
-     pierce: true
-     pierceCap: 2
-     pierceBuilding: true
      height: 19
      width: 16
      frontColor: 9DBDFA
      backColor: 769ade
      speed: 12
-     lifetime: 30
+     lifetime: 20
      trailLength: 14
      trailWidth: 3
      trailColor: 9DBDFA
@@ -212,36 +209,10 @@ weapons: [
      intervalBullets: 2
      bulletInterval: 2
      intervalRandomSpread: 360
-     hitEffect: [
-        {
-            particles: 6
-            line: true
-            length: 30
-            lenFrom: 7
-            lenTo: 0
-            strokeFrom: 1
-            strokeTo: 1
-            colorFrom: 9DBDFA
-            colorTo: 9DBDFA
-            lifetime: 23
-        }
-        {
-            particles: 9
-            line: true
-            length: 35
-            lenFrom: 4
-            lenTo: 0
-            strokeFrom: 0.7
-            strokeTo: 0.7
-            colorFrom: 9DBDFA
-            colorTo: 9DBDFA
-            lifetime: 30
-        }
-    ]
      despawnSound: explosionNavanax
      hitSound: shootArc
      despawnShake: 5
-     despawnEffect: [
+     hitEffect: [
         {
             particles: 6
             line: true
