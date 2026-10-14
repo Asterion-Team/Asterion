@@ -15,5 +15,8 @@ Special thanks to:
 - Sundered — help with some sprites;
 - Los Sasikos — some help with balancing and coding;
 
+- Sorry guys, but for now mod is discontinued
+- (-Sputnuc)
+
 # Links
 [![Discord](https://img.shields.io/discord/1278276676811358238?style=for-the-badge&color=ff9199&logo=discord&label=Asterion%20Server)](https://discord.gg/mu3rYKHFBM)
